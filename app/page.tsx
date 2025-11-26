@@ -1,12 +1,12 @@
 import React from 'react';
 import { topics } from '@/app/data/topics';
-import { RefCard } from '@/components/RefCard';
-import { Sidebar } from '@/components/Sidebar';
+import RefCard from '@/components/RefCard';
+import Sidebar from '@/components/Sidebar';
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-slate-900 text-slate-200 font-sans selection:bg-indigo-500/30">
-      <Sidebar sections={topics} />
+      <Sidebar topics={topics} />
       
       <main className="lg:pl-64">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
