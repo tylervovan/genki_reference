@@ -116,7 +116,6 @@ To add new content, edit `app/data/topics.ts`:
 - [ ] Filter by chapter
 - [ ] Filter by grammar type
 - [ ] Flashcard study mode
-- [ ] Kanji reference section
 - [ ] Audio pronunciation
 - [ ] User progress tracking
 - [ ] Custom study sets
