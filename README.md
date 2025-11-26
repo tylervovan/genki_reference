@@ -2,7 +2,7 @@
 
 A modern, QuickRef-style cheat sheet for studying Japanese using content from the Genki textbook series. Organized by topic with chapter attribution for easy reference and future filtering capabilities.
 
-## 🎯 Features
+## Features
 
 - **Topic-Based Organization**: Content organized by Japanese language concepts (Particles, Verbs, Greetings, etc.)
 - **Chapter Attribution**: Each item tagged with its source chapter from Genki
@@ -11,7 +11,7 @@ A modern, QuickRef-style cheat sheet for studying Japanese using content from th
 - **Quick Navigation**: Sidebar navigation for instant access to any topic section
 - **Rich Examples**: Japanese text with readings (romaji/hiragana) and English translations
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -35,7 +35,7 @@ npm start
 
 Visit `http://localhost:3000` (or the port shown in your terminal) to view the application.
 
-## 📚 Current Content
+## Current Content
 
 The application currently includes reference materials from Genki I Chapters 1-3:
 
@@ -62,7 +62,7 @@ The application currently includes reference materials from Genki I Chapters 1-3
 - **Question Words** (Chapters 1-3)
   - 何 (what), 誰 (who), どこ (where), etc.
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 app/
@@ -78,7 +78,7 @@ app/
 └── page.tsx              # Main page
 ```
 
-## 📝 Adding New Content
+## Adding New Content
 
 To add new content, edit `app/data/topics.ts`:
 
@@ -110,7 +110,7 @@ To add new content, edit `app/data/topics.ts`:
 }
 ```
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - [ ] Search functionality
 - [ ] Filter by chapter
@@ -121,18 +121,18 @@ To add new content, edit `app/data/topics.ts`:
 - [ ] User progress tracking
 - [ ] Custom study sets
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 - **Framework**: Next.js 16 (App Router)
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
 - **Font**: Geist Sans
 
-## 📖 Data Source
+## Data Source
 
 Content based on "Genki: An Integrated Course in Elementary Japanese" (3rd Edition).
 
-## 🤝 Contributing
+## Contributing
 
 This is a study resource. To add content:
 
@@ -141,7 +141,7 @@ This is a study resource. To add content:
 3. Test locally with `npm run dev`
 4. Submit a pull request
 
-## 📄 License
+## License
 
 Educational use only. Genki textbook content © Japan Times Publishing.
 
