@@ -1,5 +1,6 @@
 import { Topic } from './types';
 import { genkiLessons } from './genki-lessons';
+import { kanjiTopics } from './kanji';
 
 // Quick Reference sections (kept for easy access)
 const quickRefTopics: Topic[] = [
@@ -85,4 +86,4 @@ const quickRefTopics: Topic[] = [
 ];
 
 // Combine quick reference with all lesson data
-export const topics: Topic[] = [...quickRefTopics, ...genkiLessons];
+export const topics: Topic[] = [...quickRefTopics, ...genkiLessons, ...kanjiTopics];
