@@ -1,9 +1,11 @@
 import { Topic } from './types';
+import { genkiLessons } from './genki-lessons';
 
-export const topics: Topic[] = [
+// Quick Reference sections (kept for easy access)
+const quickRefTopics: Topic[] = [
   {
     id: 'basics',
-    title: 'Basics',
+    title: 'Basics & Quick Reference',
     cards: [
       {
         id: 'greetings',
@@ -38,7 +40,7 @@ export const topics: Topic[] = [
   },
   {
     id: 'particles',
-    title: 'Particles',
+    title: 'Particles Reference',
     cards: [
       {
         id: 'topic-marker-wa',
@@ -63,8 +65,8 @@ export const topics: Topic[] = [
     ]
   },
   {
-    id: 'verbs',
-    title: 'Verbs',
+    id: 'verbs-quick',
+    title: 'Verb Forms Reference',
     cards: [
       {
         id: 'desu-copula',
@@ -82,3 +84,5 @@ export const topics: Topic[] = [
   }
 ];
 
+// Combine quick reference with all lesson data
+export const topics: Topic[] = [...quickRefTopics, ...genkiLessons];
