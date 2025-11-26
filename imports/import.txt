@@ -1,0 +1,710 @@
+================================================================================
+GENKI TEXTBOOK VOLUME 1 - COMPLETE DATABASE
+LESSONS: 1 - 10
+SOURCE: PDF File (L1-3) + Curriculum Database (L4-10)
+================================================================================
+
+=== LESSON 1: New Friends (あたらしいともだち) ===
+
+[VOCABULARY: L1]
+Category | Japanese | Romaji | English
+School | だいがく | daigaku | college; university
+School | こうこう | kookoo | high school
+School | がくせい | gakusee | student
+School | だいがくせい | daigakusee | college student
+School | りゅうがくせい | ryuugakusee | international student
+School | せんせい | sensee | teacher; Professor...
+School | 〜ねんせい | ...nensee | ...year student
+School | いちねんせい | ichinensee | first-year student
+School | せんこう | senkoo | major
+Person | わたし | watashi | I
+Person | ともだち | tomodachi | friend
+Person | 〜さん | ...san | Mr./Ms....
+Person | 〜じん | ...jin | ...people (nationality)
+Person | にほんじん | nihonjin | Japanese people
+Time | いま | ima | now
+Time | ごぜん | gozen | A.M.
+Time | ごご | gogo | P.M.
+Time | 〜じ | ...ji | o'clock
+Time | いちじ | ichiji | one o'clock
+Time | はん | han | half
+Time | にじはん | niji han | half past two
+Place | にほん | Nihon | Japan
+Place | アメリカ | Amerika | U.S.A.
+Language | 〜ご | ...go | ...language
+Language | にほんご | nihongo | Japanese language
+Age | 〜さい | ...sai | ...years old
+Item | でんわ | denwa | telephone
+Suffix | 〜ばん | ...ban | number...
+Noun | ばんごう | bangoo | number
+Noun | なまえ | namae | name
+Noun | なん/なに | nan/nani | what
+Expression | あのう | anoo | um...
+Expression | はい | hai | yes
+Expression | そうです | soo desu | That's right.
+Expression | そうですか | soo desu ka | I see.; Is that so?
+Country | イギリス | Igirisu | Britain
+Country | オーストラリア | Oosutoraria | Australia
+Country | かんこく | Kankoku | Korea
+Country | カナダ | Kanada | Canada
+Country | ちゅうごく | Chuugoku | China
+Country | インド | Indo | India
+Country | エジプト | Ejiputo | Egypt
+Country | フィリピン | Firipin | Philippines
+Major | アジアけんきゅう | ajia kenkyuu | Asian studies
+Major | けいざい | keezai | economics
+Major | こうがく | koogaku | engineering
+Major | こくさいかんけい | kokusaikankee | international relations
+Major | コンピューター | konpyuutaa | computer
+Major | せいじ | seeji | politics
+Major | せいぶつがく | seebutsugaku | biology
+Major | ビジネス | bijinesu | business
+Major | ぶんがく | bungaku | literature
+Major | れきし | rekishi | history
+Occupation | いしゃ | isha | doctor
+Occupation | かいしゃいん | kaishain | office worker
+Occupation | かんごし | kangoshi | nurse
+Occupation | こうこうせい | kookoosee | high school student
+Occupation | しゅふ | shufu | housewife
+Occupation | だいがくいんせい | daigakuinsee | graduate student
+Occupation | べんごし | bengoshi | lawyer
+Family | おかあさん | okaasan | mother
+Family | おとうさん | otoosan | father
+Family | おねえさん | oneesan | older sister
+Family | おにいさん | oniisan | older brother
+Family | いもうと | imooto | younger sister
+Family | おとうと | otooto | younger brother
+
+[GRAMMAR: L1]
+Concept | Construction | Explanation
+X is Y | X wa Y desu | "Wa" marks the topic. "Desu" is the copula (is/am/are).
+Question Particle | ...ka | Add "ka" to the end of a sentence to make it a question.
+Possessive/Modifier | Noun1 no Noun2 | Connects two nouns. Noun2 is the main idea; Noun1 modifies it.
+Time | Nanji / Nansai | Question words for "What time" and "How old".
+
+---
+
+=== LESSON 2: Shopping (かいもの) ===
+
+[VOCABULARY: L2]
+Category | Japanese | Romaji | English
+Demonstrative | これ | kore | this one (near speaker)
+Demonstrative | それ | sore | that one (near listener)
+Demonstrative | あれ | are | that one (over there)
+Demonstrative | どれ | dore | which one
+Demonstrative | この | kono | this... (+noun)
+Demonstrative | その | sono | that... (+noun)
+Demonstrative | あの | ano | that... (over there) (+noun)
+Demonstrative | どの | dono | which... (+noun)
+Place | ここ | koko | here
+Place | そこ | soko | there
+Place | あそこ | asoko | over there
+Place | どこ | doko | where
+Person | だれ | dare | who
+Food | おいしい | oishii | delicious
+Food | さかな | sakana | fish
+Food | とんかつ | tonkatsu | pork cutlet
+Food | にく | niku | meat
+Food | メニュー | menyuu | menu
+Food | やさい | yasai | vegetable
+Item | かさ | kasa | umbrella
+Item | かばん | kaban | bag
+Item | くつ | kutsu | shoes
+Item | さいふ | saifu | wallet
+Item | ジーンズ | jiinzu | jeans
+Item | じてんしゃ | jitensha | bicycle
+Item | しんぶん | shinbun | newspaper
+Item | スマホ | sumaho | smartphone; mobile
+Item | Tシャツ | tiishatsu | T-shirt
+Item | とけい | tokee | watch; clock
+Item | ノート | nooto | notebook
+Item | ペン | pen | pen
+Item | ぼうし | booshi | hat; cap
+Item | ほん | hon | book
+Place | ぎんこう | ginkoo | bank
+Place | コンビニ | konbini | convenience store
+Place | トイレ | toire | toilet; restroom
+Place | としょかん | toshokan | library
+Place | ゆうびんきょく | yuubinkyoku | post office
+Major | えいご | eego | English (language)
+Money | いくら | ikura | how much
+Money | 〜えん | ...en | ...yen
+Adjective | たかい | takai | expensive; high
+Expression | いらっしゃいませ | irasshaimase | Welcome (to our store).
+Expression | (~を)おねがいします | ...o onegaishimasu | ..., please.
+Expression | (~を)ください | ...o kudasai | Please give me...
+Expression | じゃあ | jaa | then...; if that is the case...
+Expression | どうぞ | doozo | Please.; Here it is.
+Expression | どうも | doomo | Thank you.
+
+[GRAMMAR: L2]
+Concept | Construction | Explanation
+Demonstratives (Noun) | Kore / Sore / Are | "This one", "That one", "That one over there".
+Demonstratives (Det) | Kono / Sono / Ano + Noun | "This X", "That X", "That X over there".
+Place Words | Koko / Soko / Asoko | "Here", "There", "Over there".
+Whose | Dare no Noun | "Whose X".
+Particle Mo | Noun + mo | "Noun also/too". Replaces "wa".
+Negation | Noun + ja nai desu | "Is not X". (Formal: de wa arimasen).
+Sentence Tag | ~ne | Seeking confirmation ("right?").
+Sentence Tag | ~yo | Giving assurance/new info ("I tell you").
+
+---
+
+=== LESSON 3: Making a Date (デートの約束) ===
+
+[VOCABULARY: L3]
+Category | Japanese (Kana) | Japanese (Kanji) | Romaji | English
+Entertainment | えいが | 映画 | eiga | movie
+Entertainment | おんがく | 音楽 | ongaku | music
+Entertainment | ざっし | 雑誌 | zasshi | magazine
+Entertainment | スポーツ | | supootsu | sports
+Entertainment | デート | | deeto | date (romantic)
+Entertainment | テニス | | tenisu | tennis
+Entertainment | テレビ | | terebi | TV
+Food | アイスクリーム | | aisukuriimu | ice cream
+Food | ハンバーガー | | hanbaagaa | hamburger
+Food | おさけ | お酒 | osake | sake; alcoholic drink
+Food | おちゃ | お茶 | ocha | green tea
+Food | コーヒー | | koohii | coffee
+Food | みず | 水 | mizu | water
+Food | あさごはん | 朝ご飯 | asagohan | breakfast
+Food | ひるごはん | 昼ご飯 | hirugohan | lunch
+Food | ばんごはん | 晩ご飯 | bangohan | dinner
+Place | いえ | 家 | ie | home; house
+Place | うち | | uchi | home; house; my place
+Place | がっこう | 学校 | gakkoo | school
+Place | カフェ | | kafe | cafe
+Time | あした | 明日 | ashita | tomorrow
+Time | きょう | 今日 | kyoo | today
+Time | あさ | 朝 | asa | morning
+Time | こんばん | 今晩 | konban | tonight
+Time | まいにち | 毎日 | mainichi | every day
+Time | まいばん | 毎晩 | maiban | every night
+Time | しゅうまつ | 週末 | shuumatsu | weekend
+Time | どようび | 土曜日 | doyoobi | Saturday
+Time | にちようび | 日曜日 | nichiyoobi | Sunday
+Time | いつ | | itsu | when
+Time | 〜ごろ | | ...goro | at about...
+Verb (U) | いく | 行く | iku | to go
+Verb (U) | かえる | 帰る | kaeru | to go back; to return
+Verb (U) | きく | 聞く | kiku | to listen; to hear
+Verb (U) | のむ | 飲む | nomu | to drink
+Verb (U) | はなす | 話す | hanasu | to speak; to talk
+Verb (U) | よむ | 読む | yomu | to read
+Verb (Ru) | おきる | 起きる | okiru | to get up
+Verb (Ru) | たべる | 食べる | taberu | to eat
+Verb (Ru) | ねる | 寝る | neru | to sleep
+Verb (Ru) | みる | 見る | miru | to see; to watch
+Verb (Irr) | くる | 来る | kuru | to come
+Verb (Irr) | する | | suru | to do
+Verb (Irr) | べんきょうする | 勉強する | benkyoosuru | to study
+Adjective | いい | | ii | good
+Adjective | はやい | 早い | hayai | early
+Adverb | あまり | | amari | not much (+negative)
+Adverb | ぜんぜん | 全然 | zenzen | not at all (+negative)
+Adverb | たいてい | | taitei | usually
+Adverb | ちょっと | | chotto | a little
+Adverb | ときどき | 時々 | tokidoki | sometimes
+Adverb | よく | | yoku | often; much
+Expression | そうですね | | soo desu ne | That's right.; Let me see.
+Expression | でも | | demo | but
+Expression | どうですか | | doo desu ka | How about...?; How is...?
+
+[GRAMMAR: L3]
+Concept | Explanation
+Verb Conjugation | Verbs are split into Ru-verbs, U-verbs, and Irregular verbs.
+Ru-Verbs | End in -eru or -iru. Drop -ru and add -masu/-masen.
+U-Verbs | End in u-vowel sounds. Change 'u' to 'i' and add -masu/-masen.
+Irregular Verbs | "Suru" becomes "shimasu". "Kuru" becomes "kimasu".
+Particle O (を) | Marks the direct object of an action.
+Particle De (で) | Marks the location where an action takes place.
+Particle Ni (に) | Marks the goal of movement (to) OR specific time (at).
+Particle He (へ) | Marks the direction of movement (to). Pronounced "e".
+Time Reference | Use "ni" for specific dates/times. Do not use "ni" for relative time (today, tomorrow, when).
+Invitation | ~masenka | "Won't you...?" Present negative form used to invite.
+Frequency Adverbs | Words like "yoku", "tokidoki" usually appear before the object or verb.
+Topic Particle Wa (は) | Can mark time or other elements as the topic.
+
+---
+
+=== LESSON 4: The First Date (はじめてのデート) ===
+
+[VOCABULARY: L4]
+Category | Japanese (Kana) | Japanese (Kanji) | Romaji | English
+Topic | ゲーム | | geemu | game
+Topic | アルバイト | | arubaito | part-time job
+Topic | かいもの | 買い物 | kaimono | shopping
+Topic | クラス | | kurasu | class
+Topic | いぬ | 犬 | inu | dog
+Topic | ねこ | 猫 | neko | cat
+Topic | ひと | 人 | hito | person
+Topic | こども | 子供 | kodomo | child
+Topic | あなた | | anata | you
+Topic | いす | | isu | chair
+Topic | つくえ | 机 | tsukue | desk
+Topic | しゃしん | 写真 | shashin | picture; photograph
+Topic | はな | 花 | hana | flower
+Topic | レポート | | repooto | (term) paper
+Topic | ごはん | ご飯 | gohan | rice; meal
+Topic | パン | | pan | bread
+Topic | おてら | お寺 | otera | temple
+Topic | こうえん | 公園 | kooen | park
+Topic | スーパー | | suupaa | supermarket
+Topic | バスてい | バス停 | basutei | bus stop
+Topic | びょういん | 病院 | byooin | hospital
+Topic | ホテル | | hoteru | hotel
+Topic | ほんや | 本屋 | honya | bookstore
+Topic | まち | 町 | machi | town; city
+Topic | レストラン | | resutoran | restaurant
+Time | きのう | 昨日 | kinoo | yesterday
+Time | 〜じかん | 〜時間 | ...jikan | ...hours
+Time | いちじかん | 一時間 | ichijikan | one hour
+Time | せんしゅう | 先週 | senshuu | last week
+Time | とき | 時 | toki | when...; at the time of... (〜の)
+Time | げつようび | 月曜日 | getsuyoobi | Monday
+Time | かようび | 火曜日 | kayoobi | Tuesday
+Time | すいようび | 水曜日 | suiyoobi | Wednesday
+Time | もくようび | 木曜日 | mokuyoobi | Thursday
+Time | きんようび | 金曜日 | kinyoobi | Friday
+Verb (U) | あう | 会う | au | to meet; to see (a person) (に)
+Verb (U) | ある | | aru | there is... (place に thing が)
+Verb (U) | かう | 買う | kau | to buy (を)
+Verb (U) | かく | 書く | kaku | to write (person に thing を)
+Verb (U) | とる | 撮る | toru | to take (a picture) (を)
+Verb (U) | まつ | 待つ | matsu | to wait (を)
+Verb (U) | わかる | | wakaru | to understand (が)
+Verb (Ru) | いる | | iru | (a person) is in...; stays at... (place に person が)
+Expression | 〜ぐらい | | ...gurai | about (approximate measurement)
+Expression | ごめんなさい | | gomennasai | I'm sorry.
+Expression | だから | | dakara | so; therefore
+Expression | たくさん | | takusan | many; a lot
+Expression | 〜と | | ...to | together with (a person); and
+Expression | どうして | | dooshite | why
+Expression | ひとりで | 一人で | hitoride | alone
+Place | みぎ | 右 | migi | right
+Place | ひだり | 左 | hidari | left
+Place | まえ | 前 | mae | front
+Place | うしろ | 後ろ | ushiro | back
+Place | なか | 中 | naka | inside
+Place | うえ | 上 | ue | on; above
+Place | した | 下 | shita | under
+Place | ちかく | 近く | chikaku | near; nearby
+Place | となり | 隣 | tonari | next to
+Place | あいだ | 間 | aida | between (A と B の)
+
+[GRAMMAR: L4]
+Concept | Explanation
+Existence (Inanimate) | X ga arimasu. (There is/I have X). Used for non-living things.
+Existence (Animate) | X ga imasu. (There is/I have X). Used for living things (people, animals).
+Location Particles | X wa Y no [location word] desu. (X is [location] of Y). Example: Tsukue no shita (Under the desk).
+Past Tense (Noun/Adj) | Desu -> Deshita (was). Ja nai desu -> Ja nakatta desu (was not).
+Past Tense (Verbs) | Masu -> Mashita (did). Masen -> Masen deshita (did not).
+Particle Mo (Past) | "Mo" acts the same in past tense (did also).
+Duration | ~jikan (hours). No particle needed after duration.
+Particle To | Noun1 to Noun2 (and). Person to (with Person).
+
+---
+
+=== LESSON 5: A Trip to Okinawa (おきなわりょこう) ===
+
+[VOCABULARY: L5]
+Category | Japanese (Kana) | Japanese (Kanji) | Romaji | English
+Food | たべもの | 食べ物 | tabemono | food
+Food | のみもの | 飲み物 | nomimono | drink
+Food | くだもの | 果物 | kudamono | fruit
+Topic | やすみ | 休み | yasumi | holiday; absence; rest
+Topic | りょこう | 旅行 | ryokoo | travel; trip
+Topic | うみ | 海 | umi | sea; ocean
+Topic | サーフィン | | saafin | surfing
+Topic | おみやげ | お土産 | omiyage | souvenir
+Topic | バス | | basu | bus
+Topic | てんき | 天気 | tenki | weather
+Topic | しゅくだい | 宿題 | shukudai | homework
+Topic | テスト | | tesuto | test
+Topic | たんじょうび | 誕生日 | tanjoobi | birthday
+Topic | へや | 部屋 | heya | room
+Topic | ぼく | 僕 | boku | I (used by men)
+Size | Lサイズ | | eru-saizu | size L
+Adj (I) | あたらしい | 新しい | atarashii | new
+Adj (I) | ふるい | 古い | furui | old (thing)
+Adj (I) | あつい | 暑い | atsui | hot (weather)
+Adj (I) | あつい | 熱い | atsui | hot (thing)
+Adj (I) | さむい | 寒い | samui | cold (weather)
+Adj (I) | つめたい | 冷たい | tsumetai | cold (thing/people)
+Adj (I) | いそがしい | 忙しい | isogashii | busy (people/days)
+Adj (I) | おおきい | 大きい | ookii | large
+Adj (I) | ちいさい | 小さい | chiisai | small
+Adj (I) | おもしろい | 面白い | omoshiroi | interesting; funny
+Adj (I) | つまらない | | tsumaranai | boring
+Adj (I) | やさしい | | yasashii | easy (problem); kind (person)
+Adj (I) | むずかしい | 難しい | muzukashii | difficult
+Adj (I) | かっこいい | | kakkoii | good-looking
+Adj (I) | こわい | 怖い | kowai | frightening
+Adj (I) | たのしい | 楽しい | tanoshii | fun
+Adj (I) | やすい | 安い | yasui | inexpensive; cheap (thing)
+Adj (Na) | すき | 好き | suki | fond of; to like (が)
+Adj (Na) | きらい | 嫌い | kirai | disgusted with; to dislike (が)
+Adj (Na) | だいすき | 大好き | daisuki | very fond of; to love (が)
+Adj (Na) | だいきらい | 大嫌い | daikirai | to hate (が)
+Adj (Na) | きれい | | kirei | beautiful; clean
+Adj (Na) | げんき | 元気 | genki | healthy; energetic
+Adj (Na) | しずか | 静か | shizuka | quiet
+Adj (Na) | にぎやか | | nigiyaka | lively
+Adj (Na) | ひま | 暇 | hima | not busy; idle
+Verb (U) | およぐ | 泳ぐ | oyogu | to swim
+Verb (U) | きく | 聞く | kiku | to ask (person に)
+Verb (U) | のる | 乗る | noru | to ride; to board (に)
+Verb (U) | やる | | yaru | to do; to perform (を)
+Verb (Ru) | でかける | 出かける | dekakeru | to go out
+Expression | いっしょに | 一緒に | isshoni | together
+Expression | すごく | | sugoku | extremely
+Expression | だいじょうぶ | 大丈夫 | daijoobu | It's okay.; Not to worry.
+Expression | とても | | totemo | very
+Expression | どんな | | donna | what kind of...
+Expression | 〜まい | 〜枚 | ...mai | counter for flat objects
+
+[GRAMMAR: L5]
+Concept | Explanation
+Adjectives (Types) | I-Adjectives (end in 'i') and Na-Adjectives (end in 'na' when modifying).
+Adj Conjugation (Present) | **I-Adj:** Desu (aff), Kunai desu (neg). **Na-Adj:** Desu (aff), Ja nai desu (neg).
+Adj Conjugation (Past) | **I-Adj:** Katta desu (aff), Kunakatta desu (neg). **Na-Adj:** Deshita (aff), Ja nakatta desu (neg).
+Adj Modifiers | **I-Adj:** [Adj] + Noun. **Na-Adj:** [Adj] + na + Noun.
+Likes/Dislikes | X wa Y ga suki/kirai desu. (X likes/dislikes Y).
+Let's... | ~mashoo (Let's do). ~mashoo ka (Shall we do?).
+Counting | Use specific counters (mai for flat objects).
+
+---
+
+=== LESSON 6: A Day in Robert's Life (ロバートさんの一日) ===
+
+[VOCABULARY: L6]
+Category | Japanese (Kana) | Japanese (Kanji) | Romaji | English
+Food | たべもの | 食べ物 | tabemono | food
+Topic | おかね | お金 | okane | money
+Topic | おふろ | お風呂 | ofuro | bath
+Topic | かんじ | 漢字 | kanji | kanji
+Topic | きょうかしょ | 教科書 | kyookasho | textbook
+Topic | こんしゅう | 今週 | konshuu | this week
+Topic | シーディー | | shiidii | CD
+Topic | しみんびょういん | 市民病院 | shiminbyooin | municipal hospital
+Topic | シャワー | | shawaa | shower
+Topic | つぎ | 次 | tsugi | next
+Topic | でんき | 電気 | denki | electricity; light
+Topic | でんしゃ | 電車 | densha | train
+Topic | にもつ | 荷物 | nimotsu | baggage
+Topic | パソコン | | pasokon | PC; laptop
+Topic | ページ | | peeji | page
+Topic | まど | 窓 | mado | window
+Topic | よる | 夜 | yoru | night
+Topic | らいしゅう | 来週 | raishuu | next week
+Topic | らいねん | 来年 | rainen | next year
+Adj (Na) | たいへん | 大変 | taihen | tough (situation)
+Verb (U) | あそぶ | 遊ぶ | asobu | to play
+Verb (U) | いそぐ | 急ぐ | isogu | to hurry
+Verb (U) | おふろにはいる | お風呂に入る | ofuronihairu | to take a bath
+Verb (U) | かえす | 返す | kaesu | to return (a thing) (person に thing を)
+Verb (U) | けす | 消す | kesu | to turn off; to erase (を)
+Verb (U) | しぬ | 死ぬ | shinu | to die
+Verb (U) | すわる | 座る | suwaru | to sit down (seat に)
+Verb (U) | たつ | 立つ | tatsu | to stand up
+Verb (U) | たばこをすう | タバコを吸う | tabakoosuu | to smoke
+Verb (U) | つかう | 使う | tsukau | to use (を)
+Verb (U) | てつだう | 手伝う | tetsudau | to help (person/task を)
+Verb (U) | はいる | 入る | hairu | to enter (に)
+Verb (U) | もつ | 持つ | motsu | to carry; to hold (を)
+Verb (U) | やすむ | 休む | yasumu | to be absent (from) (を); to rest
+Verb (Ru) | あける | 開ける | akeru | to open (something) (を)
+Verb (Ru) | おしえる | 教える | oshieru | to teach (person に thing を)
+Verb (Ru) | おりる | 降りる | oriru | to get off (を)
+Verb (Ru) | かりる | 借りる | kariru | to borrow (person に thing を)
+Verb (Ru) | しめる | 閉める | shimeru | to close (something) (を)
+Verb (Ru) | シャワーをあびる | | shawaaoabiru | to take a shower
+Verb (Ru) | つける | | tsukeru | to turn on (を)
+Verb (Ru) | でんわをかける | 電話をかける | denwaokakeru | to make a phone call (に)
+Verb (Ru) | わすれる | 忘れる | wasureru | to forget; to leave behind (を)
+Verb (Irr) | つれてくる | 連れてくる | tsuretekuru | to bring (a person) (を)
+Verb (Irr) | もってくる | 持ってくる | mottekuru | to bring (a thing) (を)
+Expression | あとで | 後で | atode | later on
+Expression | おそく | 遅く | osoku | (do something) late
+Expression | 〜から | | ...kara | because...
+Expression | けっこうです | 結構です | kekkoodesu | That would be fine.; That wouldn't be necessary.
+Expression | すぐ | | sugu | right away
+Expression | ほんとうですか | 本当ですか | hontoodesuka | Really?
+Expression | ゆっくり | | yukkuri | slowly; leisurely
+
+[GRAMMAR: L6]
+Concept | Explanation
+Te-form (Use) | Used for connecting verbs, making requests, asking permission, etc.
+Te-form (Ru-verbs) | Drop -ru, add -te.
+Te-form (U-verbs) | u/tsu/ru -> tte; mu/bu/nu -> nde; ku -> ite; gu -> ide; su -> shite. (Exception: iku -> itte).
+Te-form (Irr) | suru -> shite; kuru -> kite.
+Requests | ~te kudasai. (Please do...).
+Prohibition | ~te wa ikemasen. (You must not...).
+Permission | ~te mo ii desu. (You may...).
+Connecting Verbs | ~te, [verb]. (I did this, and then did that).
+Reason | [Situation]. [Explanation] kara. (Situation, because Explanation).
+
+---
+
+=== LESSON 7: Family Picture (かぞくのしゃしん) ===
+
+[VOCABULARY: L7]
+Category | Japanese (Kana) | Japanese (Kanji) | Romaji | English
+Family | かぞく | 家族 | kazoku | family
+Family | おじいさん | | ojiisan | grandfather; old man
+Family | おばあさん | | obaasan | grandmother; old woman
+Family | おにいさん | お兄さん | oniisan | older brother
+Family | おねえさん | お姉さん | oneesan | older sister
+Family | ちち | 父 | chichi | (my) father
+Family | はは | 母 | haha | (my) mother
+Family | あに | 兄 | ani | (my) older brother
+Family | あね | 姉 | ane | (my) older sister
+Family | いもうと | 妹 | imooto | younger sister
+Family | おとうと | 弟 | otooto | younger brother
+Family | きょうだい | 兄弟 | kyoodai | brothers and sisters
+Topic | おとこのひと | 男の人 | otokonohito | man
+Topic | おんなのひと | 女の人 | onnanohito | woman
+Topic | かいしゃ | 会社 | kaisha | company
+Topic | しょくどう | 食堂 | shokudoo | cafeteria; dining commons
+Topic | デパート | | depaato | department store
+Topic | かみ | 髪 | kami | hair
+Topic | くち | 口 | kuchi | mouth
+Topic | め | 目 | me | eye
+Topic | めがね | 眼鏡 | megane | glasses
+Topic | うた | 歌 | uta | song
+Topic | サークル | | saakuru | club activity
+Topic | くるま | 車 | kuruma | car
+Adj (I) | ながい | 長い | nagai | long
+Adj (I) | みじかい | 短い | mijikai | short (length)
+Adj (I) | はやい | 速い | hayai | fast
+Adj (I) | せがたかい | 背が高い | segatakai | tall (stature)
+Adj (I) | せがひくい | 背が低い | segahikui | short (stature)
+Adj (I) | あたまがいい | 頭がいい | atamagaii | bright; smart
+Adj (I) | かわいい | | kawaii | cute
+Adj (Na) | しんせつ | 親切 | shinsetsu | kind
+Adj (Na) | べんり | 便利 | benri | convenient
+Verb (U) | うたう | 歌う | utau | to sing (を)
+Verb (U) | かぶる | | kaburu | to put on (a hat) (を)
+Verb (U) | しる | 知る | shiru | to get to know
+Verb (U) | しっています | 知っています | shitteimasu | I know
+Verb (U) | しりません | 知りません | shirimasen | I do not know
+Verb (U) | すむ | 住む | sumu | to live (〜にすんでいます)
+Verb (U) | はく | | haku | to put on (items below waist) (を)
+Verb (U) | ふとる | 太る | futoru | to gain weight
+Verb (U) | ふとっています | 太っています | futotteimasu | to be on the heavy side
+Verb (Ru) | (めがねを)かける | | kakeru | to put on (glasses)
+Verb (Ru) | きる | 着る | kiru | to put on (items above waist) (を)
+Verb (Ru) | つとめる | 勤める | tsutomeru | to work for (〜につとめています)
+Verb (Ru) | やせる | | yaseru | to lose weight
+Verb (Ru) | やせています | | yaseteimasu | to be thin
+Verb (Irr) | けっこんする | 結婚する | kekkonsuru | to get married (〜と)
+Expression | がんばってください | | ganbattekudasai | Do your best.
+Expression | 〜にん | 〜人 | ...nin | counter for people
+Expression | ひとり | 一人 | hitori | one person
+Expression | ふたり | 二人 | futari | two people
+Expression | べつに | 別に | betsu ni | nothing in particular (+negative)
+Expression | もちろん | | mochiron | of course
+Expression | よかったら | | yokattara | if you like
+
+[GRAMMAR: L7]
+Concept | Explanation
+Action in Progress | ~te imasu. (I am doing...).
+Resultant State | ~te imasu. (I am married / I live in... / I have [verb]ed).
+Body Parts | Person wa [body part] ga [adjective] desu. (Person has [adjective] [body part]).
+Te-forms (Adjectives) | Join sentences. **I-Adj:** Drop -i, add -kute. **Na-Adj:** Add -de. **Noun:** Add -de.
+Movement Purpose | Destination ni/e Purpose(stem) ni ikimasu. (Go to [place] to do [purpose]).
+Counting People | Hitori, Futari, San-nin, Yo-nin...
+
+---
+
+=== LESSON 8: Barbecue (バーベキュー) ===
+
+[VOCABULARY: L8]
+Category | Japanese (Kana) | Japanese (Kanji) | Romaji | English
+Topic | あさって | | asatte | the day after tomorrow
+Topic | あめ | 雨 | ame | rain
+Topic | かいしゃいん | 会社員 | kaishain | office worker
+Topic | カメラ | | kamera | camera
+Topic | カラオケ | | karaoke | karaoke
+Topic | くうき | 空気 | kuuki | air
+Topic | けさ | 今朝 | kesa | this morning
+Topic | こくばん | 黒板 | kokuban | blackboard
+Topic | こんげつ | 今月 | kongetsu | this month
+Topic | しごと | 仕事 | shigoto | job; work
+Topic | だいがくせい | 大学生 | daigakusee | college student
+Topic | てんきよほう | 天気予報 | tenkiyopoo | weather forecast
+Topic | トマト | | tomato | tomato
+Topic | なつ | 夏 | natsu | summer
+Topic | なにか | 何か | nanika | something
+Topic | パーティー | | paatii | party
+Topic | バーベキュー | | baabekyuu | barbecue
+Topic | はし | | hashi | chopsticks
+Topic | ふゆ | 冬 | fuyu | winter
+Topic | ホームステイ | | hoomusutei | homestay
+Topic | まいしゅう | 毎週 | maishuu | every week
+Topic | らいげつ | 来月 | raigetsu | next month
+Adj (I) | じょうず | 上手 | joozu | skillful; good at... (が)
+Adj (I) | へた | 下手 | heta | clumsy; poor at... (が)
+Adj (I) | ゆうめい | 有名 | yuumei | famous
+Verb (U) | あらう | 洗う | arau | to wash (を)
+Verb (U) | いる | | iru | to need (が)
+Verb (U) | おそくなる | 遅くなる | osokunaru | to be late
+Verb (U) | おふろにはいる | | ofuronihairu | to take a bath
+Verb (U) | おもう | 思う | omou | to think
+Verb (U) | きる | 切る | kiru | to cut (を)
+Verb (U) | つくる | 作る | tsukuru | to make (を)
+Verb (U) | (あめ/ゆきが)ふる | (雨/雪が)降る | furu | (rain/snow) falls
+Verb (U) | もっていく | 持っていく | motteiku | to take (a thing) (を)
+Verb (Ru) | すてる | 捨てる | suteru | to throw away (を)
+Verb (Ru) | はじめる | 始める | hajimeru | to begin (を)
+Verb (Irr) | うんてんする | 運転する | untensuru | to drive (を)
+Verb (Irr) | せんたくする | 洗濯する | sentakusuru | to do laundry (を)
+Verb (Irr) | そうじする | 掃除する | soojisuru | to clean (を)
+Verb (Irr) | りょうりする | 料理する | ryoorisuru | to cook
+Expression | ううん | | uun | uh-uh; no
+Expression | うん | | un | uh-huh; yes
+Expression | かんぱい | 乾杯 | kanpai | Cheers! (a toast)
+Expression | ざんねん(ですね) | 残念(ですね) | zannen(desu ne) | That's too bad.
+Expression | まだ | | mada | not... yet
+
+[GRAMMAR: L8]
+Concept | Explanation
+Short Forms (Verbs) | Informal speech foundation. **Present Aff:** Dictionary form. **Present Neg:** Nai-form.
+Informal Speech | Use short forms instead of Masu/Desu forms. Drop particles sometimes.
+Quotations (Think) | [Short Form] to omoimasu. (I think that...).
+Quotations (Say) | [Short Form] to itte imashita. (They said that...).
+Negative Request | ~nai de kudasai. (Please don't...).
+Verb Nominalization | Verb(short) + no. (e.g., *Nihongo o hanasu no* ga suki desu).
+Particle Ga | Emphasizes the subject (Who did it? *Mary* did it).
+
+---
+
+=== LESSON 9: Kabuki (かぶき) ===
+
+[VOCABULARY: L9]
+Category | Japanese (Kana) | Japanese (Kanji) | Romaji | English
+Topic | いいこ | いい子 | iiko | good child
+Topic | いろ | 色 | iro | color
+Topic | おべんとう | お弁当 | obentoo | boxed lunch
+Topic | かぶき | 歌舞伎 | kabuki | Kabuki; traditional Japanese theatrical art
+Topic | ギター | | gitaa | guitar
+Topic | きょねん | 去年 | kyonen | last year
+Topic | くすり | 薬 | kusuri | medicine
+Topic | くすりをのむ | 薬を飲む | kusurionomu | to take medicine
+Topic | コンサート | | konsaato | concert
+Topic | こんど | 今度 | kondo | near future
+Topic | さくぶん | 作文 | sakubun | essay; composition
+Topic | しけん | 試験 | shiken | exam
+Topic | スキー | | sukii | ski
+Topic | せんげつ | 先月 | sengetsu | last month
+Topic | たんご | 単語 | tango | word; vocabulary
+Topic | ピアノ | | piano | piano
+Topic | ピザ | | piza | pizza
+Topic | びょうき | 病気 | byooki | illness; sickness
+Adj (I) | あおい | 青い | aoi | blue
+Adj (I) | あかい | 赤い | akai | red
+Adj (I) | くろい | 黒い | kuroi | black
+Adj (I) | さびしい | 寂しい | sabishii | lonely
+Adj (I) | しろい | 白い | shiroi | white
+Adj (I) | わかい | 若い | wakai | young
+Adj (Na) | いじわる | 意地悪 | ijiwaru | mean-spirited
+Verb (U) | おどる | 踊る | odoru | to dance
+Verb (U) | おわる | 終わる | owaru | (something) ends (が)
+Verb (U) | にんきがある | 人気がある | ninkigaaru | to be popular
+Verb (U) | はじまる | 始まる | hajimaru | (something) begins (が)
+Verb (U) | ひく | 弾く | hiku | to play (a string instrument or piano) (を)
+Verb (U) | もらう | | morau | to get (from somebody) (person に thing を)
+Verb (Ru) | おぼえる | 覚える | oboeru | to memorize
+Verb (Ru) | でる | 出る | deru | to appear; to attend (に); to exit (を)
+Verb (Irr) | うんどうする | 運動する | undoosuru | to do physical exercises
+Verb (Irr) | さんぽする | 散歩する | sanposuru | to take a walk
+Expression | 〜から | | ...kara | from...
+Expression | ぜひ | 是非 | zehi | by all means
+Expression | ところで | | tokorode | by the way
+Expression | みんな | | minna | all
+Expression | もう | | moo | already
+
+[GRAMMAR: L9]
+Concept | Explanation
+Past Tense (Short) | **Verbs:** Ta-form (Affirmative), Nakatta-form (Negative).
+Ta-form | Constructed exactly like Te-form, but replace 'te' with 'ta'.
+Nakatta-form | Replace 'nai' in present negative with 'nakatta'.
+Past Tense (Adj/Noun) | **I-Adj:** -katta. **Na-Adj/Noun:** -datta.
+Qualifying Nouns | Use Short Form verbs/adjectives before a noun to modify it.
+Mada/Moo | **Moo** + Past Affirmative (Already did). **Mada** + Te-form iru (Haven't done yet).
+Explanation | [Reason] kara, [Situation]. (Because [Reason], [Situation]).
+
+---
+
+=== LESSON 10: Winter Vacation Plans (ふゆやすみのよてい) ===
+
+[VOCABULARY: L10]
+Category | Japanese (Kana) | Japanese (Kanji) | Romaji | English
+Topic | あき | 秋 | aki | autumn
+Topic | いしゃ | 医者 | isha | doctor
+Topic | えき | 駅 | eki | station
+Topic | おかねもち | お金持ち | okanemochi | rich person
+Topic | かお | 顔 | kao | face
+Topic | きせつ | 季節 | kisetsu | season
+Topic | クレジットカード | | kurejittokaado | credit card
+Topic | ケーキ | | keeki | cake
+Topic | ことし | 今年 | kotoshi | this year
+Topic | サッカー | | sakkaa | soccer
+Topic | シャツ | | shatsu | shirt
+Topic | しんかんせん | 新幹線 | shinkansen | Bullet Train
+Topic | すし | 寿司 | sushi | sushi
+Topic | せいかつ | 生活 | seikatsu | life; living
+Topic | せかい | 世界 | sekai | world
+Topic | ちかてつ | 地下鉄 | chikatetsu | subway
+Topic | てぶくろ | 手袋 | tebukuro | gloves
+Topic | てんぷら | 天ぷら | tenpura | tempura
+Topic | とこや | 床屋 | tokoya | barber's
+Topic | はる | 春 | haru | spring
+Topic | パンツ | | pantsu | pants
+Topic | びよういん | 美容院 | biyooin | beauty parlor
+Topic | びん | 便 | bin | flight
+Topic | ふね | 船 | fune | ship; boat
+Topic | やきゅう | 野球 | yakyuu | baseball
+Topic | ゆうめいじん | 有名人 | yuumeijin | celebrity
+Topic | よやく | 予約 | yoyaku | reservation
+Topic | らいがっき | 来学期 | raigakki | next semester
+Topic | りんご | | ringo | apple
+Adj (I) | あたたかい | 暖かい | atatakai | warm
+Adj (I) | おそい | 遅い | osoi | slow; late
+Adj (I) | すずしい | 涼しい | suzushii | cool (weather)
+Adj (I) | つめたい | 冷たい | tsumetai | cold (things/people)
+Adj (I) | ねむい | 眠い | nemui | sleepy
+Adj (Na) | かんたん | 簡単 | kantan | easy; simple
+Verb (U) | かかる | | kakaru | to take (amount of time/money) (no particle)
+Verb (U) | とまる | 泊まる | tomaru | to stay (at a hotel, etc.) (に)
+Verb (U) | なる | | naru | to become
+Verb (U) | はらう | 払う | harau | to pay (を)
+Verb (Ru) | きめる | 決める | kimeru | to decide (を)
+Verb (Irr) | りょこうする | 旅行する | ryokoosuru | to travel
+Verb (Irr) | れんしゅうする | 練習する | renshuusuru | to practice (を)
+Expression | あるいて | 歩いて | aruite | on foot
+Expression | いちばん | 一番 | ichiban | best
+Expression | 〜か〜 | | ...ka... | or
+Expression | 〜かげつ | 〜か月 | ...kagetsu | for... months
+Expression | 〜ご | 〜後 | ...go | in... time; after...
+Expression | このごろ | | konogoro | these days
+Expression | 〜しゅうかん | 〜週間 | ...shuukan | for... weeks
+Expression | 〜で | | ...de | by (means of transportation); with (a tool)
+Expression | どうやって | | dooyatte | how; by what means
+Expression | どちら | | dochira | which
+Expression | どっち | | dotchi | which
+Expression | どのぐらい | | donogurai | how much; how long
+Expression | 〜ねん | 〜年 | ...nen | ...years
+Expression | はやく | 早く | hayaku | (do something) early; fast
+
+[GRAMMAR: L10]
+Concept | Explanation
+Comparison (2 Items) | A no hoo ga B yori [property] desu. (A is more [property] than B).
+Comparison (Question) | A to B to dotchi no hoo ga [property] desu ka. (Which is more [property], A or B?).
+Comparison (3+ Items) | [Class] no naka de A ga ichiban [property] desu. (A is the most [property] among [Class]).
+Adj/Noun + no | Noun/Na-Adj + no (e.g., *kantan no* desu).
+Intention (Tsumori) | Verb(present short) + tsumori desu. (I intend to do...).
+Becoming | **I-Adj:** Drop -i, add -ku naru. **Na-Adj/Noun:** Add -ni naru.
+Transport/Means | Particle **De**. (e.g., Basu de ikimasu).
+Travel Duration | [Place] kara [Place] made [Method] de [Duration] kakarimasu.
+================================================================================
