@@ -1082,42 +1082,49 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l3-vocab-entertainment-1",
             "label": "movie",
+            "value": "えいが",
             "subValue": "eiga",
             "chapter": 3
           },
           {
             "id": "l3-vocab-entertainment-2",
             "label": "music",
+            "value": "おんがく",
             "subValue": "ongaku",
             "chapter": 3
           },
           {
             "id": "l3-vocab-entertainment-3",
             "label": "magazine",
+            "value": "ざっし",
             "subValue": "zasshi",
             "chapter": 3
           },
           {
             "id": "l3-vocab-entertainment-4",
             "label": "sports",
+            "value": "スポーツ",
             "subValue": "supootsu",
             "chapter": 3
           },
           {
             "id": "l3-vocab-entertainment-5",
             "label": "date (romantic)",
+            "value": "デート",
             "subValue": "deeto",
             "chapter": 3
           },
           {
             "id": "l3-vocab-entertainment-6",
             "label": "tennis",
+            "value": "テニス",
             "subValue": "tenisu",
             "chapter": 3
           },
           {
             "id": "l3-vocab-entertainment-7",
             "label": "TV",
+            "value": "テレビ",
             "subValue": "terebi",
             "chapter": 3
           }
@@ -1131,54 +1138,63 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l3-vocab-food-1",
             "label": "ice cream",
+            "value": "アイスクリーム",
             "subValue": "aisukuriimu",
             "chapter": 3
           },
           {
             "id": "l3-vocab-food-2",
             "label": "hamburger",
+            "value": "ハンバーガー",
             "subValue": "hanbaagaa",
             "chapter": 3
           },
           {
             "id": "l3-vocab-food-3",
             "label": "sake; alcoholic drink",
+            "value": "おさけ",
             "subValue": "osake",
             "chapter": 3
           },
           {
             "id": "l3-vocab-food-4",
             "label": "green tea",
+            "value": "おちゃ",
             "subValue": "ocha",
             "chapter": 3
           },
           {
             "id": "l3-vocab-food-5",
             "label": "coffee",
+            "value": "コーヒー",
             "subValue": "koohii",
             "chapter": 3
           },
           {
             "id": "l3-vocab-food-6",
             "label": "water",
+            "value": "みず",
             "subValue": "mizu",
             "chapter": 3
           },
           {
             "id": "l3-vocab-food-7",
             "label": "breakfast",
+            "value": "あさごはん",
             "subValue": "asagohan",
             "chapter": 3
           },
           {
             "id": "l3-vocab-food-8",
             "label": "lunch",
+            "value": "ひるごはん",
             "subValue": "hirugohan",
             "chapter": 3
           },
           {
             "id": "l3-vocab-food-9",
             "label": "dinner",
+            "value": "ばんごはん",
             "subValue": "bangohan",
             "chapter": 3
           }
@@ -1192,24 +1208,28 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l3-vocab-place-1",
             "label": "home; house",
+            "value": "いえ",
             "subValue": "ie",
             "chapter": 3
           },
           {
             "id": "l3-vocab-place-2",
             "label": "home; house; my place",
+            "value": "うち",
             "subValue": "uchi",
             "chapter": 3
           },
           {
             "id": "l3-vocab-place-3",
             "label": "school",
+            "value": "がっこう",
             "subValue": "gakkoo",
             "chapter": 3
           },
           {
             "id": "l3-vocab-place-4",
             "label": "cafe",
+            "value": "カフェ",
             "subValue": "kafe",
             "chapter": 3
           }
@@ -1223,66 +1243,77 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l3-vocab-time-1",
             "label": "tomorrow",
+            "value": "あした",
             "subValue": "ashita",
             "chapter": 3
           },
           {
             "id": "l3-vocab-time-2",
             "label": "today",
+            "value": "きょう",
             "subValue": "kyoo",
             "chapter": 3
           },
           {
             "id": "l3-vocab-time-3",
             "label": "morning",
+            "value": "あさ",
             "subValue": "asa",
             "chapter": 3
           },
           {
             "id": "l3-vocab-time-4",
             "label": "tonight",
+            "value": "こんばん",
             "subValue": "konban",
             "chapter": 3
           },
           {
             "id": "l3-vocab-time-5",
             "label": "every day",
+            "value": "まいにち",
             "subValue": "mainichi",
             "chapter": 3
           },
           {
             "id": "l3-vocab-time-6",
             "label": "every night",
+            "value": "まいばん",
             "subValue": "maiban",
             "chapter": 3
           },
           {
             "id": "l3-vocab-time-7",
             "label": "weekend",
+            "value": "しゅうまつ",
             "subValue": "shuumatsu",
             "chapter": 3
           },
           {
             "id": "l3-vocab-time-8",
             "label": "Saturday",
+            "value": "どようび",
             "subValue": "doyoobi",
             "chapter": 3
           },
           {
             "id": "l3-vocab-time-9",
             "label": "Sunday",
+            "value": "にちようび",
             "subValue": "nichiyoobi",
             "chapter": 3
           },
           {
             "id": "l3-vocab-time-10",
             "label": "when",
+            "value": "いつ",
             "subValue": "itsu",
             "chapter": 3
           },
           {
             "id": "l3-vocab-time-11",
             "label": "at about...",
+            "value": "〜ごろ",
             "subValue": "...goro",
             "chapter": 3
           }
@@ -1296,36 +1327,42 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l3-vocab-verb-(u)-1",
             "label": "to go",
+            "value": "いく",
             "subValue": "iku",
             "chapter": 3
           },
           {
             "id": "l3-vocab-verb-(u)-2",
             "label": "to go back; to return",
+            "value": "かえる",
             "subValue": "kaeru",
             "chapter": 3
           },
           {
             "id": "l3-vocab-verb-(u)-3",
             "label": "to listen; to hear",
+            "value": "きく",
             "subValue": "kiku",
             "chapter": 3
           },
           {
             "id": "l3-vocab-verb-(u)-4",
             "label": "to drink",
+            "value": "のむ",
             "subValue": "nomu",
             "chapter": 3
           },
           {
             "id": "l3-vocab-verb-(u)-5",
             "label": "to speak; to talk",
+            "value": "はなす",
             "subValue": "hanasu",
             "chapter": 3
           },
           {
             "id": "l3-vocab-verb-(u)-6",
             "label": "to read",
+            "value": "よむ",
             "subValue": "yomu",
             "chapter": 3
           }
@@ -1339,24 +1376,28 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l3-vocab-verb-(ru)-1",
             "label": "to get up",
+            "value": "おきる",
             "subValue": "okiru",
             "chapter": 3
           },
           {
             "id": "l3-vocab-verb-(ru)-2",
             "label": "to eat",
+            "value": "たべる",
             "subValue": "taberu",
             "chapter": 3
           },
           {
             "id": "l3-vocab-verb-(ru)-3",
             "label": "to sleep",
+            "value": "ねる",
             "subValue": "neru",
             "chapter": 3
           },
           {
             "id": "l3-vocab-verb-(ru)-4",
             "label": "to see; to watch",
+            "value": "みる",
             "subValue": "miru",
             "chapter": 3
           }
@@ -1370,18 +1411,21 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l3-vocab-verb-(irr)-1",
             "label": "to come",
+            "value": "くる",
             "subValue": "kuru",
             "chapter": 3
           },
           {
             "id": "l3-vocab-verb-(irr)-2",
             "label": "to do",
+            "value": "する",
             "subValue": "suru",
             "chapter": 3
           },
           {
             "id": "l3-vocab-verb-(irr)-3",
             "label": "to study",
+            "value": "べんきょうする",
             "subValue": "benkyoosuru",
             "chapter": 3
           }
@@ -1395,12 +1439,14 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l3-vocab-adjective-1",
             "label": "good",
+            "value": "いい",
             "subValue": "ii",
             "chapter": 3
           },
           {
             "id": "l3-vocab-adjective-2",
             "label": "early",
+            "value": "はやい",
             "subValue": "hayai",
             "chapter": 3
           }
@@ -1414,36 +1460,42 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l3-vocab-adverb-1",
             "label": "not much (+negative)",
+            "value": "あまり",
             "subValue": "amari",
             "chapter": 3
           },
           {
             "id": "l3-vocab-adverb-2",
             "label": "not at all (+negative)",
+            "value": "ぜんぜん",
             "subValue": "zenzen",
             "chapter": 3
           },
           {
             "id": "l3-vocab-adverb-3",
             "label": "usually",
+            "value": "たいてい",
             "subValue": "taitei",
             "chapter": 3
           },
           {
             "id": "l3-vocab-adverb-4",
             "label": "a little",
+            "value": "ちょっと",
             "subValue": "chotto",
             "chapter": 3
           },
           {
             "id": "l3-vocab-adverb-5",
             "label": "sometimes",
+            "value": "ときどき",
             "subValue": "tokidoki",
             "chapter": 3
           },
           {
             "id": "l3-vocab-adverb-6",
             "label": "often; much",
+            "value": "よく",
             "subValue": "yoku",
             "chapter": 3
           }
@@ -1457,18 +1509,21 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l3-vocab-expression-1",
             "label": "That's right.; Let me see.",
+            "value": "そうですね",
             "subValue": "soo desu ne",
             "chapter": 3
           },
           {
             "id": "l3-vocab-expression-2",
             "label": "but",
+            "value": "でも",
             "subValue": "demo",
             "chapter": 3
           },
           {
             "id": "l3-vocab-expression-3",
             "label": "How about...?; How is...?",
+            "value": "どうですか",
             "subValue": "doo desu ka",
             "chapter": 3
           }
@@ -1567,150 +1622,175 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l4-vocab-topic-1",
             "label": "game",
+            "value": "ゲーム",
             "subValue": "geemu",
             "chapter": 4
           },
           {
             "id": "l4-vocab-topic-2",
             "label": "part-time job",
+            "value": "アルバイト",
             "subValue": "arubaito",
             "chapter": 4
           },
           {
             "id": "l4-vocab-topic-3",
             "label": "shopping",
+            "value": "かいもの",
             "subValue": "kaimono",
             "chapter": 4
           },
           {
             "id": "l4-vocab-topic-4",
             "label": "class",
+            "value": "クラス",
             "subValue": "kurasu",
             "chapter": 4
           },
           {
             "id": "l4-vocab-topic-5",
             "label": "dog",
+            "value": "いぬ",
             "subValue": "inu",
             "chapter": 4
           },
           {
             "id": "l4-vocab-topic-6",
             "label": "cat",
+            "value": "ねこ",
             "subValue": "neko",
             "chapter": 4
           },
           {
             "id": "l4-vocab-topic-7",
             "label": "person",
+            "value": "ひと",
             "subValue": "hito",
             "chapter": 4
           },
           {
             "id": "l4-vocab-topic-8",
             "label": "child",
+            "value": "こども",
             "subValue": "kodomo",
             "chapter": 4
           },
           {
             "id": "l4-vocab-topic-9",
             "label": "you",
+            "value": "あなた",
             "subValue": "anata",
             "chapter": 4
           },
           {
             "id": "l4-vocab-topic-10",
             "label": "chair",
+            "value": "いす",
             "subValue": "isu",
             "chapter": 4
           },
           {
             "id": "l4-vocab-topic-11",
             "label": "desk",
+            "value": "つくえ",
             "subValue": "tsukue",
             "chapter": 4
           },
           {
             "id": "l4-vocab-topic-12",
             "label": "picture; photograph",
+            "value": "しゃしん",
             "subValue": "shashin",
             "chapter": 4
           },
           {
             "id": "l4-vocab-topic-13",
             "label": "flower",
+            "value": "はな",
             "subValue": "hana",
             "chapter": 4
           },
           {
             "id": "l4-vocab-topic-14",
             "label": "(term) paper",
+            "value": "レポート",
             "subValue": "repooto",
             "chapter": 4
           },
           {
             "id": "l4-vocab-topic-15",
             "label": "rice; meal",
+            "value": "ごはん",
             "subValue": "gohan",
             "chapter": 4
           },
           {
             "id": "l4-vocab-topic-16",
             "label": "bread",
+            "value": "パン",
             "subValue": "pan",
             "chapter": 4
           },
           {
             "id": "l4-vocab-topic-17",
             "label": "temple",
+            "value": "おてら",
             "subValue": "otera",
             "chapter": 4
           },
           {
             "id": "l4-vocab-topic-18",
             "label": "park",
+            "value": "こうえん",
             "subValue": "kooen",
             "chapter": 4
           },
           {
             "id": "l4-vocab-topic-19",
             "label": "supermarket",
+            "value": "スーパー",
             "subValue": "suupaa",
             "chapter": 4
           },
           {
             "id": "l4-vocab-topic-20",
             "label": "bus stop",
+            "value": "バスてい",
             "subValue": "basutei",
             "chapter": 4
           },
           {
             "id": "l4-vocab-topic-21",
             "label": "hospital",
+            "value": "びょういん",
             "subValue": "byooin",
             "chapter": 4
           },
           {
             "id": "l4-vocab-topic-22",
             "label": "hotel",
+            "value": "ホテル",
             "subValue": "hoteru",
             "chapter": 4
           },
           {
             "id": "l4-vocab-topic-23",
             "label": "bookstore",
+            "value": "ほんや",
             "subValue": "honya",
             "chapter": 4
           },
           {
             "id": "l4-vocab-topic-24",
             "label": "town; city",
+            "value": "まち",
             "subValue": "machi",
             "chapter": 4
           },
           {
             "id": "l4-vocab-topic-25",
             "label": "restaurant",
+            "value": "レストラン",
             "subValue": "resutoran",
             "chapter": 4
           }
@@ -1724,60 +1804,70 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l4-vocab-time-1",
             "label": "yesterday",
+            "value": "きのう",
             "subValue": "kinoo",
             "chapter": 4
           },
           {
             "id": "l4-vocab-time-2",
             "label": "...hours",
+            "value": "〜じかん",
             "subValue": "...jikan",
             "chapter": 4
           },
           {
             "id": "l4-vocab-time-3",
             "label": "one hour",
+            "value": "いちじかん",
             "subValue": "ichijikan",
             "chapter": 4
           },
           {
             "id": "l4-vocab-time-4",
             "label": "last week",
+            "value": "せんしゅう",
             "subValue": "senshuu",
             "chapter": 4
           },
           {
             "id": "l4-vocab-time-5",
             "label": "when...; at the time of... (〜の)",
+            "value": "とき",
             "subValue": "toki",
             "chapter": 4
           },
           {
             "id": "l4-vocab-time-6",
             "label": "Monday",
+            "value": "げつようび",
             "subValue": "getsuyoobi",
             "chapter": 4
           },
           {
             "id": "l4-vocab-time-7",
             "label": "Tuesday",
+            "value": "かようび",
             "subValue": "kayoobi",
             "chapter": 4
           },
           {
             "id": "l4-vocab-time-8",
             "label": "Wednesday",
+            "value": "すいようび",
             "subValue": "suiyoobi",
             "chapter": 4
           },
           {
             "id": "l4-vocab-time-9",
             "label": "Thursday",
+            "value": "もくようび",
             "subValue": "mokuyoobi",
             "chapter": 4
           },
           {
             "id": "l4-vocab-time-10",
             "label": "Friday",
+            "value": "きんようび",
             "subValue": "kinyoobi",
             "chapter": 4
           }
@@ -1791,42 +1881,49 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l4-vocab-verb-(u)-1",
             "label": "to meet; to see (a person) (に)",
+            "value": "あう",
             "subValue": "au",
             "chapter": 4
           },
           {
             "id": "l4-vocab-verb-(u)-2",
             "label": "there is... (place に thing が)",
+            "value": "ある",
             "subValue": "aru",
             "chapter": 4
           },
           {
             "id": "l4-vocab-verb-(u)-3",
             "label": "to buy (を)",
+            "value": "かう",
             "subValue": "kau",
             "chapter": 4
           },
           {
             "id": "l4-vocab-verb-(u)-4",
             "label": "to write (person に thing を)",
+            "value": "かく",
             "subValue": "kaku",
             "chapter": 4
           },
           {
             "id": "l4-vocab-verb-(u)-5",
             "label": "to take (a picture) (を)",
+            "value": "とる",
             "subValue": "toru",
             "chapter": 4
           },
           {
             "id": "l4-vocab-verb-(u)-6",
             "label": "to wait (を)",
+            "value": "まつ",
             "subValue": "matsu",
             "chapter": 4
           },
           {
             "id": "l4-vocab-verb-(u)-7",
             "label": "to understand (が)",
+            "value": "わかる",
             "subValue": "wakaru",
             "chapter": 4
           }
@@ -1840,6 +1937,7 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l4-vocab-verb-(ru)-1",
             "label": "(a person) is in...; stays at... (place に person が)",
+            "value": "いる",
             "subValue": "iru",
             "chapter": 4
           }
@@ -1853,42 +1951,49 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l4-vocab-expression-1",
             "label": "about (approximate measurement)",
+            "value": "〜ぐらい",
             "subValue": "...gurai",
             "chapter": 4
           },
           {
             "id": "l4-vocab-expression-2",
             "label": "I'm sorry.",
+            "value": "ごめんなさい",
             "subValue": "gomennasai",
             "chapter": 4
           },
           {
             "id": "l4-vocab-expression-3",
             "label": "so; therefore",
+            "value": "だから",
             "subValue": "dakara",
             "chapter": 4
           },
           {
             "id": "l4-vocab-expression-4",
             "label": "many; a lot",
+            "value": "たくさん",
             "subValue": "takusan",
             "chapter": 4
           },
           {
             "id": "l4-vocab-expression-5",
             "label": "together with (a person); and",
+            "value": "〜と",
             "subValue": "...to",
             "chapter": 4
           },
           {
             "id": "l4-vocab-expression-6",
             "label": "why",
+            "value": "どうして",
             "subValue": "dooshite",
             "chapter": 4
           },
           {
             "id": "l4-vocab-expression-7",
             "label": "alone",
+            "value": "ひとりで",
             "subValue": "hitoride",
             "chapter": 4
           }
@@ -1902,60 +2007,70 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l4-vocab-place-1",
             "label": "right",
+            "value": "みぎ",
             "subValue": "migi",
             "chapter": 4
           },
           {
             "id": "l4-vocab-place-2",
             "label": "left",
+            "value": "ひだり",
             "subValue": "hidari",
             "chapter": 4
           },
           {
             "id": "l4-vocab-place-3",
             "label": "front",
+            "value": "まえ",
             "subValue": "mae",
             "chapter": 4
           },
           {
             "id": "l4-vocab-place-4",
             "label": "back",
+            "value": "うしろ",
             "subValue": "ushiro",
             "chapter": 4
           },
           {
             "id": "l4-vocab-place-5",
             "label": "inside",
+            "value": "なか",
             "subValue": "naka",
             "chapter": 4
           },
           {
             "id": "l4-vocab-place-6",
             "label": "on; above",
+            "value": "うえ",
             "subValue": "ue",
             "chapter": 4
           },
           {
             "id": "l4-vocab-place-7",
             "label": "under",
+            "value": "した",
             "subValue": "shita",
             "chapter": 4
           },
           {
             "id": "l4-vocab-place-8",
             "label": "near; nearby",
+            "value": "ちかく",
             "subValue": "chikaku",
             "chapter": 4
           },
           {
             "id": "l4-vocab-place-9",
             "label": "next to",
+            "value": "となり",
             "subValue": "tonari",
             "chapter": 4
           },
           {
             "id": "l4-vocab-place-10",
             "label": "between (A と B の)",
+            "value": "あいだ",
             "subValue": "aida",
             "chapter": 4
           }
@@ -2030,18 +2145,21 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l5-vocab-food-1",
             "label": "food",
+            "value": "たべもの",
             "subValue": "tabemono",
             "chapter": 5
           },
           {
             "id": "l5-vocab-food-2",
             "label": "drink",
+            "value": "のみもの",
             "subValue": "nomimono",
             "chapter": 5
           },
           {
             "id": "l5-vocab-food-3",
             "label": "fruit",
+            "value": "くだもの",
             "subValue": "kudamono",
             "chapter": 5
           }
@@ -2055,72 +2173,84 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l5-vocab-topic-1",
             "label": "holiday; absence; rest",
+            "value": "やすみ",
             "subValue": "yasumi",
             "chapter": 5
           },
           {
             "id": "l5-vocab-topic-2",
             "label": "travel; trip",
+            "value": "りょこう",
             "subValue": "ryokoo",
             "chapter": 5
           },
           {
             "id": "l5-vocab-topic-3",
             "label": "sea; ocean",
+            "value": "うみ",
             "subValue": "umi",
             "chapter": 5
           },
           {
             "id": "l5-vocab-topic-4",
             "label": "surfing",
+            "value": "サーフィン",
             "subValue": "saafin",
             "chapter": 5
           },
           {
             "id": "l5-vocab-topic-5",
             "label": "souvenir",
+            "value": "おみやげ",
             "subValue": "omiyage",
             "chapter": 5
           },
           {
             "id": "l5-vocab-topic-6",
             "label": "bus",
+            "value": "バス",
             "subValue": "basu",
             "chapter": 5
           },
           {
             "id": "l5-vocab-topic-7",
             "label": "weather",
+            "value": "てんき",
             "subValue": "tenki",
             "chapter": 5
           },
           {
             "id": "l5-vocab-topic-8",
             "label": "homework",
+            "value": "しゅくだい",
             "subValue": "shukudai",
             "chapter": 5
           },
           {
             "id": "l5-vocab-topic-9",
             "label": "test",
+            "value": "テスト",
             "subValue": "tesuto",
             "chapter": 5
           },
           {
             "id": "l5-vocab-topic-10",
             "label": "birthday",
+            "value": "たんじょうび",
             "subValue": "tanjoobi",
             "chapter": 5
           },
           {
             "id": "l5-vocab-topic-11",
             "label": "room",
+            "value": "へや",
             "subValue": "heya",
             "chapter": 5
           },
           {
             "id": "l5-vocab-topic-12",
             "label": "I (used by men)",
+            "value": "ぼく",
             "subValue": "boku",
             "chapter": 5
           }
@@ -2134,6 +2264,7 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l5-vocab-size-1",
             "label": "size L",
+            "value": "Lサイズ",
             "subValue": "eru-saizu",
             "chapter": 5
           }
@@ -2147,102 +2278,119 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l5-vocab-adj-(i)-1",
             "label": "new",
+            "value": "あたらしい",
             "subValue": "atarashii",
             "chapter": 5
           },
           {
             "id": "l5-vocab-adj-(i)-2",
             "label": "old (thing)",
+            "value": "ふるい",
             "subValue": "furui",
             "chapter": 5
           },
           {
             "id": "l5-vocab-adj-(i)-3",
             "label": "hot (weather)",
+            "value": "あつい",
             "subValue": "atsui",
             "chapter": 5
           },
           {
             "id": "l5-vocab-adj-(i)-4",
             "label": "hot (thing)",
+            "value": "あつい",
             "subValue": "atsui",
             "chapter": 5
           },
           {
             "id": "l5-vocab-adj-(i)-5",
             "label": "cold (weather)",
+            "value": "さむい",
             "subValue": "samui",
             "chapter": 5
           },
           {
             "id": "l5-vocab-adj-(i)-6",
             "label": "cold (thing/people)",
+            "value": "つめたい",
             "subValue": "tsumetai",
             "chapter": 5
           },
           {
             "id": "l5-vocab-adj-(i)-7",
             "label": "busy (people/days)",
+            "value": "いそがしい",
             "subValue": "isogashii",
             "chapter": 5
           },
           {
             "id": "l5-vocab-adj-(i)-8",
             "label": "large",
+            "value": "おおきい",
             "subValue": "ookii",
             "chapter": 5
           },
           {
             "id": "l5-vocab-adj-(i)-9",
             "label": "small",
+            "value": "ちいさい",
             "subValue": "chiisai",
             "chapter": 5
           },
           {
             "id": "l5-vocab-adj-(i)-10",
             "label": "interesting; funny",
+            "value": "おもしろい",
             "subValue": "omoshiroi",
             "chapter": 5
           },
           {
             "id": "l5-vocab-adj-(i)-11",
             "label": "boring",
+            "value": "つまらない",
             "subValue": "tsumaranai",
             "chapter": 5
           },
           {
             "id": "l5-vocab-adj-(i)-12",
             "label": "easy (problem); kind (person)",
+            "value": "やさしい",
             "subValue": "yasashii",
             "chapter": 5
           },
           {
             "id": "l5-vocab-adj-(i)-13",
             "label": "difficult",
+            "value": "むずかしい",
             "subValue": "muzukashii",
             "chapter": 5
           },
           {
             "id": "l5-vocab-adj-(i)-14",
             "label": "good-looking",
+            "value": "かっこいい",
             "subValue": "kakkoii",
             "chapter": 5
           },
           {
             "id": "l5-vocab-adj-(i)-15",
             "label": "frightening",
+            "value": "こわい",
             "subValue": "kowai",
             "chapter": 5
           },
           {
             "id": "l5-vocab-adj-(i)-16",
             "label": "fun",
+            "value": "たのしい",
             "subValue": "tanoshii",
             "chapter": 5
           },
           {
             "id": "l5-vocab-adj-(i)-17",
             "label": "inexpensive; cheap (thing)",
+            "value": "やすい",
             "subValue": "yasui",
             "chapter": 5
           }
@@ -2256,54 +2404,63 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l5-vocab-adj-(na)-1",
             "label": "fond of; to like (が)",
+            "value": "すき",
             "subValue": "suki",
             "chapter": 5
           },
           {
             "id": "l5-vocab-adj-(na)-2",
             "label": "disgusted with; to dislike (が)",
+            "value": "きらい",
             "subValue": "kirai",
             "chapter": 5
           },
           {
             "id": "l5-vocab-adj-(na)-3",
             "label": "very fond of; to love (が)",
+            "value": "だいすき",
             "subValue": "daisuki",
             "chapter": 5
           },
           {
             "id": "l5-vocab-adj-(na)-4",
             "label": "to hate (が)",
+            "value": "だいきらい",
             "subValue": "daikirai",
             "chapter": 5
           },
           {
             "id": "l5-vocab-adj-(na)-5",
             "label": "beautiful; clean",
+            "value": "きれい",
             "subValue": "kirei",
             "chapter": 5
           },
           {
             "id": "l5-vocab-adj-(na)-6",
             "label": "healthy; energetic",
+            "value": "げんき",
             "subValue": "genki",
             "chapter": 5
           },
           {
             "id": "l5-vocab-adj-(na)-7",
             "label": "quiet",
+            "value": "しずか",
             "subValue": "shizuka",
             "chapter": 5
           },
           {
             "id": "l5-vocab-adj-(na)-8",
             "label": "lively",
+            "value": "にぎやか",
             "subValue": "nigiyaka",
             "chapter": 5
           },
           {
             "id": "l5-vocab-adj-(na)-9",
             "label": "not busy; idle",
+            "value": "ひま",
             "subValue": "hima",
             "chapter": 5
           }
@@ -2317,24 +2474,28 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l5-vocab-verb-(u)-1",
             "label": "to swim",
+            "value": "およぐ",
             "subValue": "oyogu",
             "chapter": 5
           },
           {
             "id": "l5-vocab-verb-(u)-2",
             "label": "to ask (person に)",
+            "value": "きく",
             "subValue": "kiku",
             "chapter": 5
           },
           {
             "id": "l5-vocab-verb-(u)-3",
             "label": "to ride; to board (に)",
+            "value": "のる",
             "subValue": "noru",
             "chapter": 5
           },
           {
             "id": "l5-vocab-verb-(u)-4",
             "label": "to do; to perform (を)",
+            "value": "やる",
             "subValue": "yaru",
             "chapter": 5
           }
@@ -2348,6 +2509,7 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l5-vocab-verb-(ru)-1",
             "label": "to go out",
+            "value": "でかける",
             "subValue": "dekakeru",
             "chapter": 5
           }
@@ -2361,36 +2523,42 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l5-vocab-expression-1",
             "label": "together",
+            "value": "いっしょに",
             "subValue": "isshoni",
             "chapter": 5
           },
           {
             "id": "l5-vocab-expression-2",
             "label": "extremely",
+            "value": "すごく",
             "subValue": "sugoku",
             "chapter": 5
           },
           {
             "id": "l5-vocab-expression-3",
             "label": "It's okay.; Not to worry.",
+            "value": "だいじょうぶ",
             "subValue": "daijoobu",
             "chapter": 5
           },
           {
             "id": "l5-vocab-expression-4",
             "label": "very",
+            "value": "とても",
             "subValue": "totemo",
             "chapter": 5
           },
           {
             "id": "l5-vocab-expression-5",
             "label": "what kind of...",
+            "value": "どんな",
             "subValue": "donna",
             "chapter": 5
           },
           {
             "id": "l5-vocab-expression-6",
             "label": "counter for flat objects",
+            "value": "〜まい",
             "subValue": "...mai",
             "chapter": 5
           }
@@ -2459,6 +2627,7 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l6-vocab-food-1",
             "label": "food",
+            "value": "たべもの",
             "subValue": "tabemono",
             "chapter": 6
           }
@@ -2472,108 +2641,126 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l6-vocab-topic-1",
             "label": "money",
+            "value": "おかね",
             "subValue": "okane",
             "chapter": 6
           },
           {
             "id": "l6-vocab-topic-2",
             "label": "bath",
+            "value": "おふろ",
             "subValue": "ofuro",
             "chapter": 6
           },
           {
             "id": "l6-vocab-topic-3",
             "label": "kanji",
+            "value": "かんじ",
             "subValue": "kanji",
             "chapter": 6
           },
           {
             "id": "l6-vocab-topic-4",
             "label": "textbook",
+            "value": "きょうかしょ",
             "subValue": "kyookasho",
             "chapter": 6
           },
           {
             "id": "l6-vocab-topic-5",
             "label": "this week",
+            "value": "こんしゅう",
             "subValue": "konshuu",
             "chapter": 6
           },
           {
             "id": "l6-vocab-topic-6",
             "label": "CD",
+            "value": "シーディー",
             "subValue": "shiidii",
             "chapter": 6
           },
           {
             "id": "l6-vocab-topic-7",
             "label": "municipal hospital",
+            "value": "しみんびょういん",
             "subValue": "shiminbyooin",
             "chapter": 6
           },
           {
             "id": "l6-vocab-topic-8",
             "label": "shower",
+            "value": "シャワー",
             "subValue": "shawaa",
             "chapter": 6
           },
           {
             "id": "l6-vocab-topic-9",
             "label": "next",
+            "value": "つぎ",
             "subValue": "tsugi",
             "chapter": 6
           },
           {
             "id": "l6-vocab-topic-10",
             "label": "electricity; light",
+            "value": "でんき",
             "subValue": "denki",
             "chapter": 6
           },
           {
             "id": "l6-vocab-topic-11",
             "label": "train",
+            "value": "でんしゃ",
             "subValue": "densha",
             "chapter": 6
           },
           {
             "id": "l6-vocab-topic-12",
             "label": "baggage",
+            "value": "にもつ",
             "subValue": "nimotsu",
             "chapter": 6
           },
           {
             "id": "l6-vocab-topic-13",
             "label": "PC; laptop",
+            "value": "パソコン",
             "subValue": "pasokon",
             "chapter": 6
           },
           {
             "id": "l6-vocab-topic-14",
             "label": "page",
+            "value": "ページ",
             "subValue": "peeji",
             "chapter": 6
           },
           {
             "id": "l6-vocab-topic-15",
             "label": "window",
+            "value": "まど",
             "subValue": "mado",
             "chapter": 6
           },
           {
             "id": "l6-vocab-topic-16",
             "label": "night",
+            "value": "よる",
             "subValue": "yoru",
             "chapter": 6
           },
           {
             "id": "l6-vocab-topic-17",
             "label": "next week",
+            "value": "らいしゅう",
             "subValue": "raishuu",
             "chapter": 6
           },
           {
             "id": "l6-vocab-topic-18",
             "label": "next year",
+            "value": "らいねん",
             "subValue": "rainen",
             "chapter": 6
           }
@@ -2587,6 +2774,7 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l6-vocab-adj-(na)-1",
             "label": "tough (situation)",
+            "value": "たいへん",
             "subValue": "taihen",
             "chapter": 6
           }
@@ -2600,84 +2788,98 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l6-vocab-verb-(u)-1",
             "label": "to play",
+            "value": "あそぶ",
             "subValue": "asobu",
             "chapter": 6
           },
           {
             "id": "l6-vocab-verb-(u)-2",
             "label": "to hurry",
+            "value": "いそぐ",
             "subValue": "isogu",
             "chapter": 6
           },
           {
             "id": "l6-vocab-verb-(u)-3",
             "label": "to take a bath",
+            "value": "おふろにはいる",
             "subValue": "ofuronihairu",
             "chapter": 6
           },
           {
             "id": "l6-vocab-verb-(u)-4",
             "label": "to return (a thing) (person に thing を)",
+            "value": "かえす",
             "subValue": "kaesu",
             "chapter": 6
           },
           {
             "id": "l6-vocab-verb-(u)-5",
             "label": "to turn off; to erase (を)",
+            "value": "けす",
             "subValue": "kesu",
             "chapter": 6
           },
           {
             "id": "l6-vocab-verb-(u)-6",
             "label": "to die",
+            "value": "しぬ",
             "subValue": "shinu",
             "chapter": 6
           },
           {
             "id": "l6-vocab-verb-(u)-7",
             "label": "to sit down (seat に)",
+            "value": "すわる",
             "subValue": "suwaru",
             "chapter": 6
           },
           {
             "id": "l6-vocab-verb-(u)-8",
             "label": "to stand up",
+            "value": "たつ",
             "subValue": "tatsu",
             "chapter": 6
           },
           {
             "id": "l6-vocab-verb-(u)-9",
             "label": "to smoke",
+            "value": "たばこをすう",
             "subValue": "tabakoosuu",
             "chapter": 6
           },
           {
             "id": "l6-vocab-verb-(u)-10",
             "label": "to use (を)",
+            "value": "つかう",
             "subValue": "tsukau",
             "chapter": 6
           },
           {
             "id": "l6-vocab-verb-(u)-11",
             "label": "to help (person/task を)",
+            "value": "てつだう",
             "subValue": "tetsudau",
             "chapter": 6
           },
           {
             "id": "l6-vocab-verb-(u)-12",
             "label": "to enter (に)",
+            "value": "はいる",
             "subValue": "hairu",
             "chapter": 6
           },
           {
             "id": "l6-vocab-verb-(u)-13",
             "label": "to carry; to hold (を)",
+            "value": "もつ",
             "subValue": "motsu",
             "chapter": 6
           },
           {
             "id": "l6-vocab-verb-(u)-14",
             "label": "to be absent (from) (を); to rest",
+            "value": "やすむ",
             "subValue": "yasumu",
             "chapter": 6
           }
@@ -2691,54 +2893,63 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l6-vocab-verb-(ru)-1",
             "label": "to open (something) (を)",
+            "value": "あける",
             "subValue": "akeru",
             "chapter": 6
           },
           {
             "id": "l6-vocab-verb-(ru)-2",
             "label": "to teach (person に thing を)",
+            "value": "おしえる",
             "subValue": "oshieru",
             "chapter": 6
           },
           {
             "id": "l6-vocab-verb-(ru)-3",
             "label": "to get off (を)",
+            "value": "おりる",
             "subValue": "oriru",
             "chapter": 6
           },
           {
             "id": "l6-vocab-verb-(ru)-4",
             "label": "to borrow (person に thing を)",
+            "value": "かりる",
             "subValue": "kariru",
             "chapter": 6
           },
           {
             "id": "l6-vocab-verb-(ru)-5",
             "label": "to close (something) (を)",
+            "value": "しめる",
             "subValue": "shimeru",
             "chapter": 6
           },
           {
             "id": "l6-vocab-verb-(ru)-6",
             "label": "to take a shower",
+            "value": "シャワーをあびる",
             "subValue": "shawaaoabiru",
             "chapter": 6
           },
           {
             "id": "l6-vocab-verb-(ru)-7",
             "label": "to turn on (を)",
+            "value": "つける",
             "subValue": "tsukeru",
             "chapter": 6
           },
           {
             "id": "l6-vocab-verb-(ru)-8",
             "label": "to make a phone call (に)",
+            "value": "でんわをかける",
             "subValue": "denwaokakeru",
             "chapter": 6
           },
           {
             "id": "l6-vocab-verb-(ru)-9",
             "label": "to forget; to leave behind (を)",
+            "value": "わすれる",
             "subValue": "wasureru",
             "chapter": 6
           }
@@ -2752,12 +2963,14 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l6-vocab-verb-(irr)-1",
             "label": "to bring (a person) (を)",
+            "value": "つれてくる",
             "subValue": "tsuretekuru",
             "chapter": 6
           },
           {
             "id": "l6-vocab-verb-(irr)-2",
             "label": "to bring (a thing) (を)",
+            "value": "もってくる",
             "subValue": "mottekuru",
             "chapter": 6
           }
@@ -2771,42 +2984,49 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l6-vocab-expression-1",
             "label": "later on",
+            "value": "あとで",
             "subValue": "atode",
             "chapter": 6
           },
           {
             "id": "l6-vocab-expression-2",
             "label": "(do something) late",
+            "value": "おそく",
             "subValue": "osoku",
             "chapter": 6
           },
           {
             "id": "l6-vocab-expression-3",
             "label": "because...",
+            "value": "〜から",
             "subValue": "...kara",
             "chapter": 6
           },
           {
             "id": "l6-vocab-expression-4",
             "label": "That would be fine.; That wouldn't be necessary.",
+            "value": "けっこうです",
             "subValue": "kekkoodesu",
             "chapter": 6
           },
           {
             "id": "l6-vocab-expression-5",
             "label": "right away",
+            "value": "すぐ",
             "subValue": "sugu",
             "chapter": 6
           },
           {
             "id": "l6-vocab-expression-6",
             "label": "Really?",
+            "value": "ほんとうですか",
             "subValue": "hontoodesuka",
             "chapter": 6
           },
           {
             "id": "l6-vocab-expression-7",
             "label": "slowly; leisurely",
+            "value": "ゆっくり",
             "subValue": "yukkuri",
             "chapter": 6
           }
@@ -2887,72 +3107,84 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l7-vocab-family-1",
             "label": "family",
+            "value": "かぞく",
             "subValue": "kazoku",
             "chapter": 7
           },
           {
             "id": "l7-vocab-family-2",
             "label": "grandfather; old man",
+            "value": "おじいさん",
             "subValue": "ojiisan",
             "chapter": 7
           },
           {
             "id": "l7-vocab-family-3",
             "label": "grandmother; old woman",
+            "value": "おばあさん",
             "subValue": "obaasan",
             "chapter": 7
           },
           {
             "id": "l7-vocab-family-4",
             "label": "older brother",
+            "value": "おにいさん",
             "subValue": "oniisan",
             "chapter": 7
           },
           {
             "id": "l7-vocab-family-5",
             "label": "older sister",
+            "value": "おねえさん",
             "subValue": "oneesan",
             "chapter": 7
           },
           {
             "id": "l7-vocab-family-6",
             "label": "(my) father",
+            "value": "ちち",
             "subValue": "chichi",
             "chapter": 7
           },
           {
             "id": "l7-vocab-family-7",
             "label": "(my) mother",
+            "value": "はは",
             "subValue": "haha",
             "chapter": 7
           },
           {
             "id": "l7-vocab-family-8",
             "label": "(my) older brother",
+            "value": "あに",
             "subValue": "ani",
             "chapter": 7
           },
           {
             "id": "l7-vocab-family-9",
             "label": "(my) older sister",
+            "value": "あね",
             "subValue": "ane",
             "chapter": 7
           },
           {
             "id": "l7-vocab-family-10",
             "label": "younger sister",
+            "value": "いもうと",
             "subValue": "imooto",
             "chapter": 7
           },
           {
             "id": "l7-vocab-family-11",
             "label": "younger brother",
+            "value": "おとうと",
             "subValue": "otooto",
             "chapter": 7
           },
           {
             "id": "l7-vocab-family-12",
             "label": "brothers and sisters",
+            "value": "きょうだい",
             "subValue": "kyoodai",
             "chapter": 7
           }
@@ -2966,72 +3198,84 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l7-vocab-topic-1",
             "label": "man",
+            "value": "おとこのひと",
             "subValue": "otokonohito",
             "chapter": 7
           },
           {
             "id": "l7-vocab-topic-2",
             "label": "woman",
+            "value": "おんなのひと",
             "subValue": "onnanohito",
             "chapter": 7
           },
           {
             "id": "l7-vocab-topic-3",
             "label": "company",
+            "value": "かいしゃ",
             "subValue": "kaisha",
             "chapter": 7
           },
           {
             "id": "l7-vocab-topic-4",
             "label": "cafeteria; dining commons",
+            "value": "しょくどう",
             "subValue": "shokudoo",
             "chapter": 7
           },
           {
             "id": "l7-vocab-topic-5",
             "label": "department store",
+            "value": "デパート",
             "subValue": "depaato",
             "chapter": 7
           },
           {
             "id": "l7-vocab-topic-6",
             "label": "hair",
+            "value": "かみ",
             "subValue": "kami",
             "chapter": 7
           },
           {
             "id": "l7-vocab-topic-7",
             "label": "mouth",
+            "value": "くち",
             "subValue": "kuchi",
             "chapter": 7
           },
           {
             "id": "l7-vocab-topic-8",
             "label": "eye",
+            "value": "め",
             "subValue": "me",
             "chapter": 7
           },
           {
             "id": "l7-vocab-topic-9",
             "label": "glasses",
+            "value": "めがね",
             "subValue": "megane",
             "chapter": 7
           },
           {
             "id": "l7-vocab-topic-10",
             "label": "song",
+            "value": "うた",
             "subValue": "uta",
             "chapter": 7
           },
           {
             "id": "l7-vocab-topic-11",
             "label": "club activity",
+            "value": "サークル",
             "subValue": "saakuru",
             "chapter": 7
           },
           {
             "id": "l7-vocab-topic-12",
             "label": "car",
+            "value": "くるま",
             "subValue": "kuruma",
             "chapter": 7
           }
@@ -3045,42 +3289,49 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l7-vocab-adj-(i)-1",
             "label": "long",
+            "value": "ながい",
             "subValue": "nagai",
             "chapter": 7
           },
           {
             "id": "l7-vocab-adj-(i)-2",
             "label": "short (length)",
+            "value": "みじかい",
             "subValue": "mijikai",
             "chapter": 7
           },
           {
             "id": "l7-vocab-adj-(i)-3",
             "label": "fast",
+            "value": "はやい",
             "subValue": "hayai",
             "chapter": 7
           },
           {
             "id": "l7-vocab-adj-(i)-4",
             "label": "tall (stature)",
+            "value": "せがたかい",
             "subValue": "segatakai",
             "chapter": 7
           },
           {
             "id": "l7-vocab-adj-(i)-5",
             "label": "short (stature)",
+            "value": "せがひくい",
             "subValue": "segahikui",
             "chapter": 7
           },
           {
             "id": "l7-vocab-adj-(i)-6",
             "label": "bright; smart",
+            "value": "あたまがいい",
             "subValue": "atamagaii",
             "chapter": 7
           },
           {
             "id": "l7-vocab-adj-(i)-7",
             "label": "cute",
+            "value": "かわいい",
             "subValue": "kawaii",
             "chapter": 7
           }
@@ -3094,12 +3345,14 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l7-vocab-adj-(na)-1",
             "label": "kind",
+            "value": "しんせつ",
             "subValue": "shinsetsu",
             "chapter": 7
           },
           {
             "id": "l7-vocab-adj-(na)-2",
             "label": "convenient",
+            "value": "べんり",
             "subValue": "benri",
             "chapter": 7
           }
@@ -3113,54 +3366,63 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l7-vocab-verb-(u)-1",
             "label": "to sing (を)",
+            "value": "うたう",
             "subValue": "utau",
             "chapter": 7
           },
           {
             "id": "l7-vocab-verb-(u)-2",
             "label": "to put on (a hat) (を)",
+            "value": "かぶる",
             "subValue": "kaburu",
             "chapter": 7
           },
           {
             "id": "l7-vocab-verb-(u)-3",
             "label": "to get to know",
+            "value": "しる",
             "subValue": "shiru",
             "chapter": 7
           },
           {
             "id": "l7-vocab-verb-(u)-4",
             "label": "I know",
+            "value": "しっています",
             "subValue": "shitteimasu",
             "chapter": 7
           },
           {
             "id": "l7-vocab-verb-(u)-5",
             "label": "I do not know",
+            "value": "しりません",
             "subValue": "shirimasen",
             "chapter": 7
           },
           {
             "id": "l7-vocab-verb-(u)-6",
             "label": "to live (〜にすんでいます)",
+            "value": "すむ",
             "subValue": "sumu",
             "chapter": 7
           },
           {
             "id": "l7-vocab-verb-(u)-7",
             "label": "to put on (items below waist) (を)",
+            "value": "はく",
             "subValue": "haku",
             "chapter": 7
           },
           {
             "id": "l7-vocab-verb-(u)-8",
             "label": "to gain weight",
+            "value": "ふとる",
             "subValue": "futoru",
             "chapter": 7
           },
           {
             "id": "l7-vocab-verb-(u)-9",
             "label": "to be on the heavy side",
+            "value": "ふとっています",
             "subValue": "futotteimasu",
             "chapter": 7
           }
@@ -3174,30 +3436,35 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l7-vocab-verb-(ru)-1",
             "label": "to put on (glasses)",
+            "value": "(めがねを)かける",
             "subValue": "kakeru",
             "chapter": 7
           },
           {
             "id": "l7-vocab-verb-(ru)-2",
             "label": "to put on (items above waist) (を)",
+            "value": "きる",
             "subValue": "kiru",
             "chapter": 7
           },
           {
             "id": "l7-vocab-verb-(ru)-3",
             "label": "to work for (〜につとめています)",
+            "value": "つとめる",
             "subValue": "tsutomeru",
             "chapter": 7
           },
           {
             "id": "l7-vocab-verb-(ru)-4",
             "label": "to lose weight",
+            "value": "やせる",
             "subValue": "yaseru",
             "chapter": 7
           },
           {
             "id": "l7-vocab-verb-(ru)-5",
             "label": "to be thin",
+            "value": "やせています",
             "subValue": "yaseteimasu",
             "chapter": 7
           }
@@ -3211,6 +3478,7 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l7-vocab-verb-(irr)-1",
             "label": "to get married (〜と)",
+            "value": "けっこんする",
             "subValue": "kekkonsuru",
             "chapter": 7
           }
@@ -3224,42 +3492,49 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l7-vocab-expression-1",
             "label": "Do your best.",
+            "value": "がんばってください",
             "subValue": "ganbattekudasai",
             "chapter": 7
           },
           {
             "id": "l7-vocab-expression-2",
             "label": "counter for people",
+            "value": "〜にん",
             "subValue": "...nin",
             "chapter": 7
           },
           {
             "id": "l7-vocab-expression-3",
             "label": "one person",
+            "value": "ひとり",
             "subValue": "hitori",
             "chapter": 7
           },
           {
             "id": "l7-vocab-expression-4",
             "label": "two people",
+            "value": "ふたり",
             "subValue": "futari",
             "chapter": 7
           },
           {
             "id": "l7-vocab-expression-5",
             "label": "nothing in particular (+negative)",
+            "value": "べつに",
             "subValue": "betsu ni",
             "chapter": 7
           },
           {
             "id": "l7-vocab-expression-6",
             "label": "of course",
+            "value": "もちろん",
             "subValue": "mochiron",
             "chapter": 7
           },
           {
             "id": "l7-vocab-expression-7",
             "label": "if you like",
+            "value": "よかったら",
             "subValue": "yokattara",
             "chapter": 7
           }
@@ -3322,132 +3597,154 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l8-vocab-topic-1",
             "label": "the day after tomorrow",
+            "value": "あさって",
             "subValue": "asatte",
             "chapter": 8
           },
           {
             "id": "l8-vocab-topic-2",
             "label": "rain",
+            "value": "あめ",
             "subValue": "ame",
             "chapter": 8
           },
           {
             "id": "l8-vocab-topic-3",
             "label": "office worker",
+            "value": "かいしゃいん",
             "subValue": "kaishain",
             "chapter": 8
           },
           {
             "id": "l8-vocab-topic-4",
             "label": "camera",
+            "value": "カメラ",
             "subValue": "kamera",
             "chapter": 8
           },
           {
             "id": "l8-vocab-topic-5",
             "label": "karaoke",
+            "value": "カラオケ",
             "subValue": "karaoke",
             "chapter": 8
           },
           {
             "id": "l8-vocab-topic-6",
             "label": "air",
+            "value": "くうき",
             "subValue": "kuuki",
             "chapter": 8
           },
           {
             "id": "l8-vocab-topic-7",
             "label": "this morning",
+            "value": "けさ",
             "subValue": "kesa",
             "chapter": 8
           },
           {
             "id": "l8-vocab-topic-8",
             "label": "blackboard",
+            "value": "こくばん",
             "subValue": "kokuban",
             "chapter": 8
           },
           {
             "id": "l8-vocab-topic-9",
             "label": "this month",
+            "value": "こんげつ",
             "subValue": "kongetsu",
             "chapter": 8
           },
           {
             "id": "l8-vocab-topic-10",
             "label": "job; work",
+            "value": "しごと",
             "subValue": "shigoto",
             "chapter": 8
           },
           {
             "id": "l8-vocab-topic-11",
             "label": "college student",
+            "value": "だいがくせい",
             "subValue": "daigakusee",
             "chapter": 8
           },
           {
             "id": "l8-vocab-topic-12",
             "label": "weather forecast",
+            "value": "てんきよほう",
             "subValue": "tenkiyopoo",
             "chapter": 8
           },
           {
             "id": "l8-vocab-topic-13",
             "label": "tomato",
+            "value": "トマト",
             "subValue": "tomato",
             "chapter": 8
           },
           {
             "id": "l8-vocab-topic-14",
             "label": "summer",
+            "value": "なつ",
             "subValue": "natsu",
             "chapter": 8
           },
           {
             "id": "l8-vocab-topic-15",
             "label": "something",
+            "value": "なにか",
             "subValue": "nanika",
             "chapter": 8
           },
           {
             "id": "l8-vocab-topic-16",
             "label": "party",
+            "value": "パーティー",
             "subValue": "paatii",
             "chapter": 8
           },
           {
             "id": "l8-vocab-topic-17",
             "label": "barbecue",
+            "value": "バーベキュー",
             "subValue": "baabekyuu",
             "chapter": 8
           },
           {
             "id": "l8-vocab-topic-18",
             "label": "chopsticks",
+            "value": "はし",
             "subValue": "hashi",
             "chapter": 8
           },
           {
             "id": "l8-vocab-topic-19",
             "label": "winter",
+            "value": "ふゆ",
             "subValue": "fuyu",
             "chapter": 8
           },
           {
             "id": "l8-vocab-topic-20",
             "label": "homestay",
+            "value": "ホームステイ",
             "subValue": "hoomusutei",
             "chapter": 8
           },
           {
             "id": "l8-vocab-topic-21",
             "label": "every week",
+            "value": "まいしゅう",
             "subValue": "maishuu",
             "chapter": 8
           },
           {
             "id": "l8-vocab-topic-22",
             "label": "next month",
+            "value": "らいげつ",
             "subValue": "raigetsu",
             "chapter": 8
           }
@@ -3461,18 +3758,21 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l8-vocab-adj-(i)-1",
             "label": "skillful; good at... (が)",
+            "value": "じょうず",
             "subValue": "joozu",
             "chapter": 8
           },
           {
             "id": "l8-vocab-adj-(i)-2",
             "label": "clumsy; poor at... (が)",
+            "value": "へた",
             "subValue": "heta",
             "chapter": 8
           },
           {
             "id": "l8-vocab-adj-(i)-3",
             "label": "famous",
+            "value": "ゆうめい",
             "subValue": "yuumei",
             "chapter": 8
           }
@@ -3486,54 +3786,63 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l8-vocab-verb-(u)-1",
             "label": "to wash (を)",
+            "value": "あらう",
             "subValue": "arau",
             "chapter": 8
           },
           {
             "id": "l8-vocab-verb-(u)-2",
             "label": "to need (が)",
+            "value": "いる",
             "subValue": "iru",
             "chapter": 8
           },
           {
             "id": "l8-vocab-verb-(u)-3",
             "label": "to be late",
+            "value": "おそくなる",
             "subValue": "osokunaru",
             "chapter": 8
           },
           {
             "id": "l8-vocab-verb-(u)-4",
             "label": "to take a bath",
+            "value": "おふろにはいる",
             "subValue": "ofuronihairu",
             "chapter": 8
           },
           {
             "id": "l8-vocab-verb-(u)-5",
             "label": "to think",
+            "value": "おもう",
             "subValue": "omou",
             "chapter": 8
           },
           {
             "id": "l8-vocab-verb-(u)-6",
             "label": "to cut (を)",
+            "value": "きる",
             "subValue": "kiru",
             "chapter": 8
           },
           {
             "id": "l8-vocab-verb-(u)-7",
             "label": "to make (を)",
+            "value": "つくる",
             "subValue": "tsukuru",
             "chapter": 8
           },
           {
             "id": "l8-vocab-verb-(u)-8",
             "label": "(rain/snow) falls",
+            "value": "(あめ/ゆきが)ふる",
             "subValue": "furu",
             "chapter": 8
           },
           {
             "id": "l8-vocab-verb-(u)-9",
             "label": "to take (a thing) (を)",
+            "value": "もっていく",
             "subValue": "motteiku",
             "chapter": 8
           }
@@ -3547,12 +3856,14 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l8-vocab-verb-(ru)-1",
             "label": "to throw away (を)",
+            "value": "すてる",
             "subValue": "suteru",
             "chapter": 8
           },
           {
             "id": "l8-vocab-verb-(ru)-2",
             "label": "to begin (を)",
+            "value": "はじめる",
             "subValue": "hajimeru",
             "chapter": 8
           }
@@ -3566,24 +3877,28 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l8-vocab-verb-(irr)-1",
             "label": "to drive (を)",
+            "value": "うんてんする",
             "subValue": "untensuru",
             "chapter": 8
           },
           {
             "id": "l8-vocab-verb-(irr)-2",
             "label": "to do laundry (を)",
+            "value": "せんたくする",
             "subValue": "sentakusuru",
             "chapter": 8
           },
           {
             "id": "l8-vocab-verb-(irr)-3",
             "label": "to clean (を)",
+            "value": "そうじする",
             "subValue": "soojisuru",
             "chapter": 8
           },
           {
             "id": "l8-vocab-verb-(irr)-4",
             "label": "to cook",
+            "value": "りょうりする",
             "subValue": "ryoorisuru",
             "chapter": 8
           }
@@ -3597,30 +3912,35 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l8-vocab-expression-1",
             "label": "uh-uh; no",
+            "value": "ううん",
             "subValue": "uun",
             "chapter": 8
           },
           {
             "id": "l8-vocab-expression-2",
             "label": "uh-huh; yes",
+            "value": "うん",
             "subValue": "un",
             "chapter": 8
           },
           {
             "id": "l8-vocab-expression-3",
             "label": "Cheers! (a toast)",
+            "value": "かんぱい",
             "subValue": "kanpai",
             "chapter": 8
           },
           {
             "id": "l8-vocab-expression-4",
             "label": "That's too bad.",
+            "value": "ざんねん(ですね)",
             "subValue": "zannen(desu ne)",
             "chapter": 8
           },
           {
             "id": "l8-vocab-expression-5",
             "label": "not... yet",
+            "value": "まだ",
             "subValue": "mada",
             "chapter": 8
           }
@@ -3689,108 +4009,126 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l9-vocab-topic-1",
             "label": "good child",
+            "value": "いいこ",
             "subValue": "iiko",
             "chapter": 9
           },
           {
             "id": "l9-vocab-topic-2",
             "label": "color",
+            "value": "いろ",
             "subValue": "iro",
             "chapter": 9
           },
           {
             "id": "l9-vocab-topic-3",
             "label": "boxed lunch",
+            "value": "おべんとう",
             "subValue": "obentoo",
             "chapter": 9
           },
           {
             "id": "l9-vocab-topic-4",
             "label": "Kabuki; traditional Japanese theatrical art",
+            "value": "かぶき",
             "subValue": "kabuki",
             "chapter": 9
           },
           {
             "id": "l9-vocab-topic-5",
             "label": "guitar",
+            "value": "ギター",
             "subValue": "gitaa",
             "chapter": 9
           },
           {
             "id": "l9-vocab-topic-6",
             "label": "last year",
+            "value": "きょねん",
             "subValue": "kyonen",
             "chapter": 9
           },
           {
             "id": "l9-vocab-topic-7",
             "label": "medicine",
+            "value": "くすり",
             "subValue": "kusuri",
             "chapter": 9
           },
           {
             "id": "l9-vocab-topic-8",
             "label": "to take medicine",
+            "value": "くすりをのむ",
             "subValue": "kusurionomu",
             "chapter": 9
           },
           {
             "id": "l9-vocab-topic-9",
             "label": "concert",
+            "value": "コンサート",
             "subValue": "konsaato",
             "chapter": 9
           },
           {
             "id": "l9-vocab-topic-10",
             "label": "near future",
+            "value": "こんど",
             "subValue": "kondo",
             "chapter": 9
           },
           {
             "id": "l9-vocab-topic-11",
             "label": "essay; composition",
+            "value": "さくぶん",
             "subValue": "sakubun",
             "chapter": 9
           },
           {
             "id": "l9-vocab-topic-12",
             "label": "exam",
+            "value": "しけん",
             "subValue": "shiken",
             "chapter": 9
           },
           {
             "id": "l9-vocab-topic-13",
             "label": "ski",
+            "value": "スキー",
             "subValue": "sukii",
             "chapter": 9
           },
           {
             "id": "l9-vocab-topic-14",
             "label": "last month",
+            "value": "せんげつ",
             "subValue": "sengetsu",
             "chapter": 9
           },
           {
             "id": "l9-vocab-topic-15",
             "label": "word; vocabulary",
+            "value": "たんご",
             "subValue": "tango",
             "chapter": 9
           },
           {
             "id": "l9-vocab-topic-16",
             "label": "piano",
+            "value": "ピアノ",
             "subValue": "piano",
             "chapter": 9
           },
           {
             "id": "l9-vocab-topic-17",
             "label": "pizza",
+            "value": "ピザ",
             "subValue": "piza",
             "chapter": 9
           },
           {
             "id": "l9-vocab-topic-18",
             "label": "illness; sickness",
+            "value": "びょうき",
             "subValue": "byooki",
             "chapter": 9
           }
@@ -3804,36 +4142,42 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l9-vocab-adj-(i)-1",
             "label": "blue",
+            "value": "あおい",
             "subValue": "aoi",
             "chapter": 9
           },
           {
             "id": "l9-vocab-adj-(i)-2",
             "label": "red",
+            "value": "あかい",
             "subValue": "akai",
             "chapter": 9
           },
           {
             "id": "l9-vocab-adj-(i)-3",
             "label": "black",
+            "value": "くろい",
             "subValue": "kuroi",
             "chapter": 9
           },
           {
             "id": "l9-vocab-adj-(i)-4",
             "label": "lonely",
+            "value": "さびしい",
             "subValue": "sabishii",
             "chapter": 9
           },
           {
             "id": "l9-vocab-adj-(i)-5",
             "label": "white",
+            "value": "しろい",
             "subValue": "shiroi",
             "chapter": 9
           },
           {
             "id": "l9-vocab-adj-(i)-6",
             "label": "young",
+            "value": "わかい",
             "subValue": "wakai",
             "chapter": 9
           }
@@ -3847,6 +4191,7 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l9-vocab-adj-(na)-1",
             "label": "mean-spirited",
+            "value": "いじわる",
             "subValue": "ijiwaru",
             "chapter": 9
           }
@@ -3860,36 +4205,42 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l9-vocab-verb-(u)-1",
             "label": "to dance",
+            "value": "おどる",
             "subValue": "odoru",
             "chapter": 9
           },
           {
             "id": "l9-vocab-verb-(u)-2",
             "label": "(something) ends (が)",
+            "value": "おわる",
             "subValue": "owaru",
             "chapter": 9
           },
           {
             "id": "l9-vocab-verb-(u)-3",
             "label": "to be popular",
+            "value": "にんきがある",
             "subValue": "ninkigaaru",
             "chapter": 9
           },
           {
             "id": "l9-vocab-verb-(u)-4",
             "label": "(something) begins (が)",
+            "value": "はじまる",
             "subValue": "hajimaru",
             "chapter": 9
           },
           {
             "id": "l9-vocab-verb-(u)-5",
             "label": "to play (a string instrument or piano) (を)",
+            "value": "ひく",
             "subValue": "hiku",
             "chapter": 9
           },
           {
             "id": "l9-vocab-verb-(u)-6",
             "label": "to get (from somebody) (person に thing を)",
+            "value": "もらう",
             "subValue": "morau",
             "chapter": 9
           }
@@ -3903,12 +4254,14 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l9-vocab-verb-(ru)-1",
             "label": "to memorize",
+            "value": "おぼえる",
             "subValue": "oboeru",
             "chapter": 9
           },
           {
             "id": "l9-vocab-verb-(ru)-2",
             "label": "to appear; to attend (に); to exit (を)",
+            "value": "でる",
             "subValue": "deru",
             "chapter": 9
           }
@@ -3922,12 +4275,14 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l9-vocab-verb-(irr)-1",
             "label": "to do physical exercises",
+            "value": "うんどうする",
             "subValue": "undoosuru",
             "chapter": 9
           },
           {
             "id": "l9-vocab-verb-(irr)-2",
             "label": "to take a walk",
+            "value": "さんぽする",
             "subValue": "sanposuru",
             "chapter": 9
           }
@@ -3941,30 +4296,35 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l9-vocab-expression-1",
             "label": "from...",
+            "value": "〜から",
             "subValue": "...kara",
             "chapter": 9
           },
           {
             "id": "l9-vocab-expression-2",
             "label": "by all means",
+            "value": "ぜひ",
             "subValue": "zehi",
             "chapter": 9
           },
           {
             "id": "l9-vocab-expression-3",
             "label": "by the way",
+            "value": "ところで",
             "subValue": "tokorode",
             "chapter": 9
           },
           {
             "id": "l9-vocab-expression-4",
             "label": "all",
+            "value": "みんな",
             "subValue": "minna",
             "chapter": 9
           },
           {
             "id": "l9-vocab-expression-5",
             "label": "already",
+            "value": "もう",
             "subValue": "moo",
             "chapter": 9
           }
@@ -4033,174 +4393,203 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l10-vocab-topic-1",
             "label": "autumn",
+            "value": "あき",
             "subValue": "aki",
             "chapter": 10
           },
           {
             "id": "l10-vocab-topic-2",
             "label": "doctor",
+            "value": "いしゃ",
             "subValue": "isha",
             "chapter": 10
           },
           {
             "id": "l10-vocab-topic-3",
             "label": "station",
+            "value": "えき",
             "subValue": "eki",
             "chapter": 10
           },
           {
             "id": "l10-vocab-topic-4",
             "label": "rich person",
+            "value": "おかねもち",
             "subValue": "okanemochi",
             "chapter": 10
           },
           {
             "id": "l10-vocab-topic-5",
             "label": "face",
+            "value": "かお",
             "subValue": "kao",
             "chapter": 10
           },
           {
             "id": "l10-vocab-topic-6",
             "label": "season",
+            "value": "きせつ",
             "subValue": "kisetsu",
             "chapter": 10
           },
           {
             "id": "l10-vocab-topic-7",
             "label": "credit card",
+            "value": "クレジットカード",
             "subValue": "kurejittokaado",
             "chapter": 10
           },
           {
             "id": "l10-vocab-topic-8",
             "label": "cake",
+            "value": "ケーキ",
             "subValue": "keeki",
             "chapter": 10
           },
           {
             "id": "l10-vocab-topic-9",
             "label": "this year",
+            "value": "ことし",
             "subValue": "kotoshi",
             "chapter": 10
           },
           {
             "id": "l10-vocab-topic-10",
             "label": "soccer",
+            "value": "サッカー",
             "subValue": "sakkaa",
             "chapter": 10
           },
           {
             "id": "l10-vocab-topic-11",
             "label": "shirt",
+            "value": "シャツ",
             "subValue": "shatsu",
             "chapter": 10
           },
           {
             "id": "l10-vocab-topic-12",
             "label": "Bullet Train",
+            "value": "しんかんせん",
             "subValue": "shinkansen",
             "chapter": 10
           },
           {
             "id": "l10-vocab-topic-13",
             "label": "sushi",
+            "value": "すし",
             "subValue": "sushi",
             "chapter": 10
           },
           {
             "id": "l10-vocab-topic-14",
             "label": "life; living",
+            "value": "せいかつ",
             "subValue": "seikatsu",
             "chapter": 10
           },
           {
             "id": "l10-vocab-topic-15",
             "label": "world",
+            "value": "せかい",
             "subValue": "sekai",
             "chapter": 10
           },
           {
             "id": "l10-vocab-topic-16",
             "label": "subway",
+            "value": "ちかてつ",
             "subValue": "chikatetsu",
             "chapter": 10
           },
           {
             "id": "l10-vocab-topic-17",
             "label": "gloves",
+            "value": "てぶくろ",
             "subValue": "tebukuro",
             "chapter": 10
           },
           {
             "id": "l10-vocab-topic-18",
             "label": "tempura",
+            "value": "てんぷら",
             "subValue": "tenpura",
             "chapter": 10
           },
           {
             "id": "l10-vocab-topic-19",
             "label": "barber's",
+            "value": "とこや",
             "subValue": "tokoya",
             "chapter": 10
           },
           {
             "id": "l10-vocab-topic-20",
             "label": "spring",
+            "value": "はる",
             "subValue": "haru",
             "chapter": 10
           },
           {
             "id": "l10-vocab-topic-21",
             "label": "pants",
+            "value": "パンツ",
             "subValue": "pantsu",
             "chapter": 10
           },
           {
             "id": "l10-vocab-topic-22",
             "label": "beauty parlor",
+            "value": "びよういん",
             "subValue": "biyooin",
             "chapter": 10
           },
           {
             "id": "l10-vocab-topic-23",
             "label": "flight",
+            "value": "びん",
             "subValue": "bin",
             "chapter": 10
           },
           {
             "id": "l10-vocab-topic-24",
             "label": "ship; boat",
+            "value": "ふね",
             "subValue": "fune",
             "chapter": 10
           },
           {
             "id": "l10-vocab-topic-25",
             "label": "baseball",
+            "value": "やきゅう",
             "subValue": "yakyuu",
             "chapter": 10
           },
           {
             "id": "l10-vocab-topic-26",
             "label": "celebrity",
+            "value": "ゆうめいじん",
             "subValue": "yuumeijin",
             "chapter": 10
           },
           {
             "id": "l10-vocab-topic-27",
             "label": "reservation",
+            "value": "よやく",
             "subValue": "yoyaku",
             "chapter": 10
           },
           {
             "id": "l10-vocab-topic-28",
             "label": "next semester",
+            "value": "らいがっき",
             "subValue": "raigakki",
             "chapter": 10
           },
           {
             "id": "l10-vocab-topic-29",
             "label": "apple",
+            "value": "りんご",
             "subValue": "ringo",
             "chapter": 10
           }
@@ -4214,30 +4603,35 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l10-vocab-adj-(i)-1",
             "label": "warm",
+            "value": "あたたかい",
             "subValue": "atatakai",
             "chapter": 10
           },
           {
             "id": "l10-vocab-adj-(i)-2",
             "label": "slow; late",
+            "value": "おそい",
             "subValue": "osoi",
             "chapter": 10
           },
           {
             "id": "l10-vocab-adj-(i)-3",
             "label": "cool (weather)",
+            "value": "すずしい",
             "subValue": "suzushii",
             "chapter": 10
           },
           {
             "id": "l10-vocab-adj-(i)-4",
             "label": "cold (things/people)",
+            "value": "つめたい",
             "subValue": "tsumetai",
             "chapter": 10
           },
           {
             "id": "l10-vocab-adj-(i)-5",
             "label": "sleepy",
+            "value": "ねむい",
             "subValue": "nemui",
             "chapter": 10
           }
@@ -4251,6 +4645,7 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l10-vocab-adj-(na)-1",
             "label": "easy; simple",
+            "value": "かんたん",
             "subValue": "kantan",
             "chapter": 10
           }
@@ -4264,24 +4659,28 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l10-vocab-verb-(u)-1",
             "label": "to take (amount of time/money) (no particle)",
+            "value": "かかる",
             "subValue": "kakaru",
             "chapter": 10
           },
           {
             "id": "l10-vocab-verb-(u)-2",
             "label": "to stay (at a hotel, etc.) (に)",
+            "value": "とまる",
             "subValue": "tomaru",
             "chapter": 10
           },
           {
             "id": "l10-vocab-verb-(u)-3",
             "label": "to become",
+            "value": "なる",
             "subValue": "naru",
             "chapter": 10
           },
           {
             "id": "l10-vocab-verb-(u)-4",
             "label": "to pay (を)",
+            "value": "はらう",
             "subValue": "harau",
             "chapter": 10
           }
@@ -4295,6 +4694,7 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l10-vocab-verb-(ru)-1",
             "label": "to decide (を)",
+            "value": "きめる",
             "subValue": "kimeru",
             "chapter": 10
           }
@@ -4308,12 +4708,14 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l10-vocab-verb-(irr)-1",
             "label": "to travel",
+            "value": "りょこうする",
             "subValue": "ryokoosuru",
             "chapter": 10
           },
           {
             "id": "l10-vocab-verb-(irr)-2",
             "label": "to practice (を)",
+            "value": "れんしゅうする",
             "subValue": "renshuusuru",
             "chapter": 10
           }
@@ -4327,84 +4729,98 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l10-vocab-expression-1",
             "label": "on foot",
+            "value": "あるいて",
             "subValue": "aruite",
             "chapter": 10
           },
           {
             "id": "l10-vocab-expression-2",
             "label": "best",
+            "value": "いちばん",
             "subValue": "ichiban",
             "chapter": 10
           },
           {
             "id": "l10-vocab-expression-3",
             "label": "or",
+            "value": "〜か〜",
             "subValue": "...ka...",
             "chapter": 10
           },
           {
             "id": "l10-vocab-expression-4",
             "label": "for... months",
+            "value": "〜かげつ",
             "subValue": "...kagetsu",
             "chapter": 10
           },
           {
             "id": "l10-vocab-expression-5",
             "label": "in... time; after...",
+            "value": "〜ご",
             "subValue": "...go",
             "chapter": 10
           },
           {
             "id": "l10-vocab-expression-6",
             "label": "these days",
+            "value": "このごろ",
             "subValue": "konogoro",
             "chapter": 10
           },
           {
             "id": "l10-vocab-expression-7",
             "label": "for... weeks",
+            "value": "〜しゅうかん",
             "subValue": "...shuukan",
             "chapter": 10
           },
           {
             "id": "l10-vocab-expression-8",
             "label": "by (means of transportation); with (a tool)",
+            "value": "〜で",
             "subValue": "...de",
             "chapter": 10
           },
           {
             "id": "l10-vocab-expression-9",
             "label": "how; by what means",
+            "value": "どうやって",
             "subValue": "dooyatte",
             "chapter": 10
           },
           {
             "id": "l10-vocab-expression-10",
             "label": "which",
+            "value": "どちら",
             "subValue": "dochira",
             "chapter": 10
           },
           {
             "id": "l10-vocab-expression-11",
             "label": "which",
+            "value": "どっち",
             "subValue": "dotchi",
             "chapter": 10
           },
           {
             "id": "l10-vocab-expression-12",
             "label": "how much; how long",
+            "value": "どのぐらい",
             "subValue": "donogurai",
             "chapter": 10
           },
           {
             "id": "l10-vocab-expression-13",
             "label": "...years",
+            "value": "〜ねん",
             "subValue": "...nen",
             "chapter": 10
           },
           {
             "id": "l10-vocab-expression-14",
             "label": "(do something) early; fast",
+            "value": "はやく",
             "subValue": "hayaku",
             "chapter": 10
           }

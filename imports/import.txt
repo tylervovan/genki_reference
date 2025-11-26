@@ -272,9 +272,9 @@ Verb (U) | かう | 買う | kau | to buy (を)
 Verb (U) | かく | 書く | kaku | to write (person に thing を)
 Verb (U) | とる | 撮る | toru | to take (a picture) (を)
 Verb (U) | まつ | 待つ | matsu | to wait (を)
-Verb (U) | わかる | | wakaru | to understand (が)
+Verb (U) | わかる | 分かる | wakaru | to understand (が)
 Verb (Ru) | いる | | iru | (a person) is in...; stays at... (place に person が)
-Expression | 〜ぐらい | | ...gurai | about (approximate measurement)
+Expression | 〜ぐらい | 〜位 | ...gurai | about (approximate measurement)
 Expression | ごめんなさい | | gomennasai | I'm sorry.
 Expression | だから | | dakara | so; therefore
 Expression | たくさん | | takusan | many; a lot
@@ -336,7 +336,7 @@ Adj (I) | おおきい | 大きい | ookii | large
 Adj (I) | ちいさい | 小さい | chiisai | small
 Adj (I) | おもしろい | 面白い | omoshiroi | interesting; funny
 Adj (I) | つまらない | | tsumaranai | boring
-Adj (I) | やさしい | | yasashii | easy (problem); kind (person)
+Adj (I) | やさしい | 優しい | yasashii | easy (problem); kind (person)
 Adj (I) | むずかしい | 難しい | muzukashii | difficult
 Adj (I) | かっこいい | | kakkoii | good-looking
 Adj (I) | こわい | 怖い | kowai | frightening
@@ -346,10 +346,10 @@ Adj (Na) | すき | 好き | suki | fond of; to like (が)
 Adj (Na) | きらい | 嫌い | kirai | disgusted with; to dislike (が)
 Adj (Na) | だいすき | 大好き | daisuki | very fond of; to love (が)
 Adj (Na) | だいきらい | 大嫌い | daikirai | to hate (が)
-Adj (Na) | きれい | | kirei | beautiful; clean
+Adj (Na) | きれい | 綺麗 | kirei | beautiful; clean
 Adj (Na) | げんき | 元気 | genki | healthy; energetic
 Adj (Na) | しずか | 静か | shizuka | quiet
-Adj (Na) | にぎやか | | nigiyaka | lively
+Adj (Na) | にぎやか | 賑やか | nigiyaka | lively
 Adj (Na) | ひま | 暇 | hima | not busy; idle
 Verb (U) | およぐ | 泳ぐ | oyogu | to swim
 Verb (U) | きく | 聞く | kiku | to ask (person に)
@@ -418,8 +418,8 @@ Verb (Ru) | おしえる | 教える | oshieru | to teach (person に thing を)
 Verb (Ru) | おりる | 降りる | oriru | to get off (を)
 Verb (Ru) | かりる | 借りる | kariru | to borrow (person に thing を)
 Verb (Ru) | しめる | 閉める | shimeru | to close (something) (を)
-Verb (Ru) | シャワーをあびる | | shawaaoabiru | to take a shower
-Verb (Ru) | つける | | tsukeru | to turn on (を)
+Verb (Ru) | シャワーをあびる | シャワーを浴びる | shawaaoabiru | to take a shower
+Verb (Ru) | つける | 付ける | tsukeru | to turn on (を)
 Verb (Ru) | でんわをかける | 電話をかける | denwaokakeru | to make a phone call (に)
 Verb (Ru) | わすれる | 忘れる | wasureru | to forget; to leave behind (を)
 Verb (Irr) | つれてくる | 連れてくる | tsuretekuru | to bring (a person) (を)
@@ -484,21 +484,21 @@ Adj (I) | かわいい | | kawaii | cute
 Adj (Na) | しんせつ | 親切 | shinsetsu | kind
 Adj (Na) | べんり | 便利 | benri | convenient
 Verb (U) | うたう | 歌う | utau | to sing (を)
-Verb (U) | かぶる | | kaburu | to put on (a hat) (を)
+Verb (U) | かぶる | 被る | kaburu | to put on (a hat) (を)
 Verb (U) | しる | 知る | shiru | to get to know
 Verb (U) | しっています | 知っています | shitteimasu | I know
 Verb (U) | しりません | 知りません | shirimasen | I do not know
 Verb (U) | すむ | 住む | sumu | to live (〜にすんでいます)
-Verb (U) | はく | | haku | to put on (items below waist) (を)
+Verb (U) | はく | 履く | haku | to put on (items below waist) (を)
 Verb (U) | ふとる | 太る | futoru | to gain weight
 Verb (U) | ふとっています | 太っています | futotteimasu | to be on the heavy side
-Verb (Ru) | (めがねを)かける | | kakeru | to put on (glasses)
+Verb (Ru) | (めがねを)かける | (眼鏡を)かける | kakeru | to put on (glasses)
 Verb (Ru) | きる | 着る | kiru | to put on (items above waist) (を)
 Verb (Ru) | つとめる | 勤める | tsutomeru | to work for (〜につとめています)
-Verb (Ru) | やせる | | yaseru | to lose weight
-Verb (Ru) | やせています | | yaseteimasu | to be thin
+Verb (Ru) | やせる | 痩せる | yaseru | to lose weight
+Verb (Ru) | やせています | 痩せています | yaseteimasu | to be thin
 Verb (Irr) | けっこんする | 結婚する | kekkonsuru | to get married (〜と)
-Expression | がんばってください | | ganbattekudasai | Do your best.
+Expression | がんばってください | 頑張ってください | ganbattekudasai | Do your best.
 Expression | 〜にん | 〜人 | ...nin | counter for people
 Expression | ひとり | 一人 | hitori | one person
 Expression | ふたり | 二人 | futari | two people
@@ -521,7 +521,7 @@ Counting People | Hitori, Futari, San-nin, Yo-nin...
 
 [VOCABULARY: L8]
 Category | Japanese (Kana) | Japanese (Kanji) | Romaji | English
-Topic | あさって | | asatte | the day after tomorrow
+Topic | あさって | 明後日 | asatte | the day after tomorrow
 Topic | あめ | 雨 | ame | rain
 Topic | かいしゃいん | 会社員 | kaishain | office worker
 Topic | カメラ | | kamera | camera
@@ -538,7 +538,7 @@ Topic | なつ | 夏 | natsu | summer
 Topic | なにか | 何か | nanika | something
 Topic | パーティー | | paatii | party
 Topic | バーベキュー | | baabekyuu | barbecue
-Topic | はし | | hashi | chopsticks
+Topic | はし | 箸 | hashi | chopsticks
 Topic | ふゆ | 冬 | fuyu | winter
 Topic | ホームステイ | | hoomusutei | homestay
 Topic | まいしゅう | 毎週 | maishuu | every week
@@ -549,7 +549,7 @@ Adj (I) | ゆうめい | 有名 | yuumei | famous
 Verb (U) | あらう | 洗う | arau | to wash (を)
 Verb (U) | いる | | iru | to need (が)
 Verb (U) | おそくなる | 遅くなる | osokunaru | to be late
-Verb (U) | おふろにはいる | | ofuronihairu | to take a bath
+Verb (U) | おふろにはいる | お風呂に入る | ofuronihairu | to take a bath
 Verb (U) | おもう | 思う | omou | to think
 Verb (U) | きる | 切る | kiru | to cut (を)
 Verb (U) | つくる | 作る | tsukuru | to make (を)
@@ -613,7 +613,7 @@ Verb (U) | おわる | 終わる | owaru | (something) ends (が)
 Verb (U) | にんきがある | 人気がある | ninkigaaru | to be popular
 Verb (U) | はじまる | 始まる | hajimaru | (something) begins (が)
 Verb (U) | ひく | 弾く | hiku | to play (a string instrument or piano) (を)
-Verb (U) | もらう | | morau | to get (from somebody) (person に thing を)
+Verb (U) | もらう | 貰う | morau | to get (from somebody) (person に thing を)
 Verb (Ru) | おぼえる | 覚える | oboeru | to memorize
 Verb (Ru) | でる | 出る | deru | to appear; to attend (に); to exit (を)
 Verb (Irr) | うんどうする | 運動する | undoosuru | to do physical exercises
@@ -668,16 +668,16 @@ Topic | やきゅう | 野球 | yakyuu | baseball
 Topic | ゆうめいじん | 有名人 | yuumeijin | celebrity
 Topic | よやく | 予約 | yoyaku | reservation
 Topic | らいがっき | 来学期 | raigakki | next semester
-Topic | りんご | | ringo | apple
+Topic | りんご | 林檎 | ringo | apple
 Adj (I) | あたたかい | 暖かい | atatakai | warm
 Adj (I) | おそい | 遅い | osoi | slow; late
 Adj (I) | すずしい | 涼しい | suzushii | cool (weather)
 Adj (I) | つめたい | 冷たい | tsumetai | cold (things/people)
 Adj (I) | ねむい | 眠い | nemui | sleepy
 Adj (Na) | かんたん | 簡単 | kantan | easy; simple
-Verb (U) | かかる | | kakaru | to take (amount of time/money) (no particle)
+Verb (U) | かかる | 掛かる | kakaru | to take (amount of time/money) (no particle)
 Verb (U) | とまる | 泊まる | tomaru | to stay (at a hotel, etc.) (に)
-Verb (U) | なる | | naru | to become
+Verb (U) | なる | 成る | naru | to become
 Verb (U) | はらう | 払う | harau | to pay (を)
 Verb (Ru) | きめる | 決める | kimeru | to decide (を)
 Verb (Irr) | りょこうする | 旅行する | ryokoosuru | to travel
