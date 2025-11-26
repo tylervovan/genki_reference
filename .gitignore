@@ -42,3 +42,6 @@ next-env.d.ts
 
 # local data
 notes_ignore.txt
+
+# python
+__pycache__/
