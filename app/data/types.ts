@@ -30,6 +30,8 @@ export interface RefCard {
 export interface Topic {
   id: string;
   title: string;
+  icon?: string;
   cards: RefCard[];
 }
 
+export type CheatSheetSection = Topic;
