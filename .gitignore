@@ -45,3 +45,7 @@ notes_ignore.txt
 
 # python
 __pycache__/
+
+# Sentry Config File
+.env.sentry-build-plugin
+.env.local
