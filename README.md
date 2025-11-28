@@ -111,10 +111,8 @@ To add new content, edit `app/data/topics.ts`:
 ```
 
 ## Future Enhancements
-- [ ] Filter by grammar type
-- [ ] Flashcard study mode
 - [ ] Audio pronunciation
-- [ ] User progress tracking
+- [ ] Flashcard study mode
 - [ ] Custom study sets
 
 ## Technology Stack
