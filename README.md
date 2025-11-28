@@ -6,6 +6,7 @@ A modern, QuickRef-style cheat sheet for studying Japanese using content from th
 
 - **Topic-Based Organization**: Content organized by Japanese language concepts (Particles, Verbs, Greetings, etc.)
 - **Chapter Attribution**: Each item tagged with its source chapter from Genki
+- **Audio Pronunciation**: Click-to-hear text-to-speech for all Japanese text
 - **Dark Mode UI**: Beautiful, easy-on-the-eyes dark interface inspired by QuickRef.me
 - **Responsive Design**: Works seamlessly on desktop and mobile devices
 - **Quick Navigation**: Sidebar navigation for instant access to any topic section
@@ -66,10 +67,16 @@ The application currently includes reference materials from Genki I Chapters 1-3
 
 ```
 app/
+├── api/
+│   └── tts/
+│       └── route.ts      # Text-to-speech API endpoint
 ├── components/
 │   ├── RefCard.tsx       # Individual reference card component
+│   ├── SpeakerButton.tsx # Audio playback button component
 │   ├── Sidebar.tsx       # Navigation sidebar
 │   └── TopicSection.tsx  # Topic section wrapper
+├── hooks/
+│   └── useAudioPlayer.ts # Audio playback hook
 ├── data/
 │   ├── types.ts          # TypeScript interfaces
 │   └── topics.ts         # Content data (Genki vocabulary, grammar, etc.)
@@ -111,7 +118,7 @@ To add new content, edit `app/data/topics.ts`:
 ```
 
 ## Future Enhancements
-- [ ] Audio pronunciation
+- [x] Audio pronunciation
 - [ ] Flashcard study mode
 - [ ] Custom study sets
 
