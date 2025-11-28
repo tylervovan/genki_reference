@@ -111,9 +111,6 @@ To add new content, edit `app/data/topics.ts`:
 ```
 
 ## Future Enhancements
-
-- [ ] Search functionality
-- [ ] Filter by chapter
 - [ ] Filter by grammar type
 - [ ] Flashcard study mode
 - [ ] Audio pronunciation
