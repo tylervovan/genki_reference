@@ -213,17 +213,17 @@ Expression | どうですか | | doo desu ka | How about...?; How is...?
 [GRAMMAR: L3]
 Concept | Construction | Explanation
 Verb Conjugation | - | Verbs are split into Ru-verbs, U-verbs, and Irregular verbs.
-Ru-Verbs | Stem + masu | End in -eru or -iru. Drop -ru and add -masu/-masen.
-U-Verbs | Stem(i) + masu | End in u-vowel sounds. Change 'u' to 'i' and add -masu/-masen.
-Irregular Verbs | shimasu / kimasu | "Suru" becomes "shimasu". "Kuru" becomes "kimasu".
-Particle O (を) | Noun o Verb | Marks the direct object of an action.
-Particle De (で) | Place de Verb | Marks the location where an action takes place.
-Particle Ni (に) | Goal ni / Time ni | Marks the goal of movement (to) OR specific time (at).
-Particle He (へ) | Goal e Iku | Marks the direction of movement (to). Pronounced "e".
-Time Reference | Time ni Verb | Use "ni" for specific dates/times. Do not use "ni" for relative time (today, tomorrow, when).
-Invitation | Verb(masen) ka | "Won't you...?" Present negative form used to invite.
+Ru-Verbs | Stem + ます | End in -eru or -iru. Drop -ru and add -masu/-masen.
+U-Verbs | Stem(i) + ます | End in u-vowel sounds. Change 'u' to 'i' and add -masu/-masen.
+Irregular Verbs | します / きます | "Suru" becomes "shimasu". "Kuru" becomes "kimasu".
+Particle O (を) | Noun を Verb | Marks the direct object of an action.
+Particle De (で) | Place で Verb | Marks the location where an action takes place.
+Particle Ni (に) | Goal に / Time に | Marks the goal of movement (to) OR specific time (at).
+Particle He (へ) | Goal へ 行く | Marks the direction of movement (to). Pronounced "e".
+Time Reference | Time に Verb | Use "ni" for specific dates/times. Do not use "ni" for relative time (today, tomorrow, when).
+Invitation | Verb(ません)か | "Won't you...?" Present negative form used to invite.
 Frequency Adverbs | Adverb + Verb | Words like "yoku", "tokidoki" usually appear before the object or verb.
-Topic Particle Wa (は) | Topic wa | Can mark time or other elements as the topic.
+Topic Particle Wa (は) | Topic は | Can mark time or other elements as the topic.
 
 ---
 
@@ -294,14 +294,14 @@ Place | あいだ | 間 | aida | between (A と B の)
 
 [GRAMMAR: L4]
 Concept | Construction | Explanation
-Existence (Inanimate) | X ga arimasu | "There is/I have X". Used for non-living things.
-Existence (Animate) | X ga imasu | "There is/I have X". Used for living things (people, animals).
-Location Particles | X wa Y no [Loc] desu | "X is [location] of Y". Example: Tsukue no shita (Under the desk).
-Past Tense (Noun/Adj) | Deshita / Ja nakatta | Desu -> Deshita (was). Ja nai desu -> Ja nakatta desu (was not).
-Past Tense (Verbs) | Mashita / Masen deshita | Masu -> Mashita (did). Masen -> Masen deshita (did not).
-Particle Mo (Past) | Noun mo | "Mo" acts the same in past tense (did also).
-Duration | ...jikan + Verb | ~jikan (hours). No particle needed after duration.
-Particle To | Noun to Noun | Noun1 to Noun2 (and). Person to (with Person).
+Existence (Inanimate) | X があります | "There is/I have X". Used for non-living things.
+Existence (Animate) | X がいます | "There is/I have X". Used for living things (people, animals).
+Location Particles | X は Y の [Loc] です | "X is [location] of Y". Example: Tsukue no shita (Under the desk).
+Past Tense (Noun/Adj) | でした / じゃなかった | Desu -> Deshita (was). Ja nai desu -> Ja nakatta desu (was not).
+Past Tense (Verbs) | ました / ませんでした | Masu -> Mashita (did). Masen -> Masen deshita (did not).
+Particle Mo (Past) | Noun も | "Mo" acts the same in past tense (did also).
+Duration | ...時間 + Verb | ~jikan (hours). No particle needed after duration.
+Particle To | Noun と Noun | Noun1 to Noun2 (and). Person to (with Person).
 
 ---
 
@@ -366,11 +366,11 @@ Expression | 〜まい | 〜枚 | ...mai | counter for flat objects
 [GRAMMAR: L5]
 Concept | Construction | Explanation
 Adjectives (Types) | - | I-Adjectives (end in 'i') and Na-Adjectives (end in 'na' when modifying).
-Adj Conjugation (Present) | ...i desu / ...kunai desu | **I-Adj:** Desu (aff), Kunai desu (neg). **Na-Adj:** Desu (aff), Ja nai desu (neg).
-Adj Conjugation (Past) | ...katta desu / ...nakatta | **I-Adj:** Katta desu (aff), Kunakatta desu (neg). **Na-Adj:** Deshita (aff), Ja nakatta desu (neg).
+Adj Conjugation (Present) | ...いです / ...くないです | **I-Adj:** Desu (aff), Kunai desu (neg). **Na-Adj:** Desu (aff), Ja nai desu (neg).
+Adj Conjugation (Past) | ...かったです / ...なかった | **I-Adj:** Katta desu (aff), Kunakatta desu (neg). **Na-Adj:** Deshita (aff), Ja nakatta desu (neg).
 Adj Modifiers | Adj + Noun | **I-Adj:** [Adj] + Noun. **Na-Adj:** [Adj] + na + Noun.
-Likes/Dislikes | X wa Y ga suki/kirai | X wa Y ga suki/kirai desu. (X likes/dislikes Y).
-Let's... | ~mashoo / ~mashoo ka | ~mashoo (Let's do). ~mashoo ka (Shall we do?).
+Likes/Dislikes | X は Y がすき/きらい | X wa Y ga suki/kirai desu. (X likes/dislikes Y).
+Let's... | 〜ましょう / 〜ましょうか | ~mashoo (Let's do). ~mashoo ka (Shall we do?).
 Counting | Number + Counter | Use specific counters (mai for flat objects).
 
 ---
@@ -434,15 +434,15 @@ Expression | ゆっくり | | yukkuri | slowly; leisurely
 
 [GRAMMAR: L6]
 Concept | Construction | Explanation
-Te-form (Use) | Verb-te | Used for connecting verbs, making requests, asking permission, etc.
-Te-form (Ru-verbs) | Drop -ru + te | Drop -ru, add -te.
-Te-form (U-verbs) | ...te / ...de | u/tsu/ru -> tte; mu/bu/nu -> nde; ku -> ite; gu -> ide; su -> shite. (Exception: iku -> itte).
-Te-form (Irr) | shite / kite | suru -> shite; kuru -> kite.
-Requests | ~te kudasai | ~te kudasai. (Please do...).
-Prohibition | ~te wa ikemasen | ~te wa ikemasen. (You must not...).
-Permission | ~te mo ii desu | ~te mo ii desu. (You may...).
-Connecting Verbs | Verb-te, Verb | ~te, [verb]. (I did this, and then did that).
-Reason | Situation. Explanation kara. | [Situation]. [Explanation] kara. (Situation, because Explanation).
+Te-form (Use) | Verb-て | Used for connecting verbs, making requests, asking permission, etc.
+Te-form (Ru-verbs) | Drop -ru + て | Drop -ru, add -te.
+Te-form (U-verbs) | ...て / ...で | u/tsu/ru -> tte; mu/bu/nu -> nde; ku -> ite; gu -> ide; su -> shite. (Exception: iku -> itte).
+Te-form (Irr) | して / きて | suru -> shite; kuru -> kite.
+Requests | 〜てください | ~te kudasai. (Please do...).
+Prohibition | 〜てはいけません | ~te wa ikemasen. (You must not...).
+Permission | 〜てもいいです | ~te mo ii desu. (You may...).
+Connecting Verbs | Verb-て, Verb | ~te, [verb]. (I did this, and then did that).
+Reason | Situation. Explanation から. | [Situation]. [Explanation] kara. (Situation, because Explanation).
 
 ---
 
@@ -508,12 +508,12 @@ Expression | よかったら | | yokattara | if you like
 
 [GRAMMAR: L7]
 Concept | Construction | Explanation
-Action in Progress | ~te imasu | ~te imasu. (I am doing...).
-Resultant State | ~te imasu | ~te imasu. (I am married / I live in... / I have [verb]ed).
-Body Parts | A wa B ga Adj desu | Person wa [body part] ga [adjective] desu. (Person has [adjective] [body part]).
-Te-forms (Adjectives) | ~kute / ~de | Join sentences. **I-Adj:** Drop -i, add -kute. **Na-Adj:** Add -de. **Noun:** Add -de.
-Movement Purpose | Stem ni ikimasu | Destination ni/e Purpose(stem) ni ikimasu. (Go to [place] to do [purpose]).
-Counting People | ~nin | Hitori, Futari, San-nin, Yo-nin...
+Action in Progress | 〜ています | ~te imasu. (I am doing...).
+Resultant State | 〜ています | ~te imasu. (I am married / I live in... / I have [verb]ed).
+Body Parts | A は B が Adj です | Person wa [body part] ga [adjective] desu. (Person has [adjective] [body part]).
+Te-forms (Adjectives) | 〜くて / 〜で | Join sentences. **I-Adj:** Drop -i, add -kute. **Na-Adj:** Add -de. **Noun:** Add -de.
+Movement Purpose | Stem に行きます | Destination ni/e Purpose(stem) ni ikimasu. (Go to [place] to do [purpose]).
+Counting People | 〜人 | Hitori, Futari, San-nin, Yo-nin...
 
 ---
 
@@ -571,11 +571,11 @@ Expression | まだ | | mada | not... yet
 Concept | Construction | Explanation
 Short Forms (Verbs) | Dict / Nai-form | Informal speech foundation. **Present Aff:** Dictionary form. **Present Neg:** Nai-form.
 Informal Speech | Short Form | Use short forms instead of Masu/Desu forms. Drop particles sometimes.
-Quotations (Think) | Short Form + to omoimasu | [Short Form] to omoimasu. (I think that...).
-Quotations (Say) | Short Form + to itte imashita | [Short Form] to itte imashita. (They said that...).
-Negative Request | ~nai de kudasai | ~nai de kudasai. (Please don't...).
-Verb Nominalization | Verb(short) + no | Verb(short) + no. (e.g., *Nihongo o hanasu no* ga suki desu).
-Particle Ga | Subject ga | Emphasizes the subject (Who did it? *Mary* did it).
+Quotations (Think) | Short Form + と思います | [Short Form] to omoimasu. (I think that...).
+Quotations (Say) | Short Form + と言っていました | [Short Form] to itte imashita. (They said that...).
+Negative Request | 〜ないでください | ~nai de kudasai. (Please don't...).
+Verb Nominalization | Verb(short) + の | Verb(short) + no. (e.g., *Nihongo o hanasu no* ga suki desu).
+Particle Ga | Subject が | Emphasizes the subject (Who did it? *Mary* did it).
 
 ---
 
@@ -627,12 +627,12 @@ Expression | もう | | moo | already
 [GRAMMAR: L9]
 Concept | Construction | Explanation
 Past Tense (Short) | Ta-form / Nakatta-form | **Verbs:** Ta-form (Affirmative), Nakatta-form (Negative).
-Ta-form | ~ta / ~da | Constructed exactly like Te-form, but replace 'te' with 'ta'.
-Nakatta-form | ~nakatta | Replace 'nai' in present negative with 'nakatta'.
-Past Tense (Adj/Noun) | ~katta / ~datta | **I-Adj:** -katta. **Na-Adj/Noun:** -datta.
+Ta-form | 〜た / 〜だ | Constructed exactly like Te-form, but replace 'te' with 'ta'.
+Nakatta-form | 〜なかった | Replace 'nai' in present negative with 'nakatta'.
+Past Tense (Adj/Noun) | 〜かった / 〜だった | **I-Adj:** -katta. **Na-Adj/Noun:** -datta.
 Qualifying Nouns | Short Form + Noun | Use Short Form verbs/adjectives before a noun to modify it.
-Mada/Moo | Moo + Past / Mada + Te-iru | **Moo** + Past Affirmative (Already did). **Mada** + Te-form iru (Haven't done yet).
-Explanation | Reason kara, Situation | [Reason] kara, [Situation]. (Because [Reason], [Situation]).
+Mada/Moo | もう + Past / まだ + Te-iru | **Moo** + Past Affirmative (Already did). **Mada** + Te-form iru (Haven't done yet).
+Explanation | Reason から, Situation | [Reason] kara, [Situation]. (Because [Reason], [Situation]).
 
 ---
 
@@ -699,12 +699,12 @@ Expression | はやく | 早く | hayaku | (do something) early; fast
 
 [GRAMMAR: L10]
 Concept | Construction | Explanation
-Comparison (2 Items) | A no hoo ga B yori... | A no hoo ga B yori [property] desu. (A is more [property] than B).
-Comparison (Question) | A to B to dotchi... | A to B to dotchi no hoo ga [property] desu ka. (Which is more [property], A or B?).
-Comparison (3+ Items) | ...no naka de A ga ichiban... | [Class] no naka de A ga ichiban [property] desu. (A is the most [property] among [Class]).
-Adj/Noun + no | Noun/Na-Adj + no | Noun/Na-Adj + no (e.g., *kantan no* desu).
-Intention (Tsumori) | Verb + tsumori desu | Verb(present short) + tsumori desu. (I intend to do...).
-Becoming | ~ku naru / ~ni naru | **I-Adj:** Drop -i, add -ku naru. **Na-Adj/Noun:** Add -ni naru.
-Transport/Means | Noun + de | Particle **De**. (e.g., Basu de ikimasu).
-Travel Duration | ...de [Duration] kakarimasu | [Place] kara [Place] made [Method] de [Duration] kakarimasu.
+Comparison (2 Items) | A のほうが B より... | A no hoo ga B yori [property] desu. (A is more [property] than B).
+Comparison (Question) | A と B とどっち... | A to B to dotchi no hoo ga [property] desu ka. (Which is more [property], A or B?).
+Comparison (3+ Items) | ...の中で A が一番... | [Class] no naka de A ga ichiban [property] desu. (A is the most [property] among [Class]).
+Adj/Noun + no | Noun/Na-Adj + の | Noun/Na-Adj + no (e.g., *kantan no* desu).
+Intention (Tsumori) | Verb + つもりです | Verb(present short) + tsumori desu. (I intend to do...).
+Becoming | 〜くなる / 〜になる | **I-Adj:** Drop -i, add -ku naru. **Na-Adj/Noun:** Add -ni naru.
+Transport/Means | Noun + で | Particle **De**. (e.g., Basu de ikimasu).
+Travel Duration | ...で [Duration] かかります | [Place] kara [Place] made [Method] de [Duration] kakarimasu.
 ================================================================================

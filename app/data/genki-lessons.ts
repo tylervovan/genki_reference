@@ -1537,72 +1537,84 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l3-grammar-1",
             "label": "Verb Conjugation",
+            "value": "-",
             "subValue": "Verbs are split into Ru-verbs, U-verbs, and Irregular verbs.",
             "chapter": 3
           },
           {
             "id": "l3-grammar-2",
             "label": "Ru-Verbs",
+            "value": "Stem + ます",
             "subValue": "End in -eru or -iru. Drop -ru and add -masu/-masen.",
             "chapter": 3
           },
           {
             "id": "l3-grammar-3",
             "label": "U-Verbs",
+            "value": "Stem(i) + ます",
             "subValue": "End in u-vowel sounds. Change 'u' to 'i' and add -masu/-masen.",
             "chapter": 3
           },
           {
             "id": "l3-grammar-4",
             "label": "Irregular Verbs",
+            "value": "します / きます",
             "subValue": "\"Suru\" becomes \"shimasu\". \"Kuru\" becomes \"kimasu\".",
             "chapter": 3
           },
           {
             "id": "l3-grammar-5",
             "label": "Particle O (を)",
+            "value": "Noun を Verb",
             "subValue": "Marks the direct object of an action.",
             "chapter": 3
           },
           {
             "id": "l3-grammar-6",
             "label": "Particle De (で)",
+            "value": "Place で Verb",
             "subValue": "Marks the location where an action takes place.",
             "chapter": 3
           },
           {
             "id": "l3-grammar-7",
             "label": "Particle Ni (に)",
+            "value": "Goal に / Time に",
             "subValue": "Marks the goal of movement (to) OR specific time (at).",
             "chapter": 3
           },
           {
             "id": "l3-grammar-8",
             "label": "Particle He (へ)",
+            "value": "Goal へ 行く",
             "subValue": "Marks the direction of movement (to). Pronounced \"e\".",
             "chapter": 3
           },
           {
             "id": "l3-grammar-9",
             "label": "Time Reference",
+            "value": "Time に Verb",
             "subValue": "Use \"ni\" for specific dates/times. Do not use \"ni\" for relative time (today, tomorrow, when).",
             "chapter": 3
           },
           {
             "id": "l3-grammar-10",
             "label": "Invitation",
+            "value": "Verb(ません)か",
             "subValue": "~masenka",
             "chapter": 3
           },
           {
             "id": "l3-grammar-11",
             "label": "Frequency Adverbs",
+            "value": "Adverb + Verb",
             "subValue": "Words like \"yoku\", \"tokidoki\" usually appear before the object or verb.",
             "chapter": 3
           },
           {
             "id": "l3-grammar-12",
             "label": "Topic Particle Wa (は)",
+            "value": "Topic は",
             "subValue": "Can mark time or other elements as the topic.",
             "chapter": 3
           }
@@ -2084,48 +2096,56 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l4-grammar-1",
             "label": "Existence (Inanimate)",
+            "value": "X があります",
             "subValue": "X ga arimasu. (There is/I have X). Used for non-living things.",
             "chapter": 4
           },
           {
             "id": "l4-grammar-2",
             "label": "Existence (Animate)",
+            "value": "X がいます",
             "subValue": "X ga imasu. (There is/I have X). Used for living things (people, animals).",
             "chapter": 4
           },
           {
             "id": "l4-grammar-3",
             "label": "Location Particles",
+            "value": "X は Y の [Loc] です",
             "subValue": "X wa Y no [location word] desu. (X is [location] of Y). Example: Tsukue no shita (Under the desk).",
             "chapter": 4
           },
           {
             "id": "l4-grammar-4",
             "label": "Past Tense (Noun/Adj)",
+            "value": "でした / じゃなかった",
             "subValue": "Desu -> Deshita (was). Ja nai desu -> Ja nakatta desu (was not).",
             "chapter": 4
           },
           {
             "id": "l4-grammar-5",
             "label": "Past Tense (Verbs)",
+            "value": "ました / ませんでした",
             "subValue": "Masu -> Mashita (did). Masen -> Masen deshita (did not).",
             "chapter": 4
           },
           {
             "id": "l4-grammar-6",
             "label": "Particle Mo (Past)",
+            "value": "Noun も",
             "subValue": "\"Mo\" acts the same in past tense (did also).",
             "chapter": 4
           },
           {
             "id": "l4-grammar-7",
             "label": "Duration",
+            "value": "...時間 + Verb",
             "subValue": "~jikan (hours). No particle needed after duration.",
             "chapter": 4
           },
           {
             "id": "l4-grammar-8",
             "label": "Particle To",
+            "value": "Noun と Noun",
             "subValue": "Noun1 to Noun2 (and). Person to (with Person).",
             "chapter": 4
           }
@@ -2572,42 +2592,49 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l5-grammar-1",
             "label": "Adjectives (Types)",
+            "value": "-",
             "subValue": "I-Adjectives (end in 'i') and Na-Adjectives (end in 'na' when modifying).",
             "chapter": 5
           },
           {
             "id": "l5-grammar-2",
             "label": "Adj Conjugation (Present)",
+            "value": "...いです / ...くないです",
             "subValue": "**I-Adj:** Desu (aff), Kunai desu (neg). **Na-Adj:** Desu (aff), Ja nai desu (neg).",
             "chapter": 5
           },
           {
             "id": "l5-grammar-3",
             "label": "Adj Conjugation (Past)",
+            "value": "...かったです / ...なかった",
             "subValue": "**I-Adj:** Katta desu (aff), Kunakatta desu (neg). **Na-Adj:** Deshita (aff), Ja nakatta desu (neg).",
             "chapter": 5
           },
           {
             "id": "l5-grammar-4",
             "label": "Adj Modifiers",
+            "value": "Adj + Noun",
             "subValue": "**I-Adj:** [Adj] + Noun. **Na-Adj:** [Adj] + na + Noun.",
             "chapter": 5
           },
           {
             "id": "l5-grammar-5",
             "label": "Likes/Dislikes",
+            "value": "X は Y がすき/きらい",
             "subValue": "X wa Y ga suki/kirai desu. (X likes/dislikes Y).",
             "chapter": 5
           },
           {
             "id": "l5-grammar-6",
             "label": "Let's...",
+            "value": "〜ましょう / 〜ましょうか",
             "subValue": "~mashoo (Let's do). ~mashoo ka (Shall we do?).",
             "chapter": 5
           },
           {
             "id": "l5-grammar-7",
             "label": "Counting",
+            "value": "Number + Counter",
             "subValue": "Use specific counters (mai for flat objects).",
             "chapter": 5
           }
@@ -3040,54 +3067,63 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l6-grammar-1",
             "label": "Te-form (Use)",
+            "value": "Verb-て",
             "subValue": "Used for connecting verbs, making requests, asking permission, etc.",
             "chapter": 6
           },
           {
             "id": "l6-grammar-2",
             "label": "Te-form (Ru-verbs)",
+            "value": "Drop -ru + て",
             "subValue": "Drop -ru, add -te.",
             "chapter": 6
           },
           {
             "id": "l6-grammar-3",
             "label": "Te-form (U-verbs)",
+            "value": "...て / ...で",
             "subValue": "u/tsu/ru -> tte; mu/bu/nu -> nde; ku -> ite; gu -> ide; su -> shite. (Exception: iku -> itte).",
             "chapter": 6
           },
           {
             "id": "l6-grammar-4",
             "label": "Te-form (Irr)",
+            "value": "して / きて",
             "subValue": "suru -> shite; kuru -> kite.",
             "chapter": 6
           },
           {
             "id": "l6-grammar-5",
             "label": "Requests",
+            "value": "〜てください",
             "subValue": "~te kudasai. (Please do...).",
             "chapter": 6
           },
           {
             "id": "l6-grammar-6",
             "label": "Prohibition",
+            "value": "〜てはいけません",
             "subValue": "~te wa ikemasen. (You must not...).",
             "chapter": 6
           },
           {
             "id": "l6-grammar-7",
             "label": "Permission",
+            "value": "〜てもいいです",
             "subValue": "~te mo ii desu. (You may...).",
             "chapter": 6
           },
           {
             "id": "l6-grammar-8",
             "label": "Connecting Verbs",
+            "value": "Verb-て, Verb",
             "subValue": "~te, [verb]. (I did this, and then did that).",
             "chapter": 6
           },
           {
             "id": "l6-grammar-9",
             "label": "Reason",
+            "value": "Situation. Explanation から.",
             "subValue": "[Situation]. [Explanation] kara. (Situation, because Explanation).",
             "chapter": 6
           }
@@ -3548,36 +3584,42 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l7-grammar-1",
             "label": "Action in Progress",
+            "value": "〜ています",
             "subValue": "~te imasu. (I am doing...).",
             "chapter": 7
           },
           {
             "id": "l7-grammar-2",
             "label": "Resultant State",
+            "value": "〜ています",
             "subValue": "~te imasu. (I am married / I live in... / I have [verb]ed).",
             "chapter": 7
           },
           {
             "id": "l7-grammar-3",
             "label": "Body Parts",
+            "value": "A は B が Adj です",
             "subValue": "Person wa [body part] ga [adjective] desu. (Person has [adjective] [body part]).",
             "chapter": 7
           },
           {
             "id": "l7-grammar-4",
             "label": "Te-forms (Adjectives)",
+            "value": "〜くて / 〜で",
             "subValue": "Join sentences. **I-Adj:** Drop -i, add -kute. **Na-Adj:** Add -de. **Noun:** Add -de.",
             "chapter": 7
           },
           {
             "id": "l7-grammar-5",
             "label": "Movement Purpose",
+            "value": "Stem に行きます",
             "subValue": "Destination ni/e Purpose(stem) ni ikimasu. (Go to [place] to do [purpose]).",
             "chapter": 7
           },
           {
             "id": "l7-grammar-6",
             "label": "Counting People",
+            "value": "〜人",
             "subValue": "Hitori, Futari, San-nin, Yo-nin...",
             "chapter": 7
           }
@@ -3954,42 +3996,49 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l8-grammar-1",
             "label": "Short Forms (Verbs)",
+            "value": "Dict / Nai-form",
             "subValue": "Informal speech foundation. **Present Aff:** Dictionary form. **Present Neg:** Nai-form.",
             "chapter": 8
           },
           {
             "id": "l8-grammar-2",
             "label": "Informal Speech",
+            "value": "Short Form",
             "subValue": "Use short forms instead of Masu/Desu forms. Drop particles sometimes.",
             "chapter": 8
           },
           {
             "id": "l8-grammar-3",
             "label": "Quotations (Think)",
+            "value": "Short Form + と思います",
             "subValue": "[Short Form] to omoimasu. (I think that...).",
             "chapter": 8
           },
           {
             "id": "l8-grammar-4",
             "label": "Quotations (Say)",
+            "value": "Short Form + と言っていました",
             "subValue": "[Short Form] to itte imashita. (They said that...).",
             "chapter": 8
           },
           {
             "id": "l8-grammar-5",
             "label": "Negative Request",
+            "value": "〜ないでください",
             "subValue": "~nai de kudasai. (Please don't...).",
             "chapter": 8
           },
           {
             "id": "l8-grammar-6",
             "label": "Verb Nominalization",
+            "value": "Verb(short) + の",
             "subValue": "Verb(short) + no. (e.g., *Nihongo o hanasu no* ga suki desu).",
             "chapter": 8
           },
           {
             "id": "l8-grammar-7",
             "label": "Particle Ga",
+            "value": "Subject が",
             "subValue": "Emphasizes the subject (Who did it? *Mary* did it).",
             "chapter": 8
           }
@@ -4338,42 +4387,49 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l9-grammar-1",
             "label": "Past Tense (Short)",
+            "value": "Ta-form / Nakatta-form",
             "subValue": "**Verbs:** Ta-form (Affirmative), Nakatta-form (Negative).",
             "chapter": 9
           },
           {
             "id": "l9-grammar-2",
             "label": "Ta-form",
+            "value": "〜た / 〜だ",
             "subValue": "Constructed exactly like Te-form, but replace 'te' with 'ta'.",
             "chapter": 9
           },
           {
             "id": "l9-grammar-3",
             "label": "Nakatta-form",
+            "value": "〜なかった",
             "subValue": "Replace 'nai' in present negative with 'nakatta'.",
             "chapter": 9
           },
           {
             "id": "l9-grammar-4",
             "label": "Past Tense (Adj/Noun)",
+            "value": "〜かった / 〜だった",
             "subValue": "**I-Adj:** -katta. **Na-Adj/Noun:** -datta.",
             "chapter": 9
           },
           {
             "id": "l9-grammar-5",
             "label": "Qualifying Nouns",
+            "value": "Short Form + Noun",
             "subValue": "Use Short Form verbs/adjectives before a noun to modify it.",
             "chapter": 9
           },
           {
             "id": "l9-grammar-6",
             "label": "Mada/Moo",
+            "value": "もう + Past / まだ + Te-iru",
             "subValue": "**Moo** + Past Affirmative (Already did). **Mada** + Te-form iru (Haven't done yet).",
             "chapter": 9
           },
           {
             "id": "l9-grammar-7",
             "label": "Explanation",
+            "value": "Reason から, Situation",
             "subValue": "[Reason] kara, [Situation]. (Because [Reason], [Situation]).",
             "chapter": 9
           }
@@ -4834,48 +4890,56 @@ export const genkiLessons: Topic[] = [
           {
             "id": "l10-grammar-1",
             "label": "Comparison (2 Items)",
+            "value": "A のほうが B より...",
             "subValue": "A no hoo ga B yori [property] desu. (A is more [property] than B).",
             "chapter": 10
           },
           {
             "id": "l10-grammar-2",
             "label": "Comparison (Question)",
+            "value": "A と B とどっち...",
             "subValue": "A to B to dotchi no hoo ga [property] desu ka. (Which is more [property], A or B?).",
             "chapter": 10
           },
           {
             "id": "l10-grammar-3",
             "label": "Comparison (3+ Items)",
+            "value": "...の中で A が一番...",
             "subValue": "[Class] no naka de A ga ichiban [property] desu. (A is the most [property] among [Class]).",
             "chapter": 10
           },
           {
             "id": "l10-grammar-4",
             "label": "Adj/Noun + no",
+            "value": "Noun/Na-Adj + の",
             "subValue": "Noun/Na-Adj + no (e.g., *kantan no* desu).",
             "chapter": 10
           },
           {
             "id": "l10-grammar-5",
             "label": "Intention (Tsumori)",
+            "value": "Verb + つもりです",
             "subValue": "Verb(present short) + tsumori desu. (I intend to do...).",
             "chapter": 10
           },
           {
             "id": "l10-grammar-6",
             "label": "Becoming",
+            "value": "〜くなる / 〜になる",
             "subValue": "**I-Adj:** Drop -i, add -ku naru. **Na-Adj/Noun:** Add -ni naru.",
             "chapter": 10
           },
           {
             "id": "l10-grammar-7",
             "label": "Transport/Means",
+            "value": "Noun + で",
             "subValue": "Particle **De**. (e.g., Basu de ikimasu).",
             "chapter": 10
           },
           {
             "id": "l10-grammar-8",
             "label": "Travel Duration",
+            "value": "...で [Duration] かかります",
             "subValue": "[Place] kara [Place] made [Method] de [Duration] kakarimasu.",
             "chapter": 10
           }
