@@ -1,4 +1,5 @@
 import { RefCard as RefCardType } from '../data/types';
+import SpeakerButton from './SpeakerButton';
 
 interface RefCardProps {
   card: RefCardType;
@@ -37,6 +38,7 @@ export function RefCard({ card }: RefCardProps) {
                         <span className="text-2xl font-medium text-slate-100 font-japanese">
                           {japanese}
                         </span>
+                        {japanese && <SpeakerButton text={japanese} />}
                         <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-900/50 text-blue-300 border border-blue-700/50">
                           Ch. {item.chapter}
                         </span>
@@ -90,6 +92,7 @@ export function RefCard({ card }: RefCardProps) {
                       <span className="text-xl font-medium text-slate-100 font-mono font-japanese">
                         {japanese}
                       </span>
+                      {japanese && <SpeakerButton text={japanese} />}
                       <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-900/50 text-blue-300 border border-blue-700/50">
                         Ch. {item.chapter}
                       </span>
@@ -115,7 +118,10 @@ export function RefCard({ card }: RefCardProps) {
                   return (
                     <tr key={idx} className="hover:bg-slate-750 transition-colors">
                       <td className="px-4 py-3 font-medium text-slate-100 font-japanese">
-                        {japanese}
+                        <div className="flex items-center gap-2">
+                          {japanese}
+                          {japanese && <SpeakerButton text={japanese} />}
+                        </div>
                       </td>
                       <td className="px-4 py-3 text-slate-400">{reading}</td>
                       <td className="px-4 py-3 text-slate-300">{meaning}</td>
