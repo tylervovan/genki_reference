@@ -17,7 +17,7 @@ export function RefCard({ card }: RefCardProps) {
       <div className="bg-slate-750 border-b border-slate-700 px-4 py-3">
         <h3 className="text-lg font-semibold text-slate-100">{card.title}</h3>
         {card.description && (
-          <p className="text-sm text-slate-400 mt-1">{card.description}</p>
+          <p className="text-sm text-slate-300 mt-1">{card.description}</p>
         )}
       </div>
 
@@ -39,31 +39,31 @@ export function RefCard({ card }: RefCardProps) {
                           {japanese}
                         </span>
                         {japanese && <SpeakerButton text={japanese} />}
-                        <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-900/50 text-blue-300 border border-blue-700/50">
+                        <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-900/60 text-blue-200 border border-blue-700/50">
                           Ch. {item.chapter}
                         </span>
                       </div>
                       {reading && (
-                        <div className="text-sm text-slate-400">{reading}</div>
+                        <div className="text-sm text-slate-300">{reading}</div>
                       )}
-                      <div className="text-base text-slate-300">{meaning}</div>
+                      <div className="text-base text-slate-200">{meaning}</div>
                       {item.example && (
                         <div className="mt-2 pl-4 border-l-2 border-slate-600 space-y-1">
                           <div className="text-sm text-slate-300 font-japanese">
                             {item.example.japanese}
                           </div>
                           {item.example.reading && (
-                            <div className="text-xs text-slate-400">
+                            <div className="text-xs text-slate-300">
                               {item.example.reading}
                             </div>
                           )}
-                          <div className="text-xs text-slate-400">
+                          <div className="text-xs text-slate-300">
                             "{item.example.translation}"
                           </div>
                         </div>
                       )}
                       {item.notes && (
-                        <div className="text-xs text-amber-400 italic mt-1">
+                        <div className="text-xs text-amber-300 italic mt-1">
                           💡 {item.notes}
                         </div>
                       )}
@@ -93,12 +93,12 @@ export function RefCard({ card }: RefCardProps) {
                         {japanese}
                       </span>
                       {japanese && <SpeakerButton text={japanese} />}
-                      <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-900/50 text-blue-300 border border-blue-700/50">
+                      <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-900/60 text-blue-200 border border-blue-700/50">
                         Ch. {item.chapter}
                       </span>
                     </div>
-                    <div className="text-sm text-slate-400 mt-1">{reading}</div>
-                    <div className="text-sm text-slate-300 mt-1">{meaning}</div>
+                    <div className="text-sm text-slate-300 mt-1">{reading}</div>
+                    <div className="text-sm text-slate-200 mt-1">{meaning}</div>
                   </div>
                 </div>
               );
@@ -123,10 +123,10 @@ export function RefCard({ card }: RefCardProps) {
                           {japanese && <SpeakerButton text={japanese} />}
                         </div>
                       </td>
-                      <td className="px-4 py-3 text-slate-400">{reading}</td>
-                      <td className="px-4 py-3 text-slate-300">{meaning}</td>
+                      <td className="px-4 py-3 text-slate-300">{reading}</td>
+                      <td className="px-4 py-3 text-slate-200">{meaning}</td>
                       <td className="px-4 py-3">
-                        <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-900/50 text-blue-300 border border-blue-700/50">
+                        <span className="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-900/60 text-blue-200 border border-blue-700/50">
                           Ch. {item.chapter}
                         </span>
                       </td>

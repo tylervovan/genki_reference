@@ -13,7 +13,7 @@ export default function Sidebar({ topics }: SidebarProps) {
         <h1 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-emerald-400">
           GenkiRef
         </h1>
-        <p className="text-xs text-slate-500 mt-1">Japanese Cheat Sheets</p>
+        <p className="text-xs text-slate-300 mt-1">Japanese Cheat Sheets</p>
       </div>
 
       <div className="space-y-6">
@@ -21,7 +21,7 @@ export default function Sidebar({ topics }: SidebarProps) {
           <div key={topic.id}>
             <Link 
               href={`#${topic.id}`}
-              className="block text-sm font-bold text-slate-200 hover:text-indigo-400 mb-2 uppercase tracking-wider"
+              className="block text-sm font-bold text-slate-200 hover:text-indigo-300 mb-2 uppercase tracking-wider"
             >
               {topic.title}
             </Link>
@@ -30,7 +30,7 @@ export default function Sidebar({ topics }: SidebarProps) {
                 <li key={card.id}>
                   <a 
                     href={`#${card.id}`} // Assuming we add IDs to cards in the main view
-                    className="block pl-4 py-1 text-sm text-slate-400 hover:text-slate-200 hover:border-l-2 hover:border-indigo-500 -ml-[1px] transition-colors"
+                    className="block pl-4 py-1 text-sm text-slate-300 hover:text-slate-200 hover:border-l-2 hover:border-indigo-500 -ml-[1px] transition-colors"
                   >
                     {card.title}
                   </a>

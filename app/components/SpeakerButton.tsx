@@ -22,12 +22,12 @@ export default function SpeakerButton({ text, className = '' }: SpeakerButtonPro
       disabled={isLoading || isPlaying}
       className={`p-1.5 rounded-full transition-colors ${
         isPlaying 
-          ? 'text-emerald-400 bg-emerald-900/30' 
+          ? 'text-emerald-300 bg-emerald-900/50' 
           : isLoading
-            ? 'text-indigo-400 bg-indigo-900/30'
+            ? 'text-indigo-300 bg-indigo-900/50'
             : error
-              ? 'text-red-400 hover:bg-red-900/30'
-              : 'text-slate-400 hover:text-indigo-400 hover:bg-slate-700'
+              ? 'text-red-300 hover:bg-red-900/50'
+              : 'text-slate-300 hover:text-indigo-300 hover:bg-slate-700'
       } ${className}`}
       title={error || (isPlaying ? 'Playing...' : 'Listen')}
       aria-label={isPlaying ? 'Playing pronunciation' : `Listen to pronunciation for ${text}`}

@@ -51,14 +51,14 @@ export default function StudyView({ topics }: StudyViewProps) {
             <h1 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-emerald-400">
               GenkiRef
             </h1>
-            <p className="text-slate-400 mt-2">Japanese Grammar & Vocabulary Cheat Sheets</p>
+            <p className="text-slate-300 mt-2">Japanese Grammar & Vocabulary Cheat Sheets</p>
           </div>
 
           <div className="hidden lg:block mb-12 border-b border-slate-800 pb-8">
             <h2 className="text-4xl font-extrabold tracking-tight text-slate-100 sm:text-5xl">
               Reference
             </h2>
-            <p className="mt-4 text-lg text-slate-400">
+            <p className="mt-4 text-lg text-slate-300">
               Quick reference for Genki I (3rd Edition) grammar, vocabulary, and kanji.
             </p>
           </div>
@@ -86,11 +86,11 @@ export default function StudyView({ topics }: StudyViewProps) {
               </section>
             ))}
             {filteredTopics.length === 0 && (
-              <div className="text-center py-20 text-slate-500">
+              <div className="text-center py-20 text-slate-300">
                 <p>No items match the selected filters.</p>
                 <button 
                   onClick={() => setActiveFilters([])}
-                  className="mt-4 text-indigo-400 hover:text-indigo-300 underline"
+                  className="mt-4 text-indigo-300 hover:text-indigo-200 underline"
                 >
                   Clear filters
                 </button>
@@ -98,7 +98,7 @@ export default function StudyView({ topics }: StudyViewProps) {
             )}
           </div>
 
-          <footer className="mt-20 pt-8 border-t border-slate-800 text-center text-slate-500 text-sm">
+          <footer className="mt-20 pt-8 border-t border-slate-800 text-center text-slate-300 text-sm">
             <p>Based on Genki: An Integrated Course in Elementary Japanese.</p>
           </footer>
         </div>
