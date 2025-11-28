@@ -119,6 +119,7 @@ To add new content, edit `app/data/topics.ts`:
 
 ## Future Enhancements
 - [x] Audio pronunciation
+- [x] Wider grammar cards when filtering by grammar only
 - [ ] Flashcard study mode
 - [ ] Custom study sets
 

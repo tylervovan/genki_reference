@@ -37,6 +37,9 @@ export default function StudyView({ topics }: StudyViewProps) {
       .filter((topic) => topic.cards.length > 0);
   }, [topics, activeFilters]);
 
+  // Check if only grammar is filtered
+  const isGrammarOnly = activeFilters.length === 1 && activeFilters[0] === 'grammar';
+
   return (
     <div className="min-h-screen bg-slate-900 text-slate-200 font-sans selection:bg-indigo-500/30">
       <Sidebar topics={filteredTopics} />
@@ -70,7 +73,10 @@ export default function StudyView({ topics }: StudyViewProps) {
                   {topic.title}
                 </h3>
 
-                <div className="columns-1 md:columns-2 xl:columns-3 gap-6 space-y-6">
+                <div className={isGrammarOnly 
+                  ? "columns-1 md:columns-2 gap-6 space-y-6" 
+                  : "columns-1 md:columns-2 xl:columns-3 gap-6 space-y-6"
+                }>
                   {topic.cards.map((card) => (
                     <div key={card.id} id={card.id} className="break-inside-avoid-column">
                       <RefCard card={card} />
