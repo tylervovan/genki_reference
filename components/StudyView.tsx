@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { Topic } from '@/app/data/types';
 import FilterBar from '@/components/FilterBar';
 import RefCard from '@/components/RefCard';
@@ -13,6 +13,8 @@ interface StudyViewProps {
 
 export default function StudyView({ topics }: StudyViewProps) {
   const [activeFilters, setActiveFilters] = useState<ContentType[]>([]);
+  const hasScrolledToHash = useRef(false);
+  const isInitialRender = useRef(true);
 
   const handleToggleFilter = (type: ContentType) => {
     setActiveFilters((prev) =>
@@ -36,6 +38,56 @@ export default function StudyView({ topics }: StudyViewProps) {
       }))
       .filter((topic) => topic.cards.length > 0);
   }, [topics, activeFilters]);
+
+  // Handle hash navigation after initial render to prevent infinite loop
+  useEffect(() => {
+    if (hasScrolledToHash.current) return;
+    
+    // Wait for the initial render to complete before scrolling to hash
+    const scrollToHash = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const id = hash.substring(1); // Remove the '#'
+        const element = document.getElementById(id);
+        if (element) {
+          // Use setTimeout to ensure DOM is fully rendered
+          setTimeout(() => {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            hasScrolledToHash.current = true;
+          }, 100);
+        } else {
+          hasScrolledToHash.current = true;
+        }
+      } else {
+        hasScrolledToHash.current = true;
+      }
+    };
+
+    if (isInitialRender.current) {
+      isInitialRender.current = false;
+      // Wait for CSS columns layout to stabilize
+      setTimeout(scrollToHash, 200);
+    }
+  }, []);
+
+  // Handle hash changes during navigation
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        const id = hash.substring(1);
+        const element = document.getElementById(id);
+        if (element) {
+          setTimeout(() => {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }, 100);
+        }
+      }
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
 
   // Check if only grammar is filtered
   const isGrammarOnly = activeFilters.length === 1 && activeFilters[0] === 'grammar';
