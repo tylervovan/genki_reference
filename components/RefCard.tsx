@@ -1,5 +1,8 @@
+'use client';
+
 import React from 'react';
 import { RefCard as RefCardType } from '@/app/data/types';
+import SpeakerButton from '@/app/components/SpeakerButton';
 
 interface RefCardProps {
   card: RefCardType;
@@ -36,7 +39,10 @@ export default function RefCard({ card }: RefCardProps) {
                 </td>
                 <td className="px-4 py-2 text-slate-200 font-mono">
                   <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
-                    <span className="text-emerald-400">{item.value}</span>
+                    <div className="flex items-center gap-2">
+                      <span className="text-emerald-400">{item.value}</span>
+                      {item.value && <SpeakerButton text={item.value} />}
+                    </div>
                     {item.subValue && (
                       <span className="text-xs text-slate-500 select-none">
                         {item.subValue}
