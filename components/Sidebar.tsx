@@ -8,7 +8,7 @@ interface SidebarProps {
 
 export default function Sidebar({ topics }: SidebarProps) {
   return (
-    <nav className="w-64 hidden lg:block fixed h-screen overflow-y-auto border-r border-slate-800 bg-slate-900 p-6">
+    <nav className="w-64 hidden lg:block fixed h-screen overflow-y-auto border-r border-slate-800 bg-slate-900 p-6 sidebar-scrollbar">
       <div className="mb-8">
         <h1 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-emerald-400">
           GenkiRef
