@@ -1,0 +1,278 @@
+# Japanese QuickRef - Genki Edition
+
+**[Live Demo: genki-reference.vercel.app](https://genki-reference.vercel.app)**
+
+A modern, QuickRef-style cheat sheet for studying Japanese using content from the Genki textbook series. Organized by topic with chapter attribution for easy reference and future filtering capabilities.
+
+## Features
+
+- **Topic-Based Organization**: Content organized by Japanese language concepts (Particles, Verbs, Greetings, etc.)
+- **Chapter Attribution**: Each item tagged with its source chapter from Genki
+- **Audio Pronunciation**: Click-to-hear text-to-speech for all Japanese text
+- **Dark Mode UI**: Beautiful, easy-on-the-eyes dark interface inspired by QuickRef.me
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
+- **Quick Navigation**: Sidebar navigation for instant access to any topic section
+- **Rich Examples**: Japanese text with readings (romaji/hiragana) and English translations
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+ and npm
+
+### Installation
+
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
+```
+
+Visit `http://localhost:3000` (or the port shown in your terminal) to view the application.
+
+## Current Content
+
+The application currently includes reference materials from Genki I Chapters 1-10:
+
+### Topics Covered
+
+- **Vocabulary** (Chapters 1-10)
+  - Comprehensive vocabulary lists organized by category
+  - Includes kanji, readings, and meanings
+
+- **Grammar** (Chapters 1-10)
+  - Detailed grammar points with explanations
+  - **NEW**: Usage examples with audio, readings, and translations for every grammar concept
+  - Broken down by specific concept (e.g., "X is Y", "Te-form", "Short Forms")
+
+- **Kanji** (Chapters 3-10)
+  - Kanji characters with readings and meanings
+
+## Project Structure
+
+```
+app/
+├── api/
+│   └── tts/
+│       └── route.ts        # Text-to-speech API endpoint
+├── components/
+│   └── SpeakerButton.tsx   # Audio playback button component
+├── hooks/
+│   └── useAudioPlayer.ts   # Audio playback hook
+├── data/
+│   ├── types.ts            # TypeScript interfaces
+│   └── genki-lessons.ts    # Content data (Genki vocabulary, grammar, etc.)
+├── utils/
+│   └── content.ts          # Content type utilities
+├── globals.css             # Global styles
+├── layout.tsx              # Root layout
+└── page.tsx                # Main page
+
+components/
+├── StudyView.tsx           # Main view with progressive rendering system
+├── RefCard.tsx             # Individual reference card component
+├── Sidebar.tsx             # Navigation sidebar
+└── FilterBar.tsx           # Content type filter UI
+```
+
+## Adding New Content
+
+To add new content, edit `app/data/topics.ts`:
+
+```typescript
+{
+  id: 'new-topic',
+  title: 'New Topic Name',
+  icon: '🎌',
+  cards: [
+    {
+      title: 'Card Title',
+      description: 'Optional description',
+      type: 'list',
+      items: [
+        {
+          japanese: '日本語',
+          reading: 'nihongo',
+          meaning: 'Japanese language',
+          chapter: 1,
+          example: {
+            japanese: '日本語を勉強します',
+            reading: 'nihongo o benkyou shimasu',
+            english: 'I study Japanese'
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+## Future Enhancements
+- [x] Audio pronunciation
+- [x] Wider grammar cards when filtering by grammar only
+- [x] Flashcard study mode
+- [x] Custom study sets
+
+## Technology Stack
+
+- **Framework**: Next.js 16 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Font**: Geist Sans
+
+## Architecture Notes
+
+### Progressive Rendering System
+
+The `StudyView` component (`components/StudyView.tsx`) uses a progressive rendering system to prevent a critical mobile bug.
+
+**The Problem**: When users navigate directly to a hash anchor (e.g., `/#l1-grammar`), the combination of thousands of DOM elements, complex CSS columns, and the browser's native hash scroll caused `RangeError: Maximum call stack size exceeded` on mobile devices (especially iOS).
+
+**The Solution**: Content renders in 4 phases:
+
+| Phase | What Happens |
+|-------|--------------|
+| `initial` | Minimal render, no content |
+| `skeleton` | Loading skeleton with pulse animation |
+| `content` | Topics render progressively (2 at a time) |
+| `complete` | All content visible, IDs enabled, hash navigation ready |
+
+**Key Implementation Details**:
+- Element IDs are suppressed until render completes: `id={idsEnabled ? elementId : undefined}`
+- Browser native hash scroll disabled via `history.scrollRestoration = 'manual'`
+- Hash removed from URL immediately, restored after we control scrolling
+- `requestIdleCallback` used to render during browser idle time
+- CSS `content-visibility: auto` optimizes off-screen section layout
+
+**If modifying `StudyView.tsx`**: Understand the render phases first. Test hash navigation at `http://localhost:3000/#l1-grammar` after changes.
+
+---
+
+### Audio System
+
+Japanese text-to-speech using Google Cloud TTS API.
+
+| Component | Purpose |
+|-----------|---------|
+| `app/components/SpeakerButton.tsx` | UI button with loading/playing/error states |
+| `app/hooks/useAudioPlayer.ts` | Audio state management, API calls |
+| `app/api/tts/route.ts` | Server-side proxy to Google TTS |
+
+**Flow**: Click button → POST to /api/tts → Google TTS → Base64 MP3 → Play
+
+**Requires**: `GOOGLE_CLOUD_API_KEY` environment variable
+
+---
+
+### Authentication System
+
+Google OAuth authentication via Supabase Auth.
+
+**Environment Variables:**
+
+**Local Development (`.env.local`):**
+```
+NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+```
+
+**Vercel Deployments (automatic):**
+- No additional config needed! Vercel sets `NEXT_PUBLIC_VERCEL_URL` automatically
+- Works for both preview deployments and production
+
+**Custom Domain (optional):**
+```
+NEXT_PUBLIC_SITE_URL=https://your-custom-domain.com
+```
+
+**Supabase Dashboard Setup (Authentication > URL Configuration):**
+- **Site URL**: Your production URL
+- **Redirect URLs** (add all three):
+  - `http://localhost:3000/auth/callback` (local dev)
+  - `https://*-yourusername.vercel.app/auth/callback` (preview deployments - wildcard)
+  - `https://your-production-url.vercel.app/auth/callback` (production)
+
+---
+
+### Filtering System
+
+Content filtering by type (Grammar, Vocabulary, Kanji).
+
+| Component | Purpose |
+|-----------|---------|
+| `components/FilterBar.tsx` | Toggle buttons for filter selection |
+| `app/utils/content.ts` | `getCardType()` detects type from card ID |
+
+**How filtering works**: Card IDs must contain `grammar`, `vocab`, or `kanji` for type detection. StudyView filters based on active selections.
+
+---
+
+### Navigation System
+
+Hash anchor navigation via sidebar links.
+
+| Component | Purpose |
+|-----------|---------|
+| `components/Sidebar.tsx` | Fixed navigation with topic/card links |
+| `components/StudyView.tsx` | Hash capture, manual scroll, ID control |
+
+**Why manual**: Native browser hash navigation + thousands of DOM elements = stack overflow. We suppress IDs until render complete, then manually scroll.
+
+---
+
+### Data Layer
+
+Hierarchical content structure.
+
+| File | Purpose |
+|------|---------|
+| `app/data/types.ts` | TypeScript interfaces |
+| `app/data/genki-lessons.ts` | Vocabulary & grammar by lesson (~5000 lines) |
+| `app/data/kanji.ts` | Kanji reference (~2200 lines) |
+| `app/data/topics.ts` | Aggregates all data sources |
+
+**Hierarchy**: Topic → RefCard[] → ContentItem[]
+
+---
+
+### Component Hierarchy
+
+```
+app/page.tsx (Server)
+  └── StudyView.tsx (Client - Main Controller)
+        ├── Sidebar.tsx
+        ├── FilterBar.tsx
+        └── RefCard.tsx
+              └── SpeakerButton.tsx
+```
+
+See `.cursorrules` for complete AI agent documentation.
+
+## Data Source
+
+Content based on "Genki: An Integrated Course in Elementary Japanese" (3rd Edition).
+
+## Contributing
+
+This is a study resource. To add content:
+
+1. Fork the repository
+2. Add content to `app/data/topics.ts`
+3. Test locally with `npm run dev`
+4. Submit a pull request
+
+## License
+
+Educational use only. Genki textbook content © Japan Times Publishing.
+
+---
+
+**Note**: This is a study companion tool. Please support the official Genki textbook series for complete learning materials.

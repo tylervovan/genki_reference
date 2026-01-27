@@ -1,0 +1,98 @@
+/**
+ * =============================================================================
+ * GLOBAL STYLES
+ * =============================================================================
+ *
+ * PURPOSE: Global CSS configuration for the entire application.
+ *
+ * WHAT IT DOES:
+ * - Imports Tailwind CSS
+ * - Defines custom theme colors (slate-850)
+ * - Sets dark theme CSS variables for background/foreground
+ * - Provides utility classes for sidebar scrollbar styling
+ * - Defines content-visibility optimization for topic sections
+ *
+ * WHY IT EXISTS:
+ * Centralizes all global styling. Custom utilities extend Tailwind
+ * for project-specific needs.
+ *
+ * KEY SECTIONS:
+ *
+ * @theme: Tailwind theme extensions
+ * - slate-850: Custom color between slate-800 and slate-900
+ *
+ * :root: CSS custom properties
+ * - Dark theme colors (slate-900 background)
+ *
+ * .sidebar-scrollbar: Custom scrollbar for Sidebar component
+ * - Thin, subtle scrollbar that brightens on hover
+ * - Cross-browser support (webkit + Firefox)
+ *
+ * .topic-section: CRITICAL performance optimization
+ * - content-visibility: auto - Enables off-screen rendering skip
+ * - contain-intrinsic-size: auto 500px - Placeholder size for skipped content
+ * - Part of progressive rendering system (see StudyView docs)
+ *
+ * CONSTRAINTS/GOTCHAS:
+ * - .topic-section is REQUIRED for mobile performance
+ * - Removing content-visibility may cause layout issues on iOS
+ * - Custom scrollbar styles only work in webkit/Firefox
+ *
+ * DEPENDENCIES:
+ * - Uses: Tailwind CSS v4
+ * - Used by: Entire application via app/layout.tsx
+ *
+ * RELATED FILES:
+ * - app/layout.tsx - Imports this file
+ * - components/Sidebar.tsx - Uses .sidebar-scrollbar
+ * - components/StudyView.tsx - Uses .topic-section
+ * =============================================================================
+ */
+
+@import "tailwindcss";
+
+@theme {
+  --color-slate-850: color-mix(in srgb, var(--color-slate-900) 50%, var(--color-slate-800) 50%);
+}
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 15, 23, 42; /* slate-900 */
+  --background-end-rgb: 15, 23, 42;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-start-rgb));
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  .sidebar-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #ffffff transparent;
+  }
+
+  .sidebar-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .sidebar-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .sidebar-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #cbd5e1; /* slate-300 - subtle by default */
+    border-radius: 20px;
+  }
+
+  .sidebar-scrollbar:hover::-webkit-scrollbar-thumb {
+    background-color: #ffffff; /* white - brighter on hover */
+  }
+
+  /* Optimize rendering for large card sections */
+  .topic-section {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 500px;
+  }
+}
