@@ -1,8 +1,15 @@
 # Japanese QuickRef - Genki Edition
 
-**[Live Demo: genki-reference.vercel.app](https://genki-reference.vercel.app)**
+[![Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![Supabase](https://img.shields.io/badge/Supabase-Auth_&_DB-3FCF8E?style=flat-square&logo=supabase&logoColor=white)](https://supabase.com/)
+[![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000000?style=flat-square&logo=vercel)](https://vercel.com/)
+[![License](https://img.shields.io/badge/License-Educational-blue?style=flat-square)](LICENSE)
 
-A modern, QuickRef-style cheat sheet for studying Japanese using content from the Genki textbook series. Organized by topic with chapter attribution for easy reference and future filtering capabilities.
+**[🌸 Live Demo: genki-reference.vercel.app](https://genki-reference.vercel.app)**
+
+A modern, QuickRef-style cheat sheet for studying Japanese using content from the Genki textbook series. Organized by topic with chapter attribution for easy reference and filtering.
 
 ## Features
 
@@ -123,10 +130,15 @@ To add new content, edit `app/data/topics.ts`:
 
 ## Technology Stack
 
-- **Framework**: Next.js 16 (App Router)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Font**: Geist Sans
+| Category | Technology |
+|----------|------------|
+| **Framework** | [![Next.js](https://img.shields.io/badge/Next.js_16-black?style=flat-square&logo=next.js)](https://nextjs.org/) with App Router |
+| **Language** | [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/) |
+| **Styling** | [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/) |
+| **Database** | [![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)](https://supabase.com/) (PostgreSQL + Auth) |
+| **TTS** | [![Google Cloud](https://img.shields.io/badge/Google_Cloud_TTS-4285F4?style=flat-square&logo=googlecloud&logoColor=white)](https://cloud.google.com/text-to-speech) |
+| **Deployment** | [![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel)](https://vercel.com/) |
+| **Font** | [Geist Sans](https://vercel.com/font) |
 
 ## Architecture Notes
 
