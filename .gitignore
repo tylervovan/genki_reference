@@ -5,9 +5,8 @@
 .cursor/
 .claude/
 
-# AI agent documentation (keep private)
+# AI agent documentation
 .cursorrules
-CLAUDE.md
 
 # Raw data imports (development only)
 imports/
