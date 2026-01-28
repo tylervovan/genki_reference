@@ -127,4 +127,4 @@ When creating or significantly modifying files, add a block comment at the top:
  */
 ```
 
-Update `.cursorrules` for new systems/features. Update `README.md` Architecture Notes for major changes.
+Update this file and `README.md` Architecture Notes for major changes.

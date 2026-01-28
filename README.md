@@ -266,7 +266,7 @@ app/page.tsx (Server)
               └── SpeakerButton.tsx
 ```
 
-See `.cursorrules` for complete AI agent documentation.
+See `CLAUDE.md` for AI coding assistant documentation.
 
 ## Data Source
 
