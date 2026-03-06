@@ -218,7 +218,7 @@ export async function POST(request: Request) {
         },
         body: JSON.stringify({
           input: { text },
-          voice: { languageCode: 'ja-JP', name: 'ja-JP-Neural2-B' },
+          voice: { languageCode: 'ja-JP', name: 'ja-JP-Standard-B' },
           audioConfig: { audioEncoding: 'MP3' },
         }),
       }
