@@ -71,4 +71,8 @@ __pycache__/
 
 # Sentry Config File
 .env.sentry-build-plugin
-.env.localtest-results/
+.env.local
+
+# playwright
+test-results/
+playwright-report/
