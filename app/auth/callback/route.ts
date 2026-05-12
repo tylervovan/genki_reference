@@ -18,6 +18,12 @@
  * so the Set-Cookie headers ride along on the 307 the browser receives.
  * Cache-Control: no-store keeps the CDN from caching the redirect (Cloudflare
  * can strip Set-Cookie from cached redirect responses).
+ *
+ * IMPORTANT — Supabase key format.
+ * GoTrue endpoints (/auth/v1/*) only accept the project's anon JWT while the
+ * project is on the legacy JWT secret. The newer `sb_publishable_*` keys are
+ * rejected with HTTP 401 "Invalid API key" until JWT signing keys are
+ * migrated. NEXT_PUBLIC_SUPABASE_ANON_KEY must hold the legacy anon JWT.
  * =============================================================================
  */
 
@@ -41,18 +47,7 @@ export async function GET(request: Request) {
   const origin = requestUrl.origin
   const redirectTo = sanitizeRedirectPath(requestUrl.searchParams.get('redirect_to'))
 
-  // Diagnostic logging — surface what the callback sees so we can read it via
-  // `wrangler tail`. Remove after the OAuth flow is verified working.
-  const errParam = requestUrl.searchParams.get('error')
-  const errDesc = requestUrl.searchParams.get('error_description')
-  console.log('[auth/callback] received', {
-    hasCode: !!code,
-    errorParam: errParam,
-    errorDescription: errDesc?.slice(0, 200) ?? null,
-  })
-
   if (!code) {
-    console.error('[auth/callback] no code in query string; redirecting to /?auth_error=true')
     return NextResponse.redirect(`${origin}/?auth_error=true`)
   }
 
@@ -90,21 +85,10 @@ export async function GET(request: Request) {
     }
   )
 
-  const { data, error } = await supabase.auth.exchangeCodeForSession(code)
+  const { error } = await supabase.auth.exchangeCodeForSession(code)
   if (error) {
-    console.error('[auth/callback] exchangeCodeForSession failed', {
-      message: error.message,
-      status: (error as { status?: number }).status ?? null,
-      name: error.name,
-    })
     return NextResponse.redirect(`${origin}/?auth_error=true`)
   }
-
-  console.log('[auth/callback] exchange ok', {
-    hasSession: !!data?.session,
-    userId: data?.user?.id ?? null,
-    cookiesAttached: response.cookies.getAll().map((c) => c.name),
-  })
 
   return response
 }
