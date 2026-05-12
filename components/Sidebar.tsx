@@ -49,13 +49,6 @@ interface SidebarProps {
 export default function Sidebar({ topics }: SidebarProps) {
   return (
     <nav className="w-64 hidden lg:block fixed top-14 h-[calc(100vh-3.5rem)] overflow-y-auto border-r border-slate-800 bg-slate-900 p-6 sidebar-scrollbar">
-      <div className="mb-6">
-        <h1 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-emerald-400">
-          GenkiRef
-        </h1>
-        <p className="text-xs text-slate-400 mt-1">Japanese Cheat Sheets</p>
-      </div>
-
       <div className="space-y-6">
         {topics.map((topic) => (
           <div key={topic.id}>

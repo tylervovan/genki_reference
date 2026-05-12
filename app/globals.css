@@ -53,12 +53,34 @@
 
 @theme {
   --color-slate-850: color-mix(in srgb, var(--color-slate-900) 50%, var(--color-slate-800) 50%);
+
+  /* Genki Reference brand palette — from "Genki Stamp Handoff" (direction 02).
+     Prefixed names avoid clobbering Tailwind's built-in teal/indigo scales,
+     which existing components still rely on. */
+  --color-ink: #0B1F44;
+  --color-ink-2: #0A1A38;
+  --color-night: #0A1426;
+  --color-cream: #FAF7F0;
+  --color-ash: #5C6B8A;
+  --color-brand-teal: #2DD4BF;
+  --color-brand-teal-deep: #14B8A6;
 }
 
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 15, 23, 42; /* slate-900 */
   --background-end-rgb: 15, 23, 42;
+
+  /* Raw design tokens — used by GenkiMark and any non-Tailwind inline styles.
+     Mirrors the @theme block above so brand assets work outside Tailwind too. */
+  --ink: #0B1F44;
+  --ink-2: #0A1A38;
+  --teal: #2DD4BF;
+  --teal-deep: #14B8A6;
+  --cream: #FAF7F0;
+  --paper: #FFFFFF;
+  --night: #0A1426;
+  --ash: #5C6B8A;
 }
 
 body {

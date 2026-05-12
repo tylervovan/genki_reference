@@ -40,6 +40,27 @@ import React from 'react';
 import { topics } from '@/app/data/topics';
 import AppShell from '@/components/AppShell';
 
-export default function Home() {
-  return <AppShell topics={topics} />;
+const GITHUB_REPO = 'tylervovan/genki_reference';
+const GITHUB_HREF = `https://github.com/${GITHUB_REPO}`;
+
+async function fetchStarCount(): Promise<number | null> {
+  try {
+    const res = await fetch(`https://api.github.com/repos/${GITHUB_REPO}`, {
+      headers: { Accept: 'application/vnd.github+json' },
+      // The count doesn't need to be fresher than 1h.
+      next: { revalidate: 3600 },
+    });
+    if (!res.ok) return null;
+    const data = (await res.json()) as { stargazers_count?: number };
+    return typeof data.stargazers_count === 'number' ? data.stargazers_count : null;
+  } catch {
+    return null;
+  }
+}
+
+export default async function Home() {
+  const githubStars = await fetchStarCount();
+  return (
+    <AppShell topics={topics} githubHref={GITHUB_HREF} githubStars={githubStars} />
+  );
 }

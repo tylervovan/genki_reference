@@ -44,36 +44,46 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { Topic } from '@/app/data/types';
 import StudyView from './StudyView';
 import FlashcardsView from './FlashcardsView';
 import UserMenu from './UserMenu';
+import { GenkiMark, GenkiWordmark } from './GenkiMark';
+import GithubStars from './GithubStars';
 
 type ViewMode = 'reference' | 'flashcards';
 
 interface AppShellProps {
   topics: Topic[];
+  githubHref?: string;
+  githubStars?: number | null;
 }
 
-export default function AppShell({ topics }: AppShellProps) {
+export default function AppShell({ topics, githubHref, githubStars = null }: AppShellProps) {
   const [mode, setMode] = useState<ViewMode>('reference');
 
   return (
     <div className="min-h-screen bg-slate-900 overflow-x-hidden">
       {/* Fixed Header */}
       <header className="fixed top-0 left-0 right-0 z-40 bg-slate-900/95 backdrop-blur-md border-b border-slate-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-14">
-            {/* Logo and Beta badge */}
-            <div className="flex items-center gap-2">
-              <span className="text-[10px] font-semibold uppercase tracking-wider px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-400 border border-amber-500/30">
-                Beta
-              </span>
-              <h1 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-emerald-400">
-                GenkiRef
+        {/* Two-region header:
+            - Left brand sits in the sidebar's gutter (lg:w-64, matching Sidebar's
+              w-64 and its p-6 padding so the logo aligns with "GenkiRef" below).
+            - Right region mirrors StudyView's `max-w-7xl mx-auto` so the Sign In
+              button lines up with the rightmost card column. */}
+        <div className="flex items-center h-14">
+          <div className="flex-shrink-0 lg:w-64 px-4 sm:px-6 lg:pl-6 lg:pr-0">
+            {/* 元気 Stamp brand mark + wordmark */}
+            <Link href="/" aria-label="Genki Reference" className="inline-flex items-center gap-2.5 group">
+              <GenkiMark size={32} />
+              <h1 className="text-xl text-white leading-none">
+                <GenkiWordmark />
               </h1>
-            </div>
-
+            </Link>
+          </div>
+          <div className="flex-1 min-w-0">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-end gap-3">
             {/* Mode Switch + User Menu */}
             <div className="flex items-center gap-3">
               {/* Mode Toggle */}
@@ -114,7 +124,11 @@ export default function AppShell({ topics }: AppShellProps) {
                 </button>
               </div>
 
+              {githubHref && (
+                <GithubStars href={githubHref} count={githubStars} />
+              )}
               <UserMenu />
+            </div>
             </div>
           </div>
         </div>
