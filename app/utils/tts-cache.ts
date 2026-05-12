@@ -72,7 +72,8 @@ export async function getCachedAudio(text: string): Promise<string | null> {
     stats.misses++;
     return null;
   } catch (error) {
-    log("[TTS Cache] Read error:", error);
+    // KV failures must be visible in Workers tail logs — don't gate on DEBUG.
+    console.error("[TTS Cache] Read error:", error);
     stats.misses++;
     return null;
   }
