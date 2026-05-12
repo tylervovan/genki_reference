@@ -111,7 +111,7 @@ export default function UserMenu() {
         onClick={handleSignIn}
         disabled={isSigningIn}
         className="
-          flex items-center gap-2 px-3 py-2 rounded-lg
+          inline-flex items-center gap-2 h-9 px-3 rounded-lg
           bg-slate-800 border border-slate-600
           hover:bg-slate-700 hover:border-slate-500
           text-sm font-medium text-slate-200

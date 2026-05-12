@@ -33,7 +33,7 @@ export default function GithubStars({ href, count }: GithubStarsProps) {
       rel="noopener noreferrer"
       aria-label={label}
       title={label}
-      className="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium text-slate-300 hover:text-white bg-slate-800 border border-slate-700 hover:border-slate-600 transition-colors"
+      className="hidden sm:inline-flex items-center gap-1.5 h-9 px-3 rounded-lg text-xs font-medium text-slate-300 hover:text-white bg-slate-800 border border-slate-700 hover:border-slate-600 transition-colors"
     >
       <svg
         viewBox="0 0 16 16"

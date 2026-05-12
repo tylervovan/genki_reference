@@ -87,12 +87,12 @@ export default function AppShell({ topics, githubHref, githubStars = null }: App
             {/* Mode Switch + User Menu */}
             <div className="flex items-center gap-3">
               {/* Mode Toggle */}
-              <div className="flex items-center bg-slate-800 rounded-lg p-0.5 border border-slate-700">
+              <div className="flex items-center h-9 bg-slate-800 rounded-lg p-0.5 border border-slate-700">
                 <button
                   onClick={() => setMode('reference')}
                   title="Reference - Browse vocabulary, grammar, and kanji"
                   aria-label="Reference mode"
-                  className={`group relative flex items-center gap-1.5 px-2 sm:px-2.5 py-1 text-xs font-medium rounded-md transition-all ${
+                  className={`group relative flex items-center gap-1.5 h-full px-2 sm:px-2.5 text-xs font-medium rounded-md transition-all ${
                     mode === 'reference'
                       ? 'bg-indigo-500 text-white'
                       : 'text-slate-400 hover:text-slate-200'
@@ -109,7 +109,7 @@ export default function AppShell({ topics, githubHref, githubStars = null }: App
                   onClick={() => setMode('flashcards')}
                   title="Flashcards - Create and study flashcard sets"
                   aria-label="Flashcards mode"
-                  className={`group relative flex items-center gap-1.5 px-2 sm:px-2.5 py-1 text-xs font-medium rounded-md transition-all ${
+                  className={`group relative flex items-center gap-1.5 h-full px-2 sm:px-2.5 text-xs font-medium rounded-md transition-all ${
                     mode === 'flashcards'
                       ? 'bg-indigo-500 text-white'
                       : 'text-slate-400 hover:text-slate-200'
