@@ -34,6 +34,7 @@
  */
 
 import React, { useState, useMemo, useEffect, useLayoutEffect, useRef, useCallback } from 'react';
+import Link from 'next/link';
 import { Topic } from '@/app/data/types';
 import FilterBar from '@/components/FilterBar';
 import RefCard from '@/components/RefCard';
@@ -354,8 +355,17 @@ export default function StudyView({ topics }: StudyViewProps) {
             )}
           </div>
 
-          <footer className="mt-20 pt-8 border-t border-slate-800 text-center text-slate-300 text-sm">
+          <footer className="mt-20 pt-8 border-t border-slate-800 text-center text-slate-300 text-sm space-y-2">
             <p>Based on Genki: An Integrated Course in Elementary Japanese.</p>
+            <p className="text-slate-400">
+              <Link href="/privacy" className="hover:text-slate-200 underline-offset-2 hover:underline">
+                Privacy
+              </Link>
+              <span className="mx-2 text-slate-600">·</span>
+              <Link href="/terms" className="hover:text-slate-200 underline-offset-2 hover:underline">
+                Terms
+              </Link>
+            </p>
           </footer>
         </div>
       </main>
