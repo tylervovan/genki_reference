@@ -7,7 +7,7 @@
  *
  * WHAT IT DOES:
  * - Initializes Sentry SDK in edge runtime
- * - Captures errors from proxy.ts and edge API routes
+ * - Captures errors from middleware.ts and edge API routes
  * - Tracks performance traces for edge operations
  *
  * WHY IT EXISTS:
@@ -29,7 +29,7 @@
  * RELATED FILES:
  * - sentry.client.config.ts (browser config)
  * - sentry.server.config.ts (server config)
- * - proxy.ts (edge proxy that uses this)
+ * - middleware.ts (edge proxy that uses this)
  * =============================================================================
  */
 

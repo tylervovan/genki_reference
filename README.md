@@ -4,10 +4,10 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.0-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![Supabase](https://img.shields.io/badge/Supabase-Auth_&_DB-3FCF8E?style=flat-square&logo=supabase&logoColor=white)](https://supabase.com/)
-[![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000000?style=flat-square&logo=vercel)](https://vercel.com/)
+[![Cloudflare Workers](https://img.shields.io/badge/Deployed_on-Cloudflare_Workers-F38020?style=flat-square&logo=cloudflare&logoColor=white)](https://workers.cloudflare.com/)
 [![License](https://img.shields.io/badge/License-Educational-blue?style=flat-square)](LICENSE)
 
-**[🌸 Live Demo: genki-reference.vercel.app](https://genki-reference.vercel.app)**
+**[🌸 Live Demo: genki-reference.tylervovan.com](https://genki-reference.tylervovan.com)**
 
 A modern, QuickRef-style cheat sheet for studying Japanese using content from the Genki textbook series. Organized by topic with chapter attribution for easy reference and filtering.
 
@@ -137,8 +137,8 @@ To add new content, edit `app/data/topics.ts`:
 | **Styling** | [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/) |
 | **Database** | [![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat-square&logo=supabase&logoColor=white)](https://supabase.com/) (PostgreSQL + Auth) |
 | **TTS** | [![Google Cloud](https://img.shields.io/badge/Google_Cloud_TTS-4285F4?style=flat-square&logo=googlecloud&logoColor=white)](https://cloud.google.com/text-to-speech) |
-| **Deployment** | [![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel)](https://vercel.com/) |
-| **Font** | [Geist Sans](https://vercel.com/font) |
+| **Deployment** | [![Cloudflare Workers](https://img.shields.io/badge/Cloudflare_Workers-F38020?style=flat-square&logo=cloudflare&logoColor=white)](https://workers.cloudflare.com/) via [@opennextjs/cloudflare](https://opennext.js.org/cloudflare) |
+| **Font** | [Geist Sans](https://github.com/vercel/geist-font) (open-source) |
 
 ## Architecture Notes
 
@@ -196,21 +196,16 @@ NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
 ```
 
-**Vercel Deployments (automatic):**
-- No additional config needed! Vercel sets `NEXT_PUBLIC_VERCEL_URL` automatically
-- Works for both preview deployments and production
+**Cloudflare Workers deployment:**
+- `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` must be present at *build* time (Next.js inlines them) — set them in the build environment (CI env vars) or in `.env.local` if building locally.
+- `GOOGLE_CLOUD_API_KEY` lives only as a Wrangler runtime secret: `wrangler secret put GOOGLE_CLOUD_API_KEY`.
+- `NEXT_PUBLIC_SITE_URL` (optional): set to your custom domain to force the OAuth callback to that origin instead of `window.location.origin`.
 
-**Custom Domain (optional):**
-```
-NEXT_PUBLIC_SITE_URL=https://your-custom-domain.com
-```
-
-**Supabase Dashboard Setup (Authentication > URL Configuration):**
-- **Site URL**: Your production URL
-- **Redirect URLs** (add all three):
+**Supabase Dashboard Setup (Authentication → URL Configuration):**
+- **Site URL**: `https://genki-reference.tylervovan.com`
+- **Redirect URLs**:
+  - `https://genki-reference.tylervovan.com/auth/callback`
   - `http://localhost:3000/auth/callback` (local dev)
-  - `https://*-yourusername.vercel.app/auth/callback` (preview deployments - wildcard)
-  - `https://your-production-url.vercel.app/auth/callback` (production)
 
 ---
 

@@ -38,16 +38,27 @@
 import { createClient } from '@/app/lib/supabase/server'
 import { NextResponse } from 'next/server'
 
+// Reject any redirect_to that isn't a same-origin absolute path. `//evil.com`,
+// schemed URLs, and backslash variants all collapse to a safe default. Protects
+// the post-OAuth flow from being weaponized as an open-redirect phishing chain.
+function sanitizeRedirectPath(raw: string | null): string {
+  if (!raw) return '/'
+  if (raw === '/') return '/'
+  // Must start with `/` followed by a non-slash, non-backslash character.
+  if (!/^\/[^/\\]/.test(raw)) return '/'
+  return raw
+}
+
 export async function GET(request: Request) {
   const requestUrl = new URL(request.url)
   const code = requestUrl.searchParams.get('code')
   const origin = requestUrl.origin
-  const redirectTo = requestUrl.searchParams.get('redirect_to') || '/'
+  const redirectTo = sanitizeRedirectPath(requestUrl.searchParams.get('redirect_to'))
 
   if (code) {
     const supabase = await createClient()
     const { error } = await supabase.auth.exchangeCodeForSession(code)
-    
+
     if (!error) {
       // Successful authentication - redirect to the app
       return NextResponse.redirect(`${origin}${redirectTo}`)
@@ -55,7 +66,6 @@ export async function GET(request: Request) {
   }
 
   // Something went wrong - redirect to home with error indication
-  // You could create an error page or show a toast notification
   return NextResponse.redirect(`${origin}/?auth_error=true`)
 }
 

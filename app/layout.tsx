@@ -9,8 +9,6 @@
  * - Configures Geist Sans and Geist Mono fonts
  * - Sets HTML metadata (title, description)
  * - Applies global CSS styles
- * - Includes Vercel Speed Insights for performance monitoring
- * - Includes Vercel Analytics for web analytics (page views, visitors)
  *
  * WHY IT EXISTS:
  * Required by Next.js App Router. Single source for app-wide configuration
@@ -19,7 +17,6 @@
  * HOW IT WORKS:
  * - Fonts loaded via next/font/google for optimal performance
  * - CSS variables (--font-geist-sans, --font-geist-mono) available globally
- * - SpeedInsights component auto-tracks Core Web Vitals
  *
  * CONSTRAINTS/GOTCHAS:
  * - Must export metadata object for SEO
@@ -29,8 +26,6 @@
  * DEPENDENCIES:
  * - Uses: Next.js Metadata API
  * - Uses: Geist fonts from Google Fonts
- * - Uses: Vercel Speed Insights
- * - Uses: Vercel Analytics
  * - Uses: app/globals.css
  *
  * RELATED FILES:
@@ -41,8 +36,6 @@
 
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -71,8 +64,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-        <SpeedInsights />
-        <Analytics />
       </body>
     </html>
   );

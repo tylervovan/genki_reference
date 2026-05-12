@@ -33,10 +33,8 @@
  * CONSTRAINTS/GOTCHAS:
  * - Must be used in client components only ('use client')
  * - Initial loading state may cause flash of unauthenticated content
- * - OAuth redirect URL priority: NEXT_PUBLIC_SITE_URL > NEXT_PUBLIC_VERCEL_URL > window.location.origin
- * - Vercel preview deployments work automatically (NEXT_PUBLIC_VERCEL_URL is auto-set)
- * - For custom domains, set NEXT_PUBLIC_SITE_URL
- * - Supabase must have wildcard redirect URL for preview deployments
+ * - OAuth redirect URL: NEXT_PUBLIC_SITE_URL (if set) else window.location.origin
+ * - Every redirect URL must be on Supabase's allow-list (Auth → URL Configuration)
  *
  * DEPENDENCIES:
  * - Uses: @/app/lib/supabase/client
@@ -93,22 +91,11 @@ export function useAuth(): UseAuthReturn {
   }, [supabase])
 
   const signInWithGoogle = useCallback(async () => {
-    // Determine the correct site URL for OAuth redirect
-    // Priority: 1) Explicit SITE_URL (custom domain), 2) Vercel URL (preview/prod), 3) Current origin (local)
-    const getSiteUrl = () => {
-      // Explicitly set site URL takes priority (for custom domains)
-      if (process.env.NEXT_PUBLIC_SITE_URL) {
-        return process.env.NEXT_PUBLIC_SITE_URL
-      }
-      // Vercel automatically sets this for all deployments (preview and production)
-      if (process.env.NEXT_PUBLIC_VERCEL_URL) {
-        return `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
-      }
-      // Fallback to current origin (local development)
-      return window.location.origin
-    }
-    
-    const siteUrl = getSiteUrl()
+    // Determine the correct site URL for OAuth redirect.
+    // Priority: 1) Explicit NEXT_PUBLIC_SITE_URL (custom domain), 2) Current origin.
+    // window.location.origin auto-adapts to whichever Cloudflare/local host the
+    // user is on, so no platform-specific fallback is needed.
+    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? window.location.origin
     
     const { error } = await supabase.auth.signInWithOAuth({
       provider: 'google',

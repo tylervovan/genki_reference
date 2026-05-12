@@ -7,11 +7,11 @@
  *
  * WHAT IT DOES:
  * - Authenticates user via Supabase session
- * - Rate limits requests per user (20 requests/minute)
+ * - Rate limits requests per user (20 requests/minute, Cloudflare KV)
  * - Validates input text length (max 500 characters)
- * - Checks file-based cache for existing audio
+ * - Checks Cloudflare KV cache for existing audio
  * - If not cached, calls Google Cloud Text-to-Speech API
- * - Caches the result for future requests
+ * - Caches the result for future requests (via ctx.waitUntil)
  * - Returns base64-encoded MP3 audio
  *
  * WHY IT EXISTS:
@@ -24,8 +24,9 @@
  * - Validates text exists and is within length limit
  * - Checks cache for existing audio (returns immediately if found)
  * - If not cached, sends request to Google TTS with:
- *   - Voice: ja-JP-Neural2-B (Japanese neural voice)
+ *   - Voice: ja-JP-Standard-B (Japanese standard voice — free tier)
  *   - Format: MP3 audio encoding
+ *   - API key sent via X-Goog-Api-Key header (not URL) to avoid log leakage
  * - Stores result in cache for future requests
  * - Returns { audioContent: base64_string, cached: boolean } on success
  *
@@ -36,29 +37,24 @@
  * - Protects against cost abuse and DDoS
  *
  * CACHING:
- * - File-based cache in .tts-cache/ directory
- * - Cache key is SHA-256 hash of text
- * - LRU eviction when cache exceeds size limit (default 100MB)
- * - Entries expire after 30 days by default
- * - Configure via environment variables:
- *   - TTS_CACHE_DIR: Cache directory path
- *   - TTS_MAX_CACHE_SIZE_MB: Max cache size in MB
- *   - TTS_MAX_CACHE_AGE_DAYS: Max entry age in days
+ * - Cloudflare KV (binding GENKI_TTS_CACHE) via app/utils/tts-cache.ts
+ * - Cache key is "tts:" + SHA-256(text)
+ * - TTL defaults to 30 days (configurable via TTS_CACHE_TTL_DAYS)
  *
  * CONSTRAINTS/GOTCHAS:
- * - Requires GOOGLE_CLOUD_API_KEY environment variable
+ * - Requires GOOGLE_CLOUD_API_KEY (wrangler secret in prod, env locally)
  * - Requires authenticated user (returns 401 if not logged in)
  * - Google API usage is billed per character (caching reduces costs)
- * - Voice is hardcoded to Japanese Neural2-B
- * - In serverless (Vercel), cache won't persist between cold starts
- * - Rate limit uses Vercel KV in production, in-memory fallback locally
+ * - Voice is hardcoded to ja-JP-Standard-B
+ * - Rate limit uses Cloudflare KV (binding GENKI_RATELIMIT) with an
+ *   in-memory fallback only for non-Workers dev sessions
  *
  * DEPENDENCIES:
  * - Uses: Next.js NextResponse for API responses
  * - Uses: Google Cloud Text-to-Speech REST API
- * - Uses: app/utils/tts-cache.ts for caching
+ * - Uses: app/utils/tts-cache.ts for caching (Cloudflare KV)
  * - Uses: app/lib/supabase/server.ts for authentication
- * - Uses: @vercel/kv for rate limiting (production)
+ * - Uses: Cloudflare KV (GENKI_RATELIMIT binding) for rate limiting
  * - Environment: GOOGLE_CLOUD_API_KEY
  * - Called by: app/hooks/useAudioPlayer.ts
  *
@@ -73,7 +69,7 @@
 import { NextResponse } from 'next/server';
 import { getCachedAudio, setCachedAudio } from '@/app/utils/tts-cache';
 import { createClient } from '@/app/lib/supabase/server';
-import { kv } from '@vercel/kv';
+import { getCloudflareContext } from '@opennextjs/cloudflare';
 
 // =============================================================================
 // CONFIGURATION
@@ -83,41 +79,76 @@ const RATE_LIMIT_REQUESTS = 20; // Max requests per window
 const RATE_LIMIT_WINDOW_SECONDS = 60; // Window size in seconds
 
 // =============================================================================
-// IN-MEMORY RATE LIMITER (Fallback for local development)
+// RATE LIMITER (Cloudflare KV)
 // =============================================================================
+// Fixed-window rate limit anchored to the timestamp inside the KV value.
+// Cloudflare KV's expirationTtl is reset on every put, so we cannot rely on
+// the entry's expiry to bound the window. Instead we embed the windowStart
+// into the value and decide locally whether the current request belongs to
+// the existing window or starts a new one. KV TTL is set to the window
+// length on every put to keep entries from accumulating indefinitely; the
+// authoritative window boundary lives in windowStart.
+//
+// In-memory map is only hit when no Workers binding is available (e.g. plain
+// `next dev`). In a Workers isolate it would persist across requests for the
+// life of the isolate, but the KV path always runs first in production.
 const inMemoryRateLimits = new Map<string, { count: number; resetAt: number }>();
+
+type RateLimitEntry = { count: number; windowStart: number };
+
+function getRateLimitKV(): KVNamespace | null {
+  try {
+    return getCloudflareContext().env.GENKI_RATELIMIT ?? null;
+  } catch {
+    return null;
+  }
+}
 
 async function checkRateLimit(userId: string): Promise<{ success: boolean; remaining: number }> {
   const key = `ratelimit:tts:${userId}`;
-  const now = Date.now();
+  const kv = getRateLimitKV();
   const windowMs = RATE_LIMIT_WINDOW_SECONDS * 1000;
+  const now = Date.now();
 
-  // Try Vercel KV first (production)
-  if (process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN) {
+  if (kv) {
     try {
-      const currentCount = await kv.incr(key);
-      
-      // Set expiry on first request in window
-      if (currentCount === 1) {
-        await kv.expire(key, RATE_LIMIT_WINDOW_SECONDS);
+      let count = 0;
+      let windowStart = now;
+      const raw = await kv.get(key);
+      if (raw) {
+        try {
+          const parsed = JSON.parse(raw) as RateLimitEntry;
+          if (now - parsed.windowStart < windowMs) {
+            count = parsed.count;
+            windowStart = parsed.windowStart;
+          }
+        } catch {
+          // Corrupt entry — start a fresh window.
+        }
       }
-      
-      const remaining = Math.max(0, RATE_LIMIT_REQUESTS - currentCount);
-      return { success: currentCount <= RATE_LIMIT_REQUESTS, remaining };
+      count += 1;
+      await kv.put(
+        key,
+        JSON.stringify({ count, windowStart } satisfies RateLimitEntry),
+        { expirationTtl: RATE_LIMIT_WINDOW_SECONDS }
+      );
+      const remaining = Math.max(0, RATE_LIMIT_REQUESTS - count);
+      return { success: count <= RATE_LIMIT_REQUESTS, remaining };
     } catch (error) {
-      console.error('[TTS Rate Limit] KV error, falling back to in-memory:', error);
+      // Fail closed: under KV degradation we'd rather rate-limit a legitimate
+      // user (returning 429) than silently disable the limiter and let an
+      // attacker spam the upstream TTS API.
+      console.error('[TTS Rate Limit] KV error — failing closed:', error);
+      return { success: false, remaining: 0 };
     }
   }
 
-  // Fallback: In-memory rate limiting (local development)
+  // In-memory fallback (only reached when no Workers context — e.g. plain `next dev`).
   const existing = inMemoryRateLimits.get(key);
-  
   if (!existing || now > existing.resetAt) {
-    // Start new window
     inMemoryRateLimits.set(key, { count: 1, resetAt: now + windowMs });
     return { success: true, remaining: RATE_LIMIT_REQUESTS - 1 };
   }
-  
   existing.count++;
   const remaining = Math.max(0, RATE_LIMIT_REQUESTS - existing.count);
   return { success: existing.count <= RATE_LIMIT_REQUESTS, remaining };
@@ -163,7 +194,8 @@ export async function POST(request: Request) {
     // -------------------------------------------------------------------------
     // 3. INPUT VALIDATION
     // -------------------------------------------------------------------------
-    const { text } = await request.json();
+    const body = (await request.json()) as { text?: unknown };
+    const text = body.text;
 
     if (!text) {
       return NextResponse.json(
@@ -209,12 +241,15 @@ export async function POST(request: Request) {
       );
     }
 
+    // Send the API key via header rather than `?key=<value>` so it doesn't
+    // appear in request-URL captures (Workers Logpush, Sentry trace spans, etc.).
     const response = await fetch(
-      `https://texttospeech.googleapis.com/v1/text:synthesize?key=${apiKey}`,
+      'https://texttospeech.googleapis.com/v1/text:synthesize',
       {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'X-Goog-Api-Key': apiKey,
         },
         body: JSON.stringify({
           input: { text },
@@ -225,7 +260,7 @@ export async function POST(request: Request) {
     );
 
     if (!response.ok) {
-      const errorData = await response.json();
+      const errorData = (await response.json()) as { error?: { message?: string; status?: string } };
       console.error('Google TTS API Error:', errorData);
       return NextResponse.json(
         { error: 'Failed to synthesize speech' },
@@ -233,12 +268,22 @@ export async function POST(request: Request) {
       );
     }
 
-    const data = await response.json();
-    
-    // Store in cache (don't await - let it happen in background)
-    setCachedAudio(text, data.audioContent).catch((err) => 
+    const data = (await response.json()) as { audioContent: string };
+
+    // Cache write outlives the response. ctx.waitUntil keeps the isolate
+    // alive until the KV put completes, avoiding a Workers floating-promise
+    // anti-pattern. Falls back to a fire-and-forget catch if ctx is absent
+    // (e.g. inside `next dev` without bindings).
+    const cacheWrite = setCachedAudio(text, data.audioContent).catch((err) =>
       console.error('[TTS Route] Cache write error:', err)
     );
+    try {
+      getCloudflareContext().ctx.waitUntil(cacheWrite);
+    } catch {
+      // No Workers ctx (local Node dev) — the promise will still run, just
+      // without lifecycle pinning.
+      void cacheWrite;
+    }
 
     return NextResponse.json(
       { audioContent: data.audioContent, cached: false },

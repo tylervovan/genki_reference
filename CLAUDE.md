@@ -4,25 +4,37 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Japanese QuickRef - a study companion for the Genki textbook series. Next.js 16 app with Supabase backend, featuring vocabulary/grammar/kanji reference cards with audio pronunciation and custom flashcard sets.
+Japanese QuickRef - a study companion for the Genki textbook series. Next.js 16 app with Supabase backend, deployed to Cloudflare Workers via @opennextjs/cloudflare. Live at https://genki-reference.tylervovan.com.
 
 ## Commands
 
 ```bash
-npm run dev      # Start development server (http://localhost:3000)
-npm run build    # Production build
-npm run lint     # Run ESLint
-npm run test     # Run TTS cache tests
+npm run dev          # Start Next.js dev server (http://localhost:3000)
+npm run build        # Production build (vanilla Next, used by OpenNext too)
+npm run lint         # Run ESLint
+npm run preview:cf   # Build for Workers and run wrangler preview locally
+npm run deploy:cf    # Build and deploy the Worker to Cloudflare
+npm run cf-typegen   # Regenerate cloudflare-env.d.ts from wrangler.jsonc bindings
 ```
 
 ## Environment Variables
 
-Required in `.env.local`:
+Build-time (`.env.local`, inlined by Next.js):
 ```
-NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
-GOOGLE_CLOUD_API_KEY=your-google-cloud-key
+NEXT_PUBLIC_SUPABASE_URL=https://<project>.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=<anon JWT>
+NEXT_PUBLIC_SENTRY_DSN=<optional>
+GOOGLE_CLOUD_API_KEY=<for `next dev` only — server-side reads this>
 ```
+
+Worker runtime (Cloudflare):
+- `GOOGLE_CLOUD_API_KEY` is stored as a wrangler secret (`wrangler secret put GOOGLE_CLOUD_API_KEY`).
+- `.dev.vars` populates the same secret for `wrangler dev` / `opennextjs-cloudflare preview`.
+
+Worker bindings (from `wrangler.jsonc`):
+- `GENKI_TTS_CACHE` — KV namespace for cached TTS audio (30-day TTL)
+- `GENKI_RATELIMIT` — KV namespace for per-user TTS rate limits (60s window)
+- `ASSETS` — static asset fetcher
 
 ## Git Commit Rules
 
@@ -81,7 +93,9 @@ Flow: SpeakerButton → useAudioPlayer hook → POST /api/tts → Google Cloud T
 - Rate limited: 20 requests/minute per user
 - Max 500 characters per request
 
-**Caching**: Vercel KV in production, file-based (`.tts-cache/`) locally
+**Caching**: Cloudflare KV (`GENKI_TTS_CACHE` binding) via `app/utils/tts-cache.ts`. SHA-256 of text is the cache key; TTL defaults to 30 days. The cache write is attached to `ctx.waitUntil()` so the Worker doesn't terminate before the KV put completes.
+
+**Rate limit storage**: Cloudflare KV (`GENKI_RATELIMIT` binding), 60s window. Has an in-memory fallback used when bindings aren't available (e.g. plain `next dev`).
 
 ### Authentication
 
@@ -91,7 +105,7 @@ Google OAuth via Supabase Auth.
 - `app/auth/callback/route.ts` - OAuth callback
 - `app/hooks/useAuth.ts` - Auth state hook
 - `app/lib/supabase/` - Client/server/middleware utilities
-- `proxy.ts` - Session refresh (Next.js 16 convention, formerly middleware.ts)
+- `middleware.ts` - Session refresh. Uses the legacy `middleware.ts` filename (not Next.js 16's `proxy.ts`) because OpenNext on Cloudflare doesn't yet support Node.js middleware. The legacy filename runs on the Edge runtime, which OpenNext does support.
 
 **Supabase clients**:
 - Client components: `createClient()` from `@/app/lib/supabase/client`

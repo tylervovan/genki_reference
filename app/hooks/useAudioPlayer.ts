@@ -86,7 +86,7 @@ export function useAudioPlayer(): UseAudioPlayerReturn {
       });
 
       if (!response.ok) {
-        const data = await response.json();
+        const errBody = (await response.json()) as { error?: string };
         // Provide user-friendly error messages
         if (response.status === 401) {
           throw new Error('Please sign in to use audio playback');
@@ -94,11 +94,11 @@ export function useAudioPlayer(): UseAudioPlayerReturn {
         if (response.status === 429) {
           throw new Error('Too many requests. Please wait a moment.');
         }
-        throw new Error(data.error || 'Failed to fetch audio');
+        throw new Error(errBody.error || 'Failed to fetch audio');
       }
 
-      const data = await response.json();
-      
+      const data = (await response.json()) as { audioContent?: string };
+
       if (!data.audioContent) {
         throw new Error('No audio content received');
       }

@@ -1,0 +1,36 @@
+/**
+ * Cloudflare Worker config for the Genki Reference Next.js app
+ * (adapted via @opennextjs/cloudflare).
+ *
+ * Domain: genki-reference.tylervovan.com (bound via Workers Custom Domain).
+ *
+ * Required flags:
+ *   - nodejs_compat: needed by Next.js runtime and @sentry/nextjs.
+ *   - global_fetch_strictly_public: blocks loopback fetches inside Workers
+ *     (recommended by OpenNext).
+ * Compatibility date 2025-08-16+ is required for Sentry's https.request.
+ */
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "genki-reference",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2026-05-11",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "assets": {
+    "binding": "ASSETS",
+    "directory": ".open-next/assets"
+  },
+  "observability": {
+    "enabled": true
+  },
+  "kv_namespaces": [
+    {
+      "binding": "GENKI_TTS_CACHE",
+      "id": "29bf303b34804f2b8ea196a4b91f81c8"
+    },
+    {
+      "binding": "GENKI_RATELIMIT",
+      "id": "2ecbd44ad8c94dd784d878dfb7d1b0a6"
+    }
+  ]
+}

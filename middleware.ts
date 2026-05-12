@@ -1,9 +1,18 @@
 /**
  * =============================================================================
- * NEXT.JS PROXY (formerly Middleware)
+ * EDGE MIDDLEWARE
  * =============================================================================
  *
- * PURPOSE: Handles request-level operations before routes are processed
+ * PURPOSE: Handles request-level operations before routes are processed.
+ *
+ * IMPORTANT — DO NOT add `export const runtime = 'edge'` here.
+ * Next.js 16 treats a runtime export on middleware.ts as a route-segment
+ * config and the build fails with "Page /middleware provided runtime 'edge',
+ * the edge runtime for rendering is currently experimental." The legacy
+ * `middleware.ts` filename inherently runs on the Edge runtime (its defining
+ * characteristic — no explicit declaration needed). We use the legacy
+ * filename rather than Next.js 16's `proxy.ts` because @opennextjs/cloudflare
+ * doesn't yet support Node.js middleware (the new default for proxy.ts).
  *
  * WHAT IT DOES:
  * - Refreshes Supabase auth sessions on every request
@@ -36,7 +45,7 @@
 import { type NextRequest } from 'next/server'
 import { updateSession } from '@/app/lib/supabase/middleware'
 
-export async function proxy(request: NextRequest) {
+export async function middleware(request: NextRequest) {
   return await updateSession(request)
 }
 
@@ -48,9 +57,11 @@ export const config = {
      * - _next/image (image optimization files)
      * - favicon.ico (favicon file)
      * - Public files (images, etc.)
-     * Feel free to modify this pattern to include more paths.
+     * - monitoring (Sentry tunnelRoute — see next.config.ts tunnelRoute);
+     *   skipping prevents Supabase session refresh from intercepting every
+     *   client-side error beacon.
      */
-    '/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)',
+    '/((?!_next/static|_next/image|favicon.ico|monitoring|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)',
   ],
 }
 

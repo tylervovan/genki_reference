@@ -22,15 +22,15 @@
  * 4. Writes updated cookies to response
  *
  * CONSTRAINTS/GOTCHAS:
- * - Must be used with the root proxy.ts file
+ * - Must be used with the root middleware.ts file
  * - Returns both supabase client and response object
  *
  * DEPENDENCIES:
  * - Uses: @supabase/ssr, next/server
- * - Used by: proxy.ts (root)
+ * - Used by: middleware.ts (root)
  *
  * RELATED FILES:
- * - proxy.ts (root proxy that uses this)
+ * - middleware.ts (root proxy that uses this)
  * - app/lib/supabase/client.ts (browser client)
  * - app/lib/supabase/server.ts (server client)
  * =============================================================================

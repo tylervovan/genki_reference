@@ -1,5 +1,10 @@
 import { withSentryConfig } from "@sentry/nextjs";
 import type { NextConfig } from "next";
+import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
+
+// Wires Cloudflare bindings (KV, ASSETS) into `next dev` so server code can
+// reach them via getCloudflareContext() during local development.
+initOpenNextCloudflareForDev();
 
 const nextConfig: NextConfig = {
   /**
@@ -74,11 +79,8 @@ export default withSentryConfig(nextConfig, {
   // Automatically tree-shake Sentry logger statements to reduce bundle size
   disableLogger: true,
 
-  // Enables automatic instrumentation of Vercel Cron Monitors. (Does not yet work with App Router route handlers.)
-  // See the following for more information:
-  // https://docs.sentry.io/product/crons/
-  // https://vercel.com/docs/cron-jobs
-  automaticVercelMonitors: true,
+  // No Vercel Cron Monitors — running on Cloudflare Workers.
+  automaticVercelMonitors: false,
 
   // Suppress warning if SENTRY_AUTH_TOKEN is missing (e.g. in Vercel builds without the secret)
   sourcemaps: {
